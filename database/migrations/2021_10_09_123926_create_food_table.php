@@ -13,14 +13,16 @@ class CreateFoodTable extends Migration
      */
     public function up()
     {
-        Schema::create('food', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->float('cost');
-            $table->string('image');
-            $table->longText('description');
-            $table->timestamps();
-        });
+        if (!Schema::hasTable('food')) {
+            Schema::create('food', function ($table) {
+                $table->id();
+                $table->string('name');
+                $table->float('cost');
+                $table->string('image');
+                $table->longText('description');
+                $table->timestamps();
+            });
+        }
     }
 
     /**
