@@ -1,11 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Route} from 'react-router-dom';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+
+ library.add(faBars, faBars)
+
+import Header from "./Header";
 
 function Main() {
     return (
-        <div className="container">
-            <h1>Welcome to this app</h1>
-        </div>
+        <BrowserRouter>
+            <Header/>
+        </BrowserRouter>
     );
 }
 
