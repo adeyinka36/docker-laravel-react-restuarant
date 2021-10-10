@@ -31,6 +31,9 @@ ul{
     padding: 0;
     margin: 0;
     left: 0;
+    .cancel-con{
+        justify-content: flex-end;
+    }
     .cancel{
         justify-content: flex-end;
         font-size: 3rem;
@@ -101,7 +104,7 @@ const dropDown = ()=>{
         <Con>
             <span className="logo">DELICIOUS</span>
             <ul id="menu">
-                <li className="cancel" onClick={dropDown}>x</li>
+                <li className="cancel-con"><span  className="cancel" onClick={dropDown}>x</span></li>
                 <li>Home</li>
                 <li>Menu</li>
             </ul>
