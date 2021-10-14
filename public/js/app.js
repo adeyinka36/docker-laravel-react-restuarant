@@ -12818,7 +12818,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 var media = {
   desktop: "@media (min-width:1000px)"
 };
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\nmin-width: 100%;\nfont-size: 2rem;\ndisplay: flex;\nheight: 10vh;\nbackground-color: #8A2BE2;\ncolor: white;\njustify-content: space-between;\npadding-left: .5rem;\npadding-right: .5rem;\nalign-items: center;\nposition: sticky;\n.logo{\n font-family: 'Rampart One', cursive;\n}\nul{\n    transition: .5s;\n    position: fixed;\n    top: -100%;\n    background-color: #8A2BE2;\n    list-style-type: none;\n    width: 100vw;\n    padding: 0;\n    margin: 0;\n    left: 0;\n    .cancel-con{\n        justify-content: flex-end;\n    }\n    .cancel{\n        justify-content: flex-end;\n        font-size: 3rem;\n        color: white;\n        margin-right: .5rem;\n        transition: .4s;\n        &:hover{\n            color: blue;\n            cursor: pointer;\n        }\n    }\n    ", " {\n        position: static;\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n        width: 50%;\n    }\n    li{\n        margin: 0;\n        font-size: 1.5rem;\n        text-align: center;\n        color: #fff;\n        background-color: #8A2BE2;\n        height: 5rem;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        ", " {\n            background-color: #8A2BE2;\n            color: white;\n            border: none;\n            height: auto;\n        }\n    }\n}\n.icon{\n    transition: .4s;\n    font-size: 4rem;\n    &:hover{\n        cursor: pointer;\n        transform: scale(1.1);\n    }\n    ", " {\n        display: none;\n    }\n}\n\n"])), media.desktop, media.desktop, media.desktop);
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\nmin-width: 100%;\nfont-size: 2rem;\ndisplay: flex;\nheight: 10vh;\nbackground-color: #8A2BE2;\ncolor: white;\njustify-content: space-between;\npadding-left: .5rem;\npadding-right: .5rem;\nalign-items: center;\nposition: sticky;\n.logo{\n font-family: 'Rampart One', cursive;\n}\nul{\n    transition: .5s;\n    position: fixed;\n    top: -100%;\n    background-color: #8A2BE2;\n    list-style-type: none;\n    width: 100vw;\n    padding: 0;\n    margin: 0;\n    left: 0;\n    .cancel-con{\n        justify-content: flex-end;\n        ", " {\n            display: none;\n        }\n    }\n    .cancel{\n        justify-content: flex-end;\n        font-size: 3rem;\n        color: white;\n        margin-right: .5rem;\n        transition: .4s;\n        &:hover{\n            color: blue;\n            cursor: pointer;\n        }\n    }\n    ", " {\n        position: static;\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n        width: 50%;\n    }\n    li{\n        margin: 0;\n        font-size: 1.5rem;\n        text-align: center;\n        color: #fff;\n        background-color: #8A2BE2;\n        height: 5rem;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        ", " {\n            background-color: #8A2BE2;\n            color: white;\n            border: none;\n            height: auto;\n        }\n    }\n}\n.icon{\n    transition: .4s;\n    font-size: 4rem;\n    &:hover{\n        cursor: pointer;\n        transform: scale(1.1);\n    }\n    ", " {\n        display: none;\n    }\n}\n\n"])), media.desktop, media.desktop, media.desktop, media.desktop);
 
 var Header = function Header() {
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
@@ -12871,6 +12871,54 @@ var Header = function Header() {
 
 /***/ }),
 
+/***/ "./resources/js/components/Home.js":
+/*!*****************************************!*\
+  !*** ./resources/js/components/Home.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _templateObject;
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+var burgers = ['/images/burger1.jpg', '/images/burger2.jpg', '/images/burger3.jpg'];
+var image = Math.floor(Math.random() * 3);
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    .main{\n        width: 45vw;\n        height: 70vh;\n        background-image: url(", ");\n        background-size: cover;\n        background-position: center;\n        animation: main alternate 30s;\n        margin: 0 auto;\n    }\n"])), burgers[image]);
+
+var Home = function Home() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Con, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+      className: "main"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+      className: "main-desc",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h2", {
+        children: "FOOD FOR THE MOMENT"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+        children: "THE MOST EXOTIC GLOBAL CUISINE"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+        children: "ORDER NOW!"
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+      className: "pics",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {})]
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
+
+/***/ }),
+
 /***/ "./resources/js/components/Main.js":
 /*!*****************************************!*\
   !*** ./resources/js/components/Main.js ***!
@@ -12884,11 +12932,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fortawesome/fontawesome-svg-core */ "./node_modules/@fortawesome/fontawesome-svg-core/index.es.js");
 /* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Header */ "./resources/js/components/Header.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Home__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Home */ "./resources/js/components/Home.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -12898,16 +12947,18 @@ _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_2__.library.add(_fort
 
 
 
+
+
 function Main() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.BrowserRouter, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Header__WEBPACK_IMPORTED_MODULE_4__["default"], {})
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.BrowserRouter, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Header__WEBPACK_IMPORTED_MODULE_4__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Home__WEBPACK_IMPORTED_MODULE_5__["default"], {})]
   });
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main);
 
 if (document.getElementById('app')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(Main, {}), document.getElementById('app'));
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(Main, {}), document.getElementById('app'));
 }
 
 /***/ }),

@@ -7,11 +7,13 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
  library.add(faBars, faBars)
 
 import Header from "./Header";
+import Home from  "./Home";
 
 function Main() {
     return (
         <BrowserRouter>
             <Header/>
+            <Home/>
         </BrowserRouter>
     );
 }

@@ -33,6 +33,9 @@ ul{
     left: 0;
     .cancel-con{
         justify-content: flex-end;
+        ${media.desktop} {
+            display: none;
+        }
     }
     .cancel{
         justify-content: flex-end;
