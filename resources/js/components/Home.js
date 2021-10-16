@@ -5,7 +5,10 @@ const burgers = [
                 '/images/burger2.jpg',
                 '/images/burger3.jpg'
             ]
-     let image = Math.floor(Math.random() * 3);
+let image = Math.floor(Math.random() * 3);
+const media = {
+    desktop : `@media (min-width:1341px)`
+}
 const Con = style.div`
           .main{
             width: 100%;
@@ -72,6 +75,17 @@ const Con = style.div`
         position: relative;
         width: 275px;
         margin: 0 auto;
+        ${media.desktop} {
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .shift{
+             ${media.desktop} {
+                margin-top: 5rem;
+             }
+        }
         img{
             width: 275px;
             height: 285px;
@@ -84,6 +98,34 @@ const Con = style.div`
             border-radius: 5px;
             margin-bottom: 1rem;
             position: relative;
+            z-index: 2;
+             &:hover .shade{
+                ${media.desktop} {
+                    opacity: .4;
+                    cursor: pointer;
+                    color: white;
+                }
+              }
+              &:hover .price{
+                ${media.desktop} {
+                  background-color: #8A2BE2;
+                  color: white;
+                }
+              }
+            .shade{
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              opacity: 0;
+              background-image: linear-gradient(to top left, #8A2BE2, white);
+              transition: opacity .5s;
+              margin: 0;
+            }
+            ${media.desktop} {
+                margin: .5rem;
+             }
             .overlay{
                 position: absolute;
                 left: 0;
@@ -124,29 +166,45 @@ const Home = ()=>{
                 <button>ORDER NOW!</button>
             </div>
             <div className="pics">
-                <div>
+                <div className="shift">
+                    <div className="shade"></div>
                     <img src={burgers[2]} alt="this is a burger"/>
-                    <span className="overlay">VEGGIE FEAST<span>£20.99</span></span>
+                    <span className="overlay">VEGGIE FEAST<span className="price">£20.99</span></span>
                 </div>
                 <div>
+                    <div className="shade"></div>
                     <img src={burgers[2]} alt="this is a burger"/>
-                    <span className="overlay">VEGGIE FEAST<span>£20.99</span></span>
+                    <span className="overlay">VEGGIE FEAST<span className="price">£20.99</span></span>
                 </div>
                 <div>
+                    <div className="shade"></div>
                     <img src={burgers[2]} alt="this is a burger"/>
-                    <span className="overlay">VEGGIE FEAST<span>£20.99</span></span>
+                    <span className="overlay">VEGGIE FEAST<span className="price">£20.99</span></span>
+                </div>
+                <div className="shift">
+                    <div className="shade"></div>
+                    <img src={burgers[2]} alt="this is a burger"/>
+                    <span className="overlay">VEGGIE FEAST<span className="price">£20.99</span></span>
+                </div>
+                <div className="shift">
+                    <div className="shade"></div>
+                    <img src={burgers[2]} alt="this is a burger"/>
+                    <span className="overlay">VEGGIE FEAST<span className="price">£20.99</span></span>
                 </div>
                 <div>
+                    <div className="shade"></div>
                     <img src={burgers[2]} alt="this is a burger"/>
-                    <span className="overlay">VEGGIE FEAST<span>£20.99</span></span>
+                    <span className="overlay">VEGGIE FEAST<span className="price">£20.99</span></span>
                 </div>
                 <div>
+                    <div className="shade"></div>
                     <img src={burgers[2]} alt="this is a burger"/>
-                    <span className="overlay">VEGGIE FEAST<span>£20.99</span></span>
+                    <span className="overlay">VEGGIE FEAST<span className="price">£20.99</span></span>
                 </div>
-                <div>
+                <div className="shift">
+                    <div className="shade"></div>
                     <img src={burgers[2]} alt="this is a burger"/>
-                    <span className="overlay">VEGGIE FEAST<span>£20.99</span></span>
+                    <span className="overlay">VEGGIE FEAST<span className="price">£20.99</span></span>
                 </div>
             </div>
         </Con>
