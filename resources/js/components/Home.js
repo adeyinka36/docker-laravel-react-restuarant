@@ -10,14 +10,12 @@ const media = {
     desktop : `@media (min-width:1341px)`
 }
 const Con = style.div`
+           text-align: center;
           .main{
             width: 100%;
             height: 70vh;
-            background-image: url(${burgers[image]});
-            background-size: cover;
-            background-position: center;
-            animation: main alternate 30s;
             margin: 0 auto;
+            object-fit: contain;
           }
         .main-desc{
           width: 100vw;
@@ -90,12 +88,12 @@ const Con = style.div`
             width: 275px;
             height: 285px;
             border: 1px solid #8A2BE2;
-            border-radius: 5px;
+            border-radius: 10px;
             margin: 3px 3px -5px 3px;
         }
         div{
             border: 1px solid #8A2BE2;
-            border-radius: 5px;
+            border-radius: 10px;
             margin-bottom: 1rem;
             position: relative;
             z-index: 2;
@@ -149,8 +147,25 @@ const Con = style.div`
                 }
             }
         }
-
     }
+     button{
+            display: inline-block;
+            width: 300px;
+            color: white;
+            margin: 1.5rem auto;
+            background-color: #8A2BE2;
+            font-size: 1.5rem;
+            font-family: 'Anton', sans-serif;
+            padding: 1rem;
+            letter-spacing: .25rem;
+            border-radius: 7px;
+            margin: 1rem auto;
+            &:hover{
+                background-color: #ca2be2;
+                cursor: pointer;
+            }
+          }
+
 `
 
 
@@ -158,7 +173,9 @@ const Home = ()=>{
 
     return(
         <Con>
-            <div className="main"></div>
+            <div className="main-con">
+                <img src={burgers[image]} className="main" alt="background-random"/>
+            </div>
             <div className="main-desc">
                 <h2>MEXICAN</h2>
                 <span>inspired</span>
@@ -207,6 +224,7 @@ const Home = ()=>{
                     <span className="overlay">VEGGIE FEAST<span className="price">£20.99</span></span>
                 </div>
             </div>
+            <button>EXPLORE THE MENU</button>
         </Con>
     )
 }
