@@ -12893,7 +12893,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var burgers = ['/images/burger1.jpg', '/images/burger2.jpg', '/images/burger3.jpg'];
 var image = Math.floor(Math.random() * 3);
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n          .main{\n            width: 100%;\n            height: 70vh;\n            background-image: url(", ");\n            background-size: cover;\n            background-position: center;\n            animation: main alternate 30s;\n            margin: 0 auto;\n          }\n        .main-desc{\n          width: 100vw;\n          display: flex;\n          flex-direction: column;\n          justify-content: center;\n          align-items: center;\n          h1{\n            font-family: 'Anton', sans-serif;\n            color: #8A2BE2;\n            letter-spacing: .4rem;\n          }\n          h2{\n            font-size: 1.8rem;\n            -webkit-text-stroke: 1px #8A2BE2;\n            -webkit-text-fill-color: white;\n            letter-spacing: 1rem;\n            font-family: 'Anton', sans-serif;\n          }\n          span{\n            font-family: 'Italianno', cursive;\n            font-size: 2.5rem;\n          }\n          span, h2, h1, button{\n            margin: 0;\n            width: 100%;\n            text-align: center;\n            display: inline-block;\n            color: #8A2BE2;\n            margin-top: 1rem;\n          }\n          button{\n            display: inline-block;\n            width: auto;\n            color: white;\n            margin: 1.5rem auto;\n            background-color: #8A2BE2;\n            font-size: 2rem;\n            font-family: 'Anton', sans-serif;\n            padding: 1.5rem;\n            letter-spacing: .5rem;\n            border-radius: 7px;\n            margin-top: 4rem;\n            &:hover{\n                background-color: #ca2be2;\n                cursor: pointer;\n            }\n          }\n        }\n    .pics{\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        justify-contents: center;\n        position: relative;\n        width: 275px;\n        margin: 0 auto;\n        img{\n            width: 275px;\n            height: 300px;\n            border: 1px solid #8A2BE2;\n            border-radius: 5px;\n        }\n        .overlay{\n            position: absolute;\n            top:0;\n            left:0;\n            width: 100%;\n            height: 100%;\n            background-color: blue;\n        }\n    }\n"])), burgers[image]);
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n          .main{\n            width: 100%;\n            height: 70vh;\n            background-image: url(", ");\n            background-size: cover;\n            background-position: center;\n            animation: main alternate 30s;\n            margin: 0 auto;\n          }\n        .main-desc{\n          width: 100vw;\n          display: flex;\n          flex-direction: column;\n          justify-content: center;\n          align-items: center;\n          h1{\n            font-family: 'Anton', sans-serif;\n            color: #8A2BE2;\n            letter-spacing: .4rem;\n          }\n          h2{\n            font-size: 1.8rem;\n            -webkit-text-stroke: 1px #8A2BE2;\n            -webkit-text-fill-color: white;\n            letter-spacing: 1rem;\n            font-family: 'Anton', sans-serif;\n          }\n          span{\n            font-family: 'Italianno', cursive;\n            font-size: 2.5rem;\n          }\n          span, h2, h1, button{\n            margin: 0;\n            width: 100%;\n            text-align: center;\n            display: inline-block;\n            color: #8A2BE2;\n            margin-top: 1rem;\n          }\n          button{\n            display: inline-block;\n            width: auto;\n            color: white;\n            margin: 1.5rem auto;\n            background-color: #8A2BE2;\n            font-size: 2rem;\n            font-family: 'Anton', sans-serif;\n            padding: 1.5rem;\n            letter-spacing: .5rem;\n            border-radius: 7px;\n            margin-top: 4rem;\n            &:hover{\n                background-color: #ca2be2;\n                cursor: pointer;\n            }\n          }\n        }\n    .pics{\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        justify-contents: center;\n        position: relative;\n        width: 275px;\n        margin: 0 auto;\n        img{\n            width: 275px;\n            height: 285px;\n            border: 1px solid #8A2BE2;\n            border-radius: 5px;\n            margin: 3px 3px -5px 3px;\n        }\n        div{\n            border: 1px solid #8A2BE2;\n            border-radius: 5px;\n            margin-bottom: 1rem;\n            position: relative;\n            .overlay{\n                position: absolute;\n                left: 0;\n                bottom: 0;\n                width: 100%;\n                display: flex;\n                justify-content: space-around;\n                align-items: center;\n                margin-bottom: .5rem;\n                font-family: 'Anton', sans-serif;\n                color: #8A2BE2;\n                span{\n                    border: 1px solid #8A2BE2;\n                    border-radius: 50%;\n                    width: 60px;\n                    height: 60px;\n                    display: flex;\n                    align-items: center;\n                    justify-content: center;\n\n                }\n            }\n        }\n\n    }\n"])), burgers[image]);
 
 var Home = function Home() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Con, {
@@ -12916,49 +12916,61 @@ var Home = function Home() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
           src: burgers[2],
           alt: "this is a burger"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
           className: "overlay",
-          children: "Hello"
+          children: ["VEGGIE FEAST", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+            children: "\xA320.99"
+          })]
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
           src: burgers[2],
           alt: "this is a burger"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
           className: "overlay",
-          children: "Hello"
+          children: ["VEGGIE FEAST", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+            children: "\xA320.99"
+          })]
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
           src: burgers[2],
           alt: "this is a burger"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
           className: "overlay",
-          children: "Hello"
+          children: ["VEGGIE FEAST", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+            children: "\xA320.99"
+          })]
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
           src: burgers[2],
           alt: "this is a burger"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
           className: "overlay",
-          children: "Hello"
+          children: ["VEGGIE FEAST", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+            children: "\xA320.99"
+          })]
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
           src: burgers[2],
           alt: "this is a burger"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
           className: "overlay",
-          children: "Hello"
+          children: ["VEGGIE FEAST", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+            children: "\xA320.99"
+          })]
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
           src: burgers[2],
           alt: "this is a burger"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
           className: "overlay",
-          children: "Hello"
+          children: ["VEGGIE FEAST", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+            children: "\xA320.99"
+          })]
         })]
       })]
     })]

@@ -74,18 +74,40 @@ const Con = style.div`
         margin: 0 auto;
         img{
             width: 275px;
-            height: 300px;
+            height: 285px;
             border: 1px solid #8A2BE2;
             border-radius: 5px;
+            margin: 3px 3px -5px 3px;
         }
-        .overlay{
-            position: absolute;
-            top:0;
-            left:0;
-            width: 100%;
-            height: 100%;
-            background-color: blue;
+        div{
+            border: 1px solid #8A2BE2;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            position: relative;
+            .overlay{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-bottom: .5rem;
+                font-family: 'Anton', sans-serif;
+                color: #8A2BE2;
+                span{
+                    border: 1px solid #8A2BE2;
+                    border-radius: 50%;
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                }
+            }
         }
+
     }
 `
 
@@ -104,27 +126,27 @@ const Home = ()=>{
             <div className="pics">
                 <div>
                     <img src={burgers[2]} alt="this is a burger"/>
-                    <div className="overlay">Hello</div>
+                    <span className="overlay">VEGGIE FEAST<span>£20.99</span></span>
                 </div>
                 <div>
                     <img src={burgers[2]} alt="this is a burger"/>
-                    <div className="overlay">Hello</div>
+                    <span className="overlay">VEGGIE FEAST<span>£20.99</span></span>
                 </div>
                 <div>
                     <img src={burgers[2]} alt="this is a burger"/>
-                    <div className="overlay">Hello</div>
+                    <span className="overlay">VEGGIE FEAST<span>£20.99</span></span>
                 </div>
                 <div>
                     <img src={burgers[2]} alt="this is a burger"/>
-                    <div className="overlay">Hello</div>
+                    <span className="overlay">VEGGIE FEAST<span>£20.99</span></span>
                 </div>
                 <div>
                     <img src={burgers[2]} alt="this is a burger"/>
-                    <div className="overlay">Hello</div>
+                    <span className="overlay">VEGGIE FEAST<span>£20.99</span></span>
                 </div>
                 <div>
                     <img src={burgers[2]} alt="this is a burger"/>
-                    <div className="overlay">Hello</div>
+                    <span className="overlay">VEGGIE FEAST<span>£20.99</span></span>
                 </div>
             </div>
         </Con>
