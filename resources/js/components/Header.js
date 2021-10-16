@@ -84,7 +84,6 @@ ul{
         display: none;
     }
 }
-
 `
 
 const Header = ()=>{
