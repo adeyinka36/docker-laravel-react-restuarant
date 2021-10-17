@@ -4,7 +4,9 @@ import {useEffect} from 'react';
 const images = [
     '/images/logo.jpg',
 ]
-
+const media = {
+    desktop : `@media (min-width:1341px)`
+}
 const Con =  style.div`
         .top,h1{
          display: none;
@@ -70,6 +72,47 @@ const Con =  style.div`
             border-radius: 50%;
             margin: 0 auto;
           }
+          .about .sub-con{
+           ${media.desktop}{
+              width: 50%;
+             }
+          }
+          .about .image{
+            margin: 0 auto;
+            max-width: 400px;
+            background-color: red;
+            min-height: 400px;
+            ${media.desktop}{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                width:50%;
+                max-width: 700px;
+
+            }
+          }
+          .about-con{
+            ${media.desktop}{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+          }
+          .about h2{
+            font-family: 'Anton', sans-serif;
+            margin: .25rem auto;
+            color: #8A2BE2;
+            letter-spacing: .5rem;
+            font-size: 2rem;
+             text-align: center;
+          }
+          .about p{
+            font-family: sans-serif ;
+            margin: .25rem auto;
+            color: #8A2BE2;
+            width: 400px;
+            text-align: center;
+          }
 `
 
 const SpecialandAbout = ()=>{
@@ -109,9 +152,12 @@ const SpecialandAbout = ()=>{
                     <img id="rotate" src="https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6607cc4901a7_marg-rotate.svg" alt="spinner" />
                     <img src={images[0]} className = "logo" alt="logo"/>
                 </div>
-                <div>
+                <div className="about-con">
+                    <div className="sub-con">
                     <h2>ABOUT US</h2>
                     <p>Founded in 2018 in Silver Spring, Maryland, TTT stands for Tacos, Tortas & Tequila.  As the destination for Mexican inspired street food, our mission is to redefine the Mexican eating experience by delivering food prepared to order and doing it quickly. Everything we make is in house daily so we can deliver fresh - never frozen, healthy meals that taste great and are at the highest quality. Whether you order a taco, nacho or fiesta platter we are committed to providing our guests the true flavor of real Mexican street food.  We believe that you don't have to make difficult choices about eating great tasting food and being healthy...welcome to TTT.  </p>
+                    </div>
+                    <div className="image"></div>
                 </div>
             </div>
         </Con>
