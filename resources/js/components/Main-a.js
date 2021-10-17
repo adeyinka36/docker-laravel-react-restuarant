@@ -165,7 +165,7 @@ const Con = style.div`
                 cursor: pointer;
             }
           }
-
+ overflow-x: hidden !important;
 `
 
 

@@ -1,6 +1,10 @@
 import style from 'styled-components';
 import {useEffect} from 'react';
 
+const images = [
+    '/images/logo.jpg',
+]
+
 const Con =  style.div`
         .top,h1{
          display: none;
@@ -41,10 +45,13 @@ const Con =  style.div`
           .effect{
             position: relative;
             max-width: 300px;
-            height: 500px;
+            height: 300px;
             margin: 1.5rem auto;
-            max-height: 500px;
-            img, .top, .back{
+            max-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-contents: center;
+            img{
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -55,13 +62,13 @@ const Con =  style.div`
                 transition: transform 2s ease-out;
             }
             text-align: center;
-
-            .back{
-                 background-color: red;
-                 max-height: 500px;
-                 height: 500px;
-                 max-width: 300px;
-            }
+          }
+          .logo{
+            position: static !important;
+            max-height: 230px;
+            width: 230px;
+            border-radius: 50%;
+            margin: 0 auto;
           }
 `
 
@@ -70,7 +77,7 @@ const SpecialandAbout = ()=>{
       document.addEventListener('scroll',()=>{
           let   image = document.getElementById('rotate');
           let level = Array.from(image.style.transform).filter(item=>!isNaN(Number(item))).join('') ? Number(Array.from(image.style.transform).filter(item=>!isNaN(Number(item))).join('')) : 0;
-          document.getElementById('rotate').style.transform = `rotate(${level + 360}deg)`;
+          document.getElementById('rotate').style.transform = `rotate(${level + 180}deg)`;
       })
   },[])
 
@@ -99,8 +106,12 @@ const SpecialandAbout = ()=>{
             </div>
             <div className="about">
                 <div className="effect">
-                    <div className="back"></div>
                     <img id="rotate" src="https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6607cc4901a7_marg-rotate.svg" alt="spinner" />
+                    <img src={images[0]} className = "logo" alt="logo"/>
+                </div>
+                <div>
+                    <h2>ABOUT US</h2>
+                    <p>Founded in 2018 in Silver Spring, Maryland, TTT stands for Tacos, Tortas & Tequila.  As the destination for Mexican inspired street food, our mission is to redefine the Mexican eating experience by delivering food prepared to order and doing it quickly. Everything we make is in house daily so we can deliver fresh - never frozen, healthy meals that taste great and are at the highest quality. Whether you order a taco, nacho or fiesta platter we are committed to providing our guests the true flavor of real Mexican street food.  We believe that you don't have to make difficult choices about eating great tasting food and being healthy...welcome to TTT.  </p>
                 </div>
             </div>
         </Con>
