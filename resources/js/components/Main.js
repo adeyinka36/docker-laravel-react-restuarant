@@ -7,7 +7,7 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
  library.add(faBars, faBars)
 
 import Header from "./Header";
-import Home from  "./Home";
+import Home from "../views/Home";
 
 function Main() {
     return (

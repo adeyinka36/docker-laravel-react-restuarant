@@ -1,10 +1,10 @@
 import style from 'styled-components';
 
 const burgers = [
-                '/images/burger1.jpg',
-                '/images/burger2.jpg',
-                '/images/burger3.jpg'
-            ]
+    '/images/burger1.jpg',
+    '/images/burger2.jpg',
+    '/images/burger3.jpg'
+]
 let image = Math.floor(Math.random() * 3);
 const media = {
     desktop : `@media (min-width:1341px)`
