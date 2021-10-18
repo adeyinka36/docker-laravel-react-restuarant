@@ -124,7 +124,7 @@ const Con = style.div`
             }
             ${media.desktop} {
                 margin: .5rem;
-                z-index: 1;
+                z-index: 1 !important;
              }
             .overlay{
                 position: absolute;

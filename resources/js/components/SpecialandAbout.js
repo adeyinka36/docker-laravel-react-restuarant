@@ -1,5 +1,6 @@
 import style from 'styled-components';
-import {useEffect} from 'react';
+import {useEffect, useState} from 'react';
+
 
 const images = [
     '/images/logo.jpg',
@@ -54,22 +55,28 @@ const Con =  style.div`
             align-items: center;
             justify-contents: center;
             z-index: -1;
+             ${media.desktop}{
+              max-width: 500px;
+              max-height: 500px;
+              width: 500px;
+              height: 500px;
+             }
             img{
                 position: absolute;
                 top: 0;
                 left: 0;
             }
             img{
-                height: 300px;
+                height: 500px;
                 top: 0;
-                transition: transform 2s ease-out;
+                transition: transform 10s ease-out;
             }
             text-align: center;
           }
           .logo{
             position: static !important;
-            max-height: 230px;
-            width: 230px;
+            max-height: 370px;
+            width: 375px;
             border-radius: 50%;
             margin: 0 auto;
           }
@@ -117,11 +124,21 @@ const Con =  style.div`
 `
 
 const SpecialandAbout = ()=>{
+    let t1 = 0;
+    let count =0;
   useEffect(()=>{
+
       document.addEventListener('scroll',()=>{
+          if(t1 === 0){t1 = new Date().getTime(); }
           let   image = document.getElementById('rotate');
           let level = Array.from(image.style.transform).filter(item=>!isNaN(Number(item))).join('') ? Number(Array.from(image.style.transform).filter(item=>!isNaN(Number(item))).join('')) : 0;
+          if(((new Date().getTime() - 30000) < t1) &&  count) {
+              return
+          }
+
           document.getElementById('rotate').style.transform = `rotate(${level + 180}deg)`;
+          t1 = new Date().getTime()
+          count++
       })
   },[])
 
