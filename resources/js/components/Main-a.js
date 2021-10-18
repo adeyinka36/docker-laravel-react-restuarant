@@ -96,7 +96,7 @@ const Con = style.div`
             border-radius: 10px;
             margin-bottom: 1rem;
             position: relative;
-            z-index: 2;
+            z-index: -1;
              &:hover .shade{
                 ${media.desktop} {
                     opacity: .4;
@@ -120,9 +120,11 @@ const Con = style.div`
               background-image: linear-gradient(to top left, #8A2BE2, white);
               transition: opacity .5s;
               margin: 0;
+              z-index: -1;
             }
             ${media.desktop} {
                 margin: .5rem;
+                z-index: 1;
              }
             .overlay{
                 position: absolute;

@@ -65,6 +65,7 @@ ul{
         display: flex;
         justify-content: center;
         align-items: center;
+        max-width: 95%;
         ${media.desktop} {
             background-color: #8A2BE2;
             color: white;

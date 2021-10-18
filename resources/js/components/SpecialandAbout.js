@@ -53,6 +53,7 @@ const Con =  style.div`
             display: flex;
             align-items: center;
             justify-contents: center;
+            z-index: -1;
             img{
                 position: absolute;
                 top: 0;

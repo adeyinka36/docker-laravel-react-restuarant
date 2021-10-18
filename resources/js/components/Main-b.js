@@ -79,6 +79,9 @@ const Con = style.div`
             justify-content: center;
        }
    }
+   img{
+    z-index: -1 !important;
+}
 `
 
 
