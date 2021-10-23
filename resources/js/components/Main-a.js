@@ -76,8 +76,9 @@ const Con = style.div`
         ${media.desktop} {
             flex-wrap: wrap;
             flex-direction: row;
-            width: 90%;
-            max-width: 1200px;
+            width: 100%;
+            justify-content: space-between;
+
         }
         .shift{
              ${media.desktop} {
@@ -97,6 +98,12 @@ const Con = style.div`
             margin-bottom: 1rem;
             position: relative;
             z-index: -1;
+            img{
+             ${media.desktop} {
+                  width: 100%;
+                  min-height: 275px;
+                }
+            }
              &:hover .shade{
                 ${media.desktop} {
                     opacity: .4;
@@ -123,6 +130,7 @@ const Con = style.div`
               z-index: -1;
             }
             ${media.desktop} {
+                width: 20%;
                 margin: .5rem;
                 z-index: 1 !important;
              }

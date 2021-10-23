@@ -4,7 +4,9 @@ import {useEffect, useState} from 'react';
 
 const images = [
     '/images/logo.jpg',
+    '/images/spin.jpg'
 ]
+const aboutImg = 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc662695490218_Fiesta_Clipped.png'
 const media = {
     desktop : `@media (min-width:1341px)`
 }
@@ -47,10 +49,10 @@ const Con =  style.div`
           }
           .effect{
             position: relative;
-            max-width: 300px;
-            height: 300px;
+            max-width: 500px;
+            height: 500px;
             margin: 1.5rem auto;
-            max-height: 300px;
+            max-height: 500px;
             display: flex;
             align-items: center;
             justify-contents: center;
@@ -69,7 +71,7 @@ const Con =  style.div`
             img{
                 height: 500px;
                 top: 0;
-                transition: transform 10s ease-out;
+                transition: transform .500s ease-out;
             }
             text-align: center;
           }
@@ -88,7 +90,6 @@ const Con =  style.div`
           .about .image{
             margin: 0 auto;
             max-width: 400px;
-            background-color: red;
             min-height: 400px;
             ${media.desktop}{
                 display:flex;
@@ -101,9 +102,11 @@ const Con =  style.div`
           }
           .about-con{
             ${media.desktop}{
+                margin: 1rem auto;
                 display:flex;
                 justify-content: center;
                 align-items: center;
+                max-width: 1400px;
             }
           }
           .about h2{
@@ -113,6 +116,9 @@ const Con =  style.div`
             letter-spacing: .5rem;
             font-size: 2rem;
              text-align: center;
+             ${media.desktop} {
+                    font-size: 2.5rem
+             }
           }
           .about p{
             font-family: sans-serif ;
@@ -120,7 +126,17 @@ const Con =  style.div`
             color: #8A2BE2;
             width: 400px;
             text-align: center;
+             ${media.desktop} {
+                    font-size: 1.5rem;
+                    width: 100%;
+             }
           }
+          .about .image{
+                background-image: url(${aboutImg});
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+             }
 `
 
 const SpecialandAbout = ()=>{
@@ -132,11 +148,11 @@ const SpecialandAbout = ()=>{
           if(t1 === 0){t1 = new Date().getTime(); }
           let   image = document.getElementById('rotate');
           let level = Array.from(image.style.transform).filter(item=>!isNaN(Number(item))).join('') ? Number(Array.from(image.style.transform).filter(item=>!isNaN(Number(item))).join('')) : 0;
-          if(((new Date().getTime() - 30000) < t1) &&  count) {
+          if(((new Date().getTime() - 100) < t1) &&  count) {
               return
           }
 
-          document.getElementById('rotate').style.transform = `rotate(${level + 180}deg)`;
+          document.getElementById('rotate').style.transform = `rotate(${level + 10}deg)`;
           t1 = new Date().getTime()
           count++
       })
@@ -168,7 +184,7 @@ const SpecialandAbout = ()=>{
             <div className="about">
                 <div className="effect">
                     <img id="rotate" src="https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6607cc4901a7_marg-rotate.svg" alt="spinner" />
-                    <img src={images[0]} className = "logo" alt="logo"/>
+                    <img src={images[1]} className = "logo" alt="logo"/>
                 </div>
                 <div className="about-con">
                     <div className="sub-con">

@@ -11,13 +11,15 @@ min-width: 100%;
 font-size: 2rem;
 display: flex;
 height: 10vh;
-background-color: #8A2BE2;
-color: white;
+background-color: white;
+color: #8A2BE2;
 justify-content: space-between;
 padding-left: .5rem;
 padding-right: .5rem;
 align-items: center;
 position: sticky;
+top: 0;
+z-index: 100;
 .logo{
  font-family: 'Rampart One', cursive;
 }
@@ -25,12 +27,14 @@ ul{
     transition: .5s;
     position: fixed;
     top: -100%;
-    background-color: #8A2BE2;
+    background-color: white;
     list-style-type: none;
     width: 100vw;
+    color: #8A2BE2;
     padding: 0;
     margin: 0;
     left: 0;
+    font-family: 'Rampart One', cursive;
     .cancel-con{
         justify-content: flex-end;
         ${media.desktop} {
@@ -59,16 +63,16 @@ ul{
         margin: 0;
         font-size: 1.5rem;
         text-align: center;
-        color: #fff;
-        background-color: #8A2BE2;
+        color: #8A2BE2;
+        background-color: white;
         height: 5rem;
         display: flex;
         justify-content: center;
         align-items: center;
         max-width: 95%;
         ${media.desktop} {
-            background-color: #8A2BE2;
-            color: white;
+            background-color: white;
+            color: #8A2BE2;
             border: none;
             height: auto;
         }
