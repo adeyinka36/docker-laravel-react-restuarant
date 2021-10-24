@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route} from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import Footer from "./footer";
 
  library.add(faBars, faBars)
 
@@ -14,6 +15,7 @@ function Main() {
         <BrowserRouter>
             <Header/>
             <Home/>
+            <Footer/>
         </BrowserRouter>
     );
 }
