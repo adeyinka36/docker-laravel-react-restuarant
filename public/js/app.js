@@ -13064,7 +13064,7 @@ var image = Math.floor(Math.random() * 3);
 var media = {
   desktop: "@media (min-width:1341px)"
 };
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    h2{\n     font-family: 'Italianno',cursive;\n     font-size: 3rem;\n     color:  #8A2BE2;\n     text-align: center;\n    }\n   h1{\n     font-family: 'Anton', sans-serif;\n     color: #8A2BE2;\n     letter-spacing: .4rem;\n     text-align: center;\n     margin-top: 2rem;\n       }\n   width: 100%;\n   .main-con{\n       display: flex;\n       flex-direction: column;\n       justify-content: center;\n       align-items: center;\n        ", " {\n           flex-direction: row;\n         }\n       .con{\n            display: flex;\n           flex-direction: column;\n           justify-content: center;\n           align-items: center;\n           margin-bottom: 3rem;\n            ", " {\n                &:first-child, &:last-child{\n                   margin-top: 5rem;\n                }\n            }\n           &:hover .price{\n                ", " {\n                  cursor: pointer;\n                  background-color: #8A2BE2;\n                  color: white;\n             }\n           }\n           &:hover{\n                ", " {\n                  cursor: pointer;\n             }\n           }\n\n       }\n       img{\n            max-width: 80%;\n            height: auto;\n\n       }\n       span{\n          font-family: 'Anton', sans-serif;\n          color: #8A2BE2;\n       }\n       .con>:first-child {\n         font-size: 1rem;\n         letter-spacing: .15rem;\n       }\n       .price{\n            border: 1px solid #8A2BE2;\n            border-radius: 50%;\n            width: 60px;\n            height: 60px;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n       }\n   }\n   img{\n    z-index: -1 !important;\n}\n"])), media.desktop, media.desktop, media.desktop, media.desktop);
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    h2{\n     font-family: 'Anton',sans-serif\n     font-size: 3rem;\n     color:  #8A2BE2;\n     text-align: center;\n    }\n   h1{\n     font-family: 'Anton', sans-serif;\n     color: #8A2BE2;\n     letter-spacing: .4rem;\n     text-align: center;\n     margin-top: 2rem;\n       }\n   width: 100%;\n   .main-con{\n       display: flex;\n       flex-direction: column;\n       justify-content: center;\n       align-items: center;\n        ", " {\n           flex-direction: row;\n         }\n       .con{\n            display: flex;\n           flex-direction: column;\n           justify-content: center;\n           align-items: center;\n           margin-bottom: 3rem;\n            ", " {\n                &:first-child, &:last-child{\n                   margin-top: 5rem;\n                }\n            }\n           &:hover .price{\n                ", " {\n                  cursor: pointer;\n                  background-color: #8A2BE2;\n                  color: white;\n             }\n           }\n           &:hover{\n                ", " {\n                  cursor: pointer;\n             }\n           }\n\n       }\n       img{\n            max-width: 80%;\n            height: auto;\n\n       }\n       span{\n          font-family: 'Anton', sans-serif;\n          color: #8A2BE2;\n       }\n       .con>:first-child {\n         font-size: 1rem;\n         letter-spacing: .15rem;\n       }\n       .price{\n            border: 1px solid #8A2BE2;\n            border-radius: 50%;\n            width: 60px;\n            height: 60px;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n       }\n   }\n   img{\n    z-index: -1 !important;\n}\n"])), media.desktop, media.desktop, media.desktop, media.desktop);
 
 var Main = function Main() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Con, {
@@ -13187,7 +13187,7 @@ var aboutImg = 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb10
 var media = {
   desktop: "@media (min-width:1341px)"
 };
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n        .top,h1{\n         display: none;\n        }\n        h1,p, button{\n            margin: 0;\n        }\n        .mid h1{\n            display:block;\n            font-family: 'Anton', sans-serif;\n            color: #8A2BE2;\n            letter-spacing: .4rem;\n        }\n        .mid p{\n            color: #8A2BE2;\n            font-family: sans-serif;\n        }\n        .mid {\n            text-align: center;\n        }\n        button{\n            display: inline-block;\n            width: auto;\n            color: white;\n            margin: 1.5rem auto;\n            background-color: #8A2BE2;\n            font-size: 2rem;\n            font-family: 'Anton', sans-serif;\n            padding: 1.5rem;\n            letter-spacing: .5rem;\n            border-radius: 7px;\n            margin-top: 2rem;\n            &:hover{\n                background-color: #ca2be2;\n                cursor: pointer;\n            }\n          }\n          .effect{\n            position: relative;\n            max-width: 500px;\n            height: 500px;\n            margin: 1.5rem auto;\n            max-height: 500px;\n            display: flex;\n            align-items: center;\n            justify-contents: center;\n            z-index: -1;\n             ", "{\n              max-width: 500px;\n              max-height: 500px;\n              width: 500px;\n              height: 500px;\n             }\n            img{\n                position: absolute;\n                top: 0;\n                left: 0;\n            }\n            img{\n                height: 500px;\n                top: 0;\n                transition: transform .500s ease-out;\n            }\n            text-align: center;\n          }\n          .logo{\n            position: static !important;\n            max-height: 370px;\n            width: 375px;\n            border-radius: 50%;\n            margin: 0 auto;\n          }\n          .about .sub-con{\n           ", "{\n              width: 50%;\n             }\n          }\n          .about .image{\n            margin: 0 auto;\n            max-width: 400px;\n            min-height: 400px;\n            ", "{\n                display:flex;\n                justify-content: center;\n                align-items: center;\n                width:50%;\n                max-width: 700px;\n\n            }\n          }\n          .about-con{\n            ", "{\n                margin: 1rem auto;\n                display:flex;\n                justify-content: center;\n                align-items: center;\n                max-width: 1400px;\n            }\n          }\n          .about h2{\n            font-family: 'Anton', sans-serif;\n            margin: .25rem auto;\n            color: #8A2BE2;\n            letter-spacing: .5rem;\n            font-size: 2rem;\n             text-align: center;\n             ", " {\n                    font-size: 2.5rem\n             }\n          }\n          .about p{\n            font-family: sans-serif ;\n            margin: .25rem auto;\n            color: #8A2BE2;\n            width: 400px;\n            text-align: center;\n             ", " {\n                    font-size: 1.5rem;\n                    width: 100%;\n             }\n          }\n          .about .image{\n                background-image: url(", ");\n                background-size: cover;\n                background-repeat: no-repeat;\n                background-position: center;\n             }\n"])), media.desktop, media.desktop, media.desktop, media.desktop, media.desktop, media.desktop, aboutImg);
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n        .top,h1{\n         display: none;\n        }\n        h1,p, button{\n            margin: 0;\n        }\n        .mid h1{\n            display:block;\n            font-family: 'Anton', sans-serif;\n            color: #8A2BE2;\n            letter-spacing: .4rem;\n        }\n        .mid p{\n            color: #8A2BE2;\n            font-family: 'Anton',sans-serif;\n            letter-spacing: .1rem;\n        }\n        .mid {\n            text-align: center;\n        }\n        button{\n            display: inline-block;\n            width: auto;\n            color: white;\n            margin: 1.5rem auto;\n            background-color: #8A2BE2;\n            font-size: 2rem;\n            font-family: 'Anton', sans-serif;\n            padding: 1.5rem;\n            letter-spacing: .5rem;\n            border-radius: 7px;\n            margin-top: 2rem;\n            &:hover{\n                background-color: #ca2be2;\n                cursor: pointer;\n            }\n          }\n          .effect{\n            position: relative;\n            max-width: 500px;\n            height: 500px;\n            margin: 1.5rem auto;\n            max-height: 500px;\n            display: flex;\n            align-items: center;\n            justify-contents: center;\n            z-index: -1;\n             ", "{\n              max-width: 500px;\n              max-height: 500px;\n              width: 500px;\n              height: 500px;\n             }\n            img{\n                position: absolute;\n                top: 0;\n                left: 0;\n            }\n            img{\n                height: 500px;\n                top: 0;\n                transition: transform .500s ease-out;\n            }\n            text-align: center;\n          }\n          .logo{\n            position: static !important;\n            max-height: 370px;\n            width: 375px;\n            border-radius: 50%;\n            margin: 0 auto;\n          }\n          .about .sub-con{\n           ", "{\n              width: 50%;\n             }\n          }\n          .about .image{\n            margin: 0 auto;\n            max-width: 400px;\n            min-height: 400px;\n            ", "{\n                display:flex;\n                justify-content: center;\n                align-items: center;\n                width:50%;\n                max-width: 700px;\n\n            }\n          }\n          .about-con{\n            ", "{\n                margin: 1rem auto;\n                display:flex;\n                justify-content: center;\n                align-items: center;\n                max-width: 1400px;\n            }\n          }\n          .about h2{\n            font-family: 'Anton', sans-serif;\n            margin: .25rem auto;\n            color: #8A2BE2;\n            letter-spacing: .5rem;\n            font-size: 2rem;\n             text-align: center;\n             ", " {\n                    font-size: 2.5rem\n             }\n          }\n          .about p{\n            font-family: sans-serif ;\n            margin: .25rem auto;\n            color: #8A2BE2;\n            width: 400px;\n            text-align: center;\n             ", " {\n                    font-size: 1.5rem;\n                    width: 100%;\n             }\n          }\n          .about .image{\n                background-image: url(", ");\n                background-size: cover;\n                background-repeat: no-repeat;\n                background-position: center;\n             }\n"])), media.desktop, media.desktop, media.desktop, media.desktop, media.desktop, media.desktop, aboutImg);
 
 var SpecialandAbout = function SpecialandAbout() {
   var t1 = 0;
@@ -13286,6 +13286,65 @@ var SpecialandAbout = function SpecialandAbout() {
 
 /***/ }),
 
+/***/ "./resources/js/components/footer.js":
+/*!*******************************************!*\
+  !*** ./resources/js/components/footer.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _templateObject;
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+var burgers = ['/images/logo.jpg', '/images/spin.jpg'];
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n     margin-top: 6rem;\n     text-align: center;\n    .main-con{\n        margin: .25rem  auto;\n        justify-content: center;\n        display: flex;\n        flex-wrap: wrap;\n        width: 80%;\n        img{\n         max-width: 30%;\n         margin: .1rem;\n        }\n    }\n    .insta{\n        display: inline-block;\n        width: auto;\n        color: white;\n        font-family: 'Anton', sans-serif;\n        background-color: #8A2BE2;\n        padding: 1rem;\n        border-radius: 5px;\n    }\n    p{\n        display: inline-block;\n        width: auto;\n        color: #8A2BE2;\n        font-family: 'Anton', sans-serif;\n        font-size: 1.5rem;\n    }\n"])));
+
+var Footer = function Footer() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Con, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+      children: "Open Everyday: 10am-10pm"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+      className: "main-con",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+        src: burgers[0],
+        alt: "second display"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+        src: burgers[0],
+        alt: "second display"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+        src: burgers[0],
+        alt: "second display"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+        src: burgers[0],
+        alt: "second display"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+        src: burgers[0],
+        alt: "second display"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+        src: burgers[0],
+        alt: "second display"
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+      className: "insta",
+      children: "FOLLOW US ON INSTAGRAM"
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
+
+/***/ }),
+
 /***/ "./resources/js/views/Home.js":
 /*!************************************!*\
   !*** ./resources/js/views/Home.js ***!
@@ -13300,7 +13359,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Main_a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Main-a */ "./resources/js/components/Main-a.js");
 /* harmony import */ var _components_Main_b__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Main-b */ "./resources/js/components/Main-b.js");
 /* harmony import */ var _components_SpecialandAbout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/SpecialandAbout */ "./resources/js/components/SpecialandAbout.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/footer */ "./resources/js/components/footer.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -13308,8 +13369,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Home = function Home() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Main_a__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Main_b__WEBPACK_IMPORTED_MODULE_1__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_SpecialandAbout__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_Main_a__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_Main_b__WEBPACK_IMPORTED_MODULE_1__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_SpecialandAbout__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_footer__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
   });
 };
 

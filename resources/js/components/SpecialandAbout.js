@@ -25,7 +25,8 @@ const Con =  style.div`
         }
         .mid p{
             color: #8A2BE2;
-            font-family: sans-serif;
+            font-family: 'Anton',sans-serif;
+            letter-spacing: .1rem;
         }
         .mid {
             text-align: center;

@@ -10,7 +10,7 @@ const media = {
 }
 const Con = style.div`
     h2{
-     font-family: 'Italianno',cursive;
+     font-family: 'Anton',sans-serif
      font-size: 3rem;
      color:  #8A2BE2;
      text-align: center;
