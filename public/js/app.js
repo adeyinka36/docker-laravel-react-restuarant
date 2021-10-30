@@ -12779,6 +12779,59 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/js/components/Food.js":
+/*!*****************************************!*\
+  !*** ./resources/js/components/Food.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _templateObject;
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+var burgers = ['/images/burger1.jpg', '/images/burger2.jpg', '/images/burger3.jpg'];
+var image = Math.floor(Math.random() * 3);
+var media = {
+  desktop: "@media (min-width:1341px)"
+};
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 600px;\n  display: flex;\n  flex-direction: column;\n  margin: 0 auto;\n  justify-content: center;\n  align-items: center;\n  color: #8A2BE2\n  font-famil: 'Anton',sans-serif;\n\n"])));
+
+var Food = function Food() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Con, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+      src: burgers[1],
+      alt: "What you get"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+      className: "details",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+        children: "Delicious"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+        children: "This is the description This is the description This is the description This is the description"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+        children: "+"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+        children: "\xA312.99"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+        children: "-"
+      })]
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Food);
+
+/***/ }),
+
 /***/ "./resources/js/components/Header.js":
 /*!*******************************************!*\
   !*** ./resources/js/components/Header.js ***!
@@ -13129,13 +13182,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fortawesome/fontawesome-svg-core */ "./node_modules/@fortawesome/fontawesome-svg-core/index.es.js");
 /* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
 /* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./footer */ "./resources/js/components/footer.js");
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Header */ "./resources/js/components/Header.js");
 /* harmony import */ var _views_Home__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../views/Home */ "./resources/js/views/Home.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _views_Menu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../views/Menu */ "./resources/js/views/Menu.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -13148,16 +13202,17 @@ _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_2__.library.add(_fort
 
 
 
+
 function Main() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.BrowserRouter, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Header__WEBPACK_IMPORTED_MODULE_5__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_views_Home__WEBPACK_IMPORTED_MODULE_6__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_footer__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.BrowserRouter, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Header__WEBPACK_IMPORTED_MODULE_5__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_views_Home__WEBPACK_IMPORTED_MODULE_6__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_views_Menu__WEBPACK_IMPORTED_MODULE_7__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_footer__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
   });
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main);
 
 if (document.getElementById('app')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(Main, {}), document.getElementById('app'));
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Main, {}), document.getElementById('app'));
 }
 
 /***/ }),
@@ -13187,9 +13242,10 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 var images = ['/images/logo.jpg', '/images/spin.jpg'];
 var aboutImg = 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc662695490218_Fiesta_Clipped.png';
 var media = {
-  desktop: "@media (min-width:1341px)"
+  desktop: "@media (min-width:1341px)",
+  tiny: "@media (max-width:500px)"
 };
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n        .top,h1{\n         display: none;\n        }\n        h1,p, button{\n            margin: 0;\n        }\n        .mid h1{\n            display:block;\n            font-family: 'Anton', sans-serif;\n            color: #8A2BE2;\n            letter-spacing: .4rem;\n        }\n        .mid p{\n            color: #8A2BE2;\n            font-family: 'Anton',sans-serif;\n            letter-spacing: .1rem;\n        }\n        .mid {\n            text-align: center;\n        }\n        button{\n            display: inline-block;\n            width: auto;\n            color: white;\n            margin: 1.5rem auto;\n            background-color: #8A2BE2;\n            font-size: 2rem;\n            font-family: 'Anton', sans-serif;\n            padding: 1.5rem;\n            letter-spacing: .5rem;\n            border-radius: 7px;\n            margin-top: 2rem;\n            &:hover{\n                background-color: #ca2be2;\n                cursor: pointer;\n            }\n          }\n          .effect{\n            position: relative;\n            max-width: 500px;\n            height: 500px;\n            margin: 1.5rem auto;\n            max-height: 500px;\n            display: flex;\n            align-items: center;\n            justify-contents: center;\n            z-index: -1;\n             ", "{\n              max-width: 500px;\n              max-height: 500px;\n              width: 500px;\n              height: 500px;\n             }\n            img{\n                position: absolute;\n                top: 0;\n                left: 0;\n            }\n            img{\n                height: 500px;\n                top: 0;\n                transition: transform .500s ease-out;\n            }\n            text-align: center;\n          }\n          .logo{\n            position: static !important;\n            max-height: 370px;\n            width: 375px;\n            border-radius: 50%;\n            margin: 0 auto;\n          }\n          .about .sub-con{\n           ", "{\n              width: 50%;\n             }\n          }\n          .about .image{\n            margin: 0 auto;\n            max-width: 400px;\n            min-height: 400px;\n            ", "{\n                display:flex;\n                justify-content: center;\n                align-items: center;\n                width:50%;\n                max-width: 700px;\n\n            }\n          }\n          .about-con{\n            ", "{\n                margin: 1rem auto;\n                display:flex;\n                justify-content: center;\n                align-items: center;\n                max-width: 1400px;\n            }\n          }\n          .about h2{\n            font-family: 'Anton', sans-serif;\n            margin: .25rem auto;\n            color: #8A2BE2;\n            letter-spacing: .5rem;\n            font-size: 2rem;\n             text-align: center;\n             ", " {\n                    font-size: 2.5rem\n             }\n          }\n          .about p{\n            font-family: sans-serif ;\n            margin: .25rem auto;\n            color: #8A2BE2;\n            width: 400px;\n            text-align: center;\n             ", " {\n                    font-size: 1.5rem;\n                    width: 100%;\n             }\n          }\n          .about .image{\n                background-image: url(", ");\n                background-size: cover;\n                background-repeat: no-repeat;\n                background-position: center;\n             }\n"])), media.desktop, media.desktop, media.desktop, media.desktop, media.desktop, media.desktop, aboutImg);
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n        .top,h1{\n         display: none;\n        }\n        h1,p, button{\n            margin: 0;\n        }\n        .mid h1{\n            display:block;\n            font-family: 'Anton', sans-serif;\n            color: #8A2BE2;\n            letter-spacing: .4rem;\n        }\n        .mid p{\n            color: #8A2BE2;\n            font-family: 'Anton',sans-serif;\n            letter-spacing: .1rem;\n        }\n        .mid {\n            text-align: center;\n        }\n        button{\n            display: inline-block;\n            width: auto;\n            color: white;\n            margin: 1.5rem auto;\n            background-color: #8A2BE2;\n            font-size: 2rem;\n            font-family: 'Anton', sans-serif;\n            padding: 1.5rem;\n            letter-spacing: .5rem;\n            border-radius: 7px;\n            margin-top: 2rem;\n            &:hover{\n                background-color: #ca2be2;\n                cursor: pointer;\n            }\n          }\n          .effect{\n            position: relative;\n            max-width: 500px;\n            height: 500px;\n            margin: 1.5rem auto;\n            max-height: 500px;\n            display: flex;\n            align-items: center;\n            justify-contents: center;\n            z-index: -1;\n             ", "{\n              max-width: 500px;\n              max-height: 500px;\n              width: 500px;\n              height: 500px;\n             }\n            img{\n                position: absolute;\n                top: 0;\n                left: 0;\n            }\n            img{\n                height: 500px;\n                top: 0;\n                transition: transform .500s ease-out;\n            }\n            text-align: center;\n          }\n          .logo{\n            position: static !important;\n            max-height: 370px;\n            width: 375px;\n            border-radius: 50%;\n            margin: 0 auto;\n          }\n          .about .sub-con{\n           ", "{\n              width: 50%;\n             }\n          }\n          .about .image{\n            margin: 0 auto;\n            max-width: 400px;\n            min-height: 400px;\n            ", "{\n                display:flex;\n                justify-content: center;\n                align-items: center;\n                width:50%;\n                max-width: 700px;\n\n            }\n          }\n          .about-con{\n            ", "{\n                margin: 1rem auto;\n                display:flex;\n                justify-content: center;\n                align-items: center;\n                max-width: 1400px;\n            }\n          }\n          .about h2{\n            font-family: 'Anton', sans-serif;\n            margin: .25rem auto;\n            color: #8A2BE2;\n            letter-spacing: .5rem;\n            font-size: 2rem;\n             text-align: center;\n             ", " {\n                    font-size: 2.5rem\n             }\n          }\n          .about p{\n            font-family: sans-serif ;\n            margin: .25rem auto;\n            color: #8A2BE2;\n            width: 400px;\n            text-align: center;\n             ", " {\n                    font-size: 1.5rem;\n                    width: 100%;\n             }\n          }\n          .about .image{\n                background-image: url(", ");\n                background-size: cover;\n                background-repeat: no-repeat;\n                background-position: center;\n             }\n         }\n        .effect{\n        ", "{\n            max-width: 230px;\n            max-height: 230px;\n        }\n         img{\n            ", "{\n                max-height:100%;\n                max-width: 100%;\n            }\n         }\n        }\n"])), media.desktop, media.desktop, media.desktop, media.desktop, media.desktop, media.desktop, aboutImg, media.tiny, media.tiny);
 
 var SpecialandAbout = function SpecialandAbout() {
   var t1 = 0;
@@ -13375,6 +13431,32 @@ var Home = function Home() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
+
+/***/ }),
+
+/***/ "./resources/js/views/Menu.js":
+/*!************************************!*\
+  !*** ./resources/js/views/Menu.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _components_Food__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Food */ "./resources/js/components/Food.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+var Menu = function Menu() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {})
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Menu);
 
 /***/ }),
 

@@ -9,12 +9,14 @@ import Footer from "./footer";
 
 import Header from "./Header";
 import Home from "../views/Home";
+import Menu from "../views/Menu";
 
 function Main() {
     return (
         <BrowserRouter>
             <Header/>
             <Home/>
+            <Menu/>
             <Footer/>
         </BrowserRouter>
     );

@@ -8,7 +8,8 @@ const images = [
 ]
 const aboutImg = 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc662695490218_Fiesta_Clipped.png'
 const media = {
-    desktop : `@media (min-width:1341px)`
+    desktop : `@media (min-width:1341px)`,
+    tiny: `@media (max-width:500px)`
 }
 const Con =  style.div`
         .top,h1{
@@ -138,6 +139,19 @@ const Con =  style.div`
                 background-repeat: no-repeat;
                 background-position: center;
              }
+         }
+        .effect{
+        ${media.tiny}{
+            max-width: 230px;
+            max-height: 230px;
+        }
+         img{
+            ${media.tiny}{
+                max-height:100%;
+                max-width: 100%;
+            }
+         }
+        }
 `
 
 const SpecialandAbout = ()=>{
