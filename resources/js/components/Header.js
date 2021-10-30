@@ -1,5 +1,6 @@
 import style from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {Link} from 'react-router-dom';
 import {useState} from 'react';
 
 const media = {
@@ -112,7 +113,7 @@ const dropDown = ()=>{
             <span className="logo">DELICIOUS</span>
             <ul id="menu">
                 <li className="cancel-con"><span  className="cancel" onClick={dropDown}>x</span></li>
-                <li>Home</li>
+                <li><Link to='/menu'>Home</Link></li>
                 <li>Menu</li>
             </ul>
             <FontAwesomeIcon onClick={dropDown} icon={['fa', 'bars']} className="icon"/>

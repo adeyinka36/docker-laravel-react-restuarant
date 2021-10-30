@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route} from 'react-router-dom';
-import { library } from '@fortawesome/fontawesome-svg-core'
+import { BrowserRouter as Router, Route} from 'react-router-dom';
+import {Switch} from 'react-router';
+import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import Footer from "./footer";
 
@@ -13,12 +14,12 @@ import Menu from "../views/Menu";
 
 function Main() {
     return (
-        <BrowserRouter>
+        <Router>
             <Header/>
-            <Home/>
-            <Menu/>
+            <Route  exact path = "/"  component={Home}/>
+            <Route  exact path = "/menu"  component={Menu}/>
             <Footer/>
-        </BrowserRouter>
+        </Router>
     );
 }
 
