@@ -12779,6 +12779,40 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/js/components/Dessersts.js":
+/*!**********************************************!*\
+  !*** ./resources/js/components/Dessersts.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _templateObject;
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n        .desserts{\n            margin: 5rem 0;\n            width: 100vw;\n            text-align: center;\n            font-size: 3.5rem;\n            background-color: #8A2BE2;\n            color: white;\n            font-family: 'Anton',sans-serif;\n  }\n\n"])));
+
+var Desserts = function Desserts() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Con, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+      className: "desserts",
+      children: "DESSERTS"
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Desserts);
+
+/***/ }),
+
 /***/ "./resources/js/components/Food.js":
 /*!*****************************************!*\
   !*** ./resources/js/components/Food.js ***!
@@ -12804,7 +12838,7 @@ var image = Math.floor(Math.random() * 3);
 var media = {
   desktop: "@media (min-width:1341px)"
 };
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 600px;\n  display: flex;\n  flex-direction: column;\n  margin: 0 auto;\n  justify-content: center;\n  align-items: center;\n  color: #8A2BE2;\n  font-family: 'Anton',sans-serif;\n  img{\n    max-width: 600px;\n    width: 95%;\n\n  }\n  .details{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    .sig{\n        font-size: 3rem;\n    }\n    p{\n    margin-top: .1rem;\n    margin-bottom: .1rem;\n    }\n    .desc{\n        margin: 0;\n        padding: 0;\n        display: flex;\n        justify-content: space-around;\n        align-items: center;\n        width: 70%;\n        .buy{\n            font-size: 2rem;\n            border: 1px solid #8A2BE2;\n            border-radius: 50%;\n            height: 70px;\n            width: 70px;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            &:hover{\n             cursor: pointer;\n             color: white;\n             background-color: #8A2BE2;\n            }\n    }\n    }\n\n  }\n"])));
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 600px;\n  display: flex;\n  flex-direction: column;\n  margin: 0 auto;\n  justify-content: center;\n  align-items: center;\n  color: #8A2BE2;\n  font-family: 'Anton',sans-serif;\n  margin-top: 5rem;\n  img{\n    max-width: 600px;\n    width: 95%;\n\n  }\n  .details{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    .sig{\n        font-size: 3rem;\n    }\n    p{\n    margin-top: .1rem;\n    margin-bottom: .1rem;\n    }\n    .desc{\n        margin: 0;\n        padding: 0;\n        display: flex;\n        justify-content: space-around;\n        align-items: center;\n        width: 70%;\n        .buy{\n            font-size: 2rem;\n            border: 1px solid #8A2BE2;\n            border-radius: 50%;\n            height: 70px;\n            width: 70px;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            &:hover{\n             cursor: pointer;\n             color: white;\n             background-color: #8A2BE2;\n            }\n    }\n    }\n  }\n"])));
 
 var Food = function Food() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Con, {
@@ -13387,7 +13421,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 var burgers = ['/images/logo.jpg', '/images/spin.jpg'];
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n     margin-top: 6rem;\n     text-align: center;\n    .main-con{\n        margin: .25rem  auto;\n        justify-content: center;\n        display: flex;\n        flex-wrap: wrap;\n        width: 80%;\n        img{\n         max-width: 30%;\n         margin: .1rem;\n        }\n    }\n    .insta{\n        display: inline-block;\n        width: auto;\n        color: white;\n        font-family: 'Anton', sans-serif;\n        background-color: #8A2BE2;\n        padding: 1rem;\n        border-radius: 5px;\n    }\n    p{\n        display: inline-block;\n        width: auto;\n        color: #8A2BE2;\n        font-family: 'Anton', sans-serif;\n        font-size: 1.5rem;\n    }\n"])));
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n     margin-top: 6rem;\n     text-align: center;\n    .main-con{\n        margin: .25rem  auto;\n        justify-content: center;\n        display: flex;\n        flex-wrap: wrap;\n        width: 80%;\n        img{\n         max-width: 30%;\n         margin: .1rem;\n        }\n    }\n    .insta{\n        display: inline-block;\n        width: auto;\n        color: white;\n        font-family: 'Anton', sans-serif;\n        background-color: #8A2BE2;\n        padding: 1rem;\n        border-radius: 5px;\n        margin-bottom: 6rem;\n    }\n    p{\n        display: inline-block;\n        width: auto;\n        color: #8A2BE2;\n        font-family: 'Anton', sans-serif;\n        font-size: 1.5rem;\n    }\n    .checkout{\n      position: fixed;\n      bottom: 0;\n      left: 0;\n      width: 100vw;\n      height: 5rem;\n      font-family: 'Anton', sans-serif;\n      background-color: #8A2BE2;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      font-size: 3rem;\n      color: white;\n      &:hover{\n          cursor: pointer;\n          color: white;\n          background-color: blue;\n      }\n    }\n"])));
 
 var Footer = function Footer() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Con, {
@@ -13417,6 +13451,9 @@ var Footer = function Footer() {
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
       className: "insta",
       children: "FOLLOW US ON INSTAGRAM"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+      "class": "checkout",
+      children: "CHECKOUT"
     })]
   });
 };
@@ -13468,13 +13505,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _components_Food__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Food */ "./resources/js/components/Food.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _components_Dessersts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Dessersts */ "./resources/js/components/Dessersts.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
 
 
 
 var Menu = function Menu() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {})
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Dessersts__WEBPACK_IMPORTED_MODULE_1__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {})]
   });
 };
 

@@ -20,6 +20,7 @@ const Con =  style.div`
   align-items: center;
   color: #8A2BE2;
   font-family: 'Anton',sans-serif;
+  margin-top: 5rem;
   img{
     max-width: 600px;
     width: 95%;
@@ -60,7 +61,6 @@ const Con =  style.div`
             }
     }
     }
-
   }
 `
 

@@ -28,6 +28,7 @@ const Con = style.div`
         background-color: #8A2BE2;
         padding: 1rem;
         border-radius: 5px;
+        margin-bottom: 6rem;
     }
     p{
         display: inline-block;
@@ -35,6 +36,25 @@ const Con = style.div`
         color: #8A2BE2;
         font-family: 'Anton', sans-serif;
         font-size: 1.5rem;
+    }
+    .checkout{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      height: 5rem;
+      font-family: 'Anton', sans-serif;
+      background-color: #8A2BE2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      color: white;
+      &:hover{
+          cursor: pointer;
+          color: white;
+          background-color: blue;
+      }
     }
 `
 
@@ -52,6 +72,7 @@ const Footer = ()=>{
                 <img src={burgers[0]} alt="second display"/>
             </div>
             <p className="insta">FOLLOW US ON INSTAGRAM</p>
+            <span class="checkout">CHECKOUT</span>
         </Con>
     )
 }
