@@ -1,4 +1,5 @@
 import style from 'styled-components';
+import {useState} from 'react';
 
 
 const burgers = [
@@ -21,6 +22,11 @@ const Con =  style.div`
   color: #8A2BE2;
   font-family: 'Anton',sans-serif;
   margin-top: 5rem;
+  ${media.desktop}{
+    width: 30%;
+    max-width: 500px;
+    justify-content: space-around;
+  }
   img{
     max-width: 600px;
     width: 95%;
@@ -62,13 +68,49 @@ const Con =  style.div`
     }
     }
   }
+  .main-img{
+    ${media.desktop} {
+        display: none;
+    }
+  }
+  .details{
+      &:hover{
+       ${media.desktop}{
+            cursor: pointer;
+         }
+        }
+      }
+
+ }
+  .preview{
+           height: 100vh;
+           width: 100vw;
+           top: 0;
+           left: 0;
+           z-index: -2;
+           position: fixed;
+           opacity: .9;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           opacity: .5;
+         }
 `
 
+//make other menu option invisible when image is shown on background
 const Food = ()=>{
+        let [val, setVal ] = useState(0);
+    const show = ()=>{
+        setVal(1)
+    }
+    const unShow = ()=>{
+        setVal(0)
+    }
 
     return(
-        <Con>
-            <img src={burgers[1]} alt="What you get"/>
+        <Con className="container" onMouseOver={show} onMouseLeave={unShow}>
+            <img src={burgers[1]} className="main-img" alt="What you get"/>
                 <div className="details">
                     <p className="sig">Delicious</p>
                     <span>This is the description This is the description This is the description This is the description</span>
@@ -78,6 +120,9 @@ const Food = ()=>{
                         <div className="buy">-</div>
                     </div>
                 </div>
+            {val === 1? <div className="preview">
+                <img src={burgers[1]} alt="What you get"/>
+            </div>: null}
         </Con>
     )
 }

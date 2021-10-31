@@ -1,10 +1,15 @@
 import Food from '../components/Food';
 import Desserts from "../components/Dessersts";
+import style from "styled-components";
 
+const Con = style.div`
+    display: flex;
+    flex-wrap: wrap;
+`
 const Menu = ()=>{
 
     return(
-        <div>
+        <Con>
             <Food/>
             <Food/>
             <Food/>
@@ -16,7 +21,7 @@ const Menu = ()=>{
             <Food/>
             <Food/>
             <Food/>
-        </div>
+        </Con>
     )
 }
 
