@@ -89,32 +89,50 @@ const Con =  style.div`
            left: 0;
            z-index: -2;
            position: fixed;
-           opacity: .9;
+           opacity: 1;
            display: flex;
            flex-direction: column;
            justify-content: center;
            align-items: center;
-           opacity: .5;
+           opacity: 1;
+           transition: .500s;
          }
+         opacity: ${props=>props.opacity};
+         transition: .500s;
+
 `
 
 //make other menu option invisible when image is shown on background
-const Food = ()=>{
+const Food = props =>{
         let [val, setVal ] = useState(0);
+        let [cur, setCur ] = useState(0);
     const show = ()=>{
         setVal(1)
+        props.changeOpacity(0);
+        props.changeViewing(1);
+        setCur(1);
     }
     const unShow = ()=>{
         setVal(0)
+        props.changeOpacity(1);
+        props.changeViewing(0);
+        setCur(0);
     }
 
+    let opacity;
+    if((cur && props.viewing) || !props.viewing){
+        opacity = .8;
+    }else {
+        opacity = 0;
+    }
     return(
-        <Con className="container" onMouseOver={show} onMouseLeave={unShow}>
+
+        <Con className="container"  opacity = {opacity}>
             <img src={burgers[1]} className="main-img" alt="What you get"/>
                 <div className="details">
                     <p className="sig">Delicious</p>
                     <span>This is the description This is the description This is the description This is the description</span>
-                    <div className="desc">
+                    <div className="desc" onMouseOver={show} onMouseLeave={unShow}>
                         <div className="buy">+</div>
                         <span className="sig">£12.99</span>
                         <div className="buy">-</div>

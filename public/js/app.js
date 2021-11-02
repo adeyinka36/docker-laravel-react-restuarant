@@ -12852,26 +12852,46 @@ var image = Math.floor(Math.random() * 3);
 var media = {
   desktop: "@media (min-width:1341px)"
 };
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 600px;\n  display: flex;\n  flex-direction: column;\n  margin: 0 auto;\n  justify-content: center;\n  align-items: center;\n  color: #8A2BE2;\n  font-family: 'Anton',sans-serif;\n  margin-top: 5rem;\n  ", "{\n    width: 30%;\n    max-width: 500px;\n    justify-content: space-around;\n  }\n  img{\n    max-width: 600px;\n    width: 95%;\n\n  }\n  .details{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    .sig{\n        font-size: 3rem;\n    }\n    p{\n    margin-top: .1rem;\n    margin-bottom: .1rem;\n    }\n    .desc{\n        margin: 0;\n        padding: 0;\n        display: flex;\n        justify-content: space-around;\n        align-items: center;\n        width: 70%;\n        .buy{\n            font-size: 2rem;\n            border: 1px solid #8A2BE2;\n            border-radius: 50%;\n            height: 70px;\n            width: 70px;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            &:hover{\n             cursor: pointer;\n             color: white;\n             background-color: #8A2BE2;\n            }\n    }\n    }\n  }\n  .main-img{\n    ", " {\n        display: none;\n    }\n  }\n  .details{\n      &:hover{\n       ", "{\n            cursor: pointer;\n         }\n        }\n      }\n\n }\n  .preview{\n           height: 100vh;\n           width: 100vw;\n           top: 0;\n           left: 0;\n           z-index: -2;\n           position: fixed;\n           opacity: .9;\n           display: flex;\n           flex-direction: column;\n           justify-content: center;\n           align-items: center;\n           opacity: .5;\n         }\n"])), media.desktop, media.desktop, media.desktop); //make other menu option invisible when image is shown on background
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 600px;\n  display: flex;\n  flex-direction: column;\n  margin: 0 auto;\n  justify-content: center;\n  align-items: center;\n  color: #8A2BE2;\n  font-family: 'Anton',sans-serif;\n  margin-top: 5rem;\n  ", "{\n    width: 30%;\n    max-width: 500px;\n    justify-content: space-around;\n  }\n  img{\n    max-width: 600px;\n    width: 95%;\n\n  }\n  .details{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    .sig{\n        font-size: 3rem;\n    }\n    p{\n    margin-top: .1rem;\n    margin-bottom: .1rem;\n    }\n    .desc{\n        margin: 0;\n        padding: 0;\n        display: flex;\n        justify-content: space-around;\n        align-items: center;\n        width: 70%;\n        .buy{\n            font-size: 2rem;\n            border: 1px solid #8A2BE2;\n            border-radius: 50%;\n            height: 70px;\n            width: 70px;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            &:hover{\n             cursor: pointer;\n             color: white;\n             background-color: #8A2BE2;\n            }\n    }\n    }\n  }\n  .main-img{\n    ", " {\n        display: none;\n    }\n  }\n  .details{\n      &:hover{\n       ", "{\n            cursor: pointer;\n         }\n        }\n      }\n\n }\n  .preview{\n           height: 100vh;\n           width: 100vw;\n           top: 0;\n           left: 0;\n           z-index: -2;\n           position: fixed;\n           opacity: 1;\n           display: flex;\n           flex-direction: column;\n           justify-content: center;\n           align-items: center;\n           opacity: 1;\n           transition: .500s;\n         }\n         opacity: ", ";\n         transition: .500s;\n\n"])), media.desktop, media.desktop, media.desktop, function (props) {
+  return props.opacity;
+}); //make other menu option invisible when image is shown on background
 
-var Food = function Food() {
+var Food = function Food(props) {
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),
       _useState2 = _slicedToArray(_useState, 2),
       val = _useState2[0],
       setVal = _useState2[1];
 
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),
+      _useState4 = _slicedToArray(_useState3, 2),
+      cur = _useState4[0],
+      setCur = _useState4[1];
+
   var show = function show() {
     setVal(1);
+    props.changeOpacity(0);
+    props.changeViewing(1);
+    setCur(1);
   };
 
   var unShow = function unShow() {
     setVal(0);
+    props.changeOpacity(1);
+    props.changeViewing(0);
+    setCur(0);
   };
+
+  var opacity;
+
+  if (cur && props.viewing || !props.viewing) {
+    opacity = .8;
+  } else {
+    opacity = 0;
+  }
 
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(Con, {
     className: "container",
-    onMouseOver: show,
-    onMouseLeave: unShow,
+    opacity: opacity,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
       src: burgers[1],
       className: "main-img",
@@ -12885,6 +12905,8 @@ var Food = function Food() {
         children: "This is the description This is the description This is the description This is the description"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
         className: "desc",
+        onMouseOver: show,
+        onMouseLeave: unShow,
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
           className: "buy",
           children: "+"
@@ -13543,9 +13565,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _components_Food__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Food */ "./resources/js/components/Food.js");
 /* harmony import */ var _components_Dessersts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Dessersts */ "./resources/js/components/Dessersts.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject;
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
@@ -13554,11 +13589,82 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    display: flex;\n    flex-wrap: wrap;\n"])));
+
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    display: flex;\n    flex-wrap: wrap;\n"])));
 
 var Menu = function Menu() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(Con, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Dessersts__WEBPACK_IMPORTED_MODULE_1__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {})]
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(1),
+      _useState2 = _slicedToArray(_useState, 2),
+      opacity = _useState2[0],
+      setOpacity = _useState2[1];
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(0),
+      _useState4 = _slicedToArray(_useState3, 2),
+      viewing = _useState4[0],
+      setViewing = _useState4[1];
+
+  var changeViewing = function changeViewing(val) {
+    console.log(val);
+    setViewing(val);
+  };
+
+  var changeOpacity = function changeOpacity(val) {
+    console.log(val);
+    setOpacity(val);
+  };
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(Con, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      opa: opacity,
+      changeOpacity: changeOpacity,
+      changeViewing: changeViewing,
+      viewing: viewing
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      opa: opacity,
+      changeOpacity: changeOpacity,
+      changeViewing: changeViewing,
+      viewing: viewing
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      opa: opacity,
+      changeOpacity: changeOpacity,
+      changeViewing: changeViewing,
+      viewing: viewing
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      opa: opacity,
+      changeOpacity: changeOpacity,
+      changeViewing: changeViewing,
+      viewing: viewing
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      opa: opacity,
+      changeOpacity: changeOpacity,
+      changeViewing: changeViewing,
+      viewing: viewing
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Dessersts__WEBPACK_IMPORTED_MODULE_1__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      opa: opacity,
+      changeOpacity: changeOpacity,
+      changeViewing: changeViewing,
+      viewing: viewing
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      opa: opacity,
+      changeOpacity: changeOpacity,
+      changeViewing: changeViewing,
+      viewing: viewing
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      opa: opacity,
+      changeOpacity: changeOpacity,
+      changeViewing: changeViewing,
+      viewing: viewing
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      opa: opacity,
+      changeOpacity: changeOpacity,
+      changeViewing: changeViewing,
+      viewing: viewing
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      opa: opacity,
+      changeOpacity: changeOpacity,
+      changeViewing: changeViewing,
+      viewing: viewing
+    })]
   });
 };
 
