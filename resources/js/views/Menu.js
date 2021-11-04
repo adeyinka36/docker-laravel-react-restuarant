@@ -1,9 +1,11 @@
 import Food from '../components/Food';
 import Desserts from "../components/Dessersts";
-import style from "styled-components";
+import styled from "styled-components";
 import {useState} from "react";
+import Button from '@material-ui/core/Button';
+import Form from '../views/Form';
 
-const Con = style.div`
+const Con = styled.div`
     display: flex;
     flex-wrap: wrap;
 `
@@ -12,11 +14,9 @@ const Menu = ()=>{
     let [viewing, setViewing] = useState(0);
 
     const changeViewing = val =>{
-        console.log(val)
         setViewing(val)
     }
     const  changeOpacity = (val)=>{
-        console.log(val)
         setOpacity(val);
     }
     return(
@@ -32,6 +32,8 @@ const Menu = ()=>{
             <Food opa = {opacity} changeOpacity={changeOpacity} changeViewing={changeViewing} viewing={viewing}/>
             <Food opa = {opacity} changeOpacity={changeOpacity} changeViewing={changeViewing} viewing={viewing}/>
             <Food opa = {opacity} changeOpacity={changeOpacity} changeViewing={changeViewing} viewing={viewing}/>
+            <Button>PRESS</Button>
+            <Form/>
         </Con>
     )
 }

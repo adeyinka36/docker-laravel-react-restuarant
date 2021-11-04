@@ -1,4 +1,4 @@
-import style from 'styled-components';
+import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {Link} from 'react-router-dom';
 import {useState} from 'react';
@@ -7,7 +7,7 @@ const media = {
     desktop : `@media (min-width:1000px)`
 }
 
-const  Con =  style.div`
+const  Con =  styled.div`
 min-width: 100%;
 font-size: 2rem;
 display: flex;

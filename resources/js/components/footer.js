@@ -72,7 +72,7 @@ const Footer = ()=>{
                 <img src={burgers[0]} alt="second display"/>
             </div>
             <p className="insta">FOLLOW US ON INSTAGRAM</p>
-            <span class="checkout">CHECKOUT</span>
+            <span className="checkout">CHECKOUT</span>
         </Con>
     )
 }
