@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import {useContext, useState} from 'react';
+import FormContext from '../Context';
 
 
 const Con = styled.div`
@@ -59,29 +61,38 @@ const Con = styled.div`
     }
 `
 
-const Pay = ()=>{
+const Pay = props =>{
+    const [success,setSuccess] = useState(0);
     return(
         <Con>
             <div className="main-con">
-                <div className="con">
-                    <label>CARDHOLDER NAME:</label>
-                    <input className="input"/>
-                </div>
-                <div className="con">
-                    <label> CARD NUMBER:</label>
-                    <input className="input"/>
-                </div>
-                <div className="con" id="small">
-                    <label>EXPIRY DATE:</label>
-                    <input className="input"/>
-                </div>
+                {!success ? <>
+                        <div className="con">
+                            <label>CARDHOLDER NAME:</label>
+                            <input className="input"/>
+                        </div>
+                        <div className="con">
+                            <label> CARD NUMBER:</label>
+                            <input className="input"/>
+                        </div>
+                        <div className="con" id="small">
+                            <label>EXPIRY DATE:</label>
+                            <input className="input"/>
+                        </div>
 
-                <div className="con" id="small">
-                    <label>SECUIRTY CODE:</label>
-                    <input className="input"/>
-                </div>
+                        <div className="con" id="small">
+                            <label>SECUIRTY CODE:</label>
+                            <input className="input"/>
+                        </div>
 
-                <button>MAKE PAYMENT</button>
+                        <button onClick={() => setSuccess(1)}>MAKE PAYMENT</button>
+                    </>:
+
+                        <>
+                            <h2>SUCCESS!</h2>
+                            <button>HOME</button>
+                        </>
+                }
             </div>
         </Con>
     )

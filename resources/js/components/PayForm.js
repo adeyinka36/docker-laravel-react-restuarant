@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import {useContext} from "react";
+import FormContext from "../Context";
 
 
 const Con = styled.div`
@@ -56,7 +58,8 @@ const Con = styled.div`
     }
 `
 
-const PayForm = ()=>{
+const PayForm = props =>{
+const form = useContext(FormContext);
     return(
         <Con>
             <div className="main-con">
@@ -72,7 +75,7 @@ const PayForm = ()=>{
                     <label>ADDRESS:</label>
                     <input className="input"/>
                 </div>
-                <button>PAYMENT</button>
+                <button onClick={()=>form.setForm(3)}>PAYMENT</button>
             </div>
         </Con>
     )

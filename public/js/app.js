@@ -17633,6 +17633,24 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./resources/js/Context.js":
+/*!*********************************!*\
+  !*** ./resources/js/Context.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var FormContext = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createContext)({});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FormContext);
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -17961,8 +17979,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _Context__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Context */ "./resources/js/Context.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject;
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
@@ -17970,65 +17990,71 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    .main-con {\n        position: fixed;\n        top: 0;\n        left: 0;\n        z-index: 1000;\n        width: 100vw;\n        height: 100vh;\n        font-family: 'Anton', sans-serif;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        opacity:.9;\n        background-color: #8A2BE2;\n        flex-direction: column;\n        .remove{\n            color: red;\n            font-size: 3rem;\n        }\n        .con{\n            z-index: 1000;\n            opacity: 1;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            width: 75%;\n            height: 50px;\n            color: white;\n            font-size: 1.5rem;\n            max-width: 900px;\n            .count{\n                margin-right: 1rem;\n            }\n            p{\n                margin-right: 10px;\n            }\n            .total{\n                margin-top: 50px;\n            }\n        }\n        button {\n            width: 200px;\n            padding: .1rem;\n            font-family: 'Anton', sans-serif;\n            border: 1px solid grey;\n            font-size: 2rem;\n            height: 100px;\n            background-color: #8A2BE2;\n            margin-top: 10px;\n            &:hover{\n                background-color: white;\n                cursor: pointer;\n            }\n        }\n    }\n"])));
 
-var InitForm = function InitForm() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Con, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    .main-con {\n        position: fixed;\n        top: 0;\n        left: 0;\n        z-index: 1000;\n        width: 100vw;\n        height: 100vh;\n        font-family: 'Anton', sans-serif;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        opacity:.9;\n        background-color: #8A2BE2;\n        flex-direction: column;\n        .remove{\n            color: red;\n            font-size: 3rem;\n        }\n        .con{\n            z-index: 1000;\n            opacity: 1;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            width: 75%;\n            height: 50px;\n            color: white;\n            font-size: 1.5rem;\n            .count{\n                margin-right: 1rem;\n            }\n            p{\n                margin-right: 10px;\n            }\n            .total{\n                margin-top: 50px;\n            }\n        }\n        button {\n            width: 200px;\n            padding: .1rem;\n            font-family: 'Anton', sans-serif;\n            border: 1px solid grey;\n            font-size: 2rem;\n            height: 100px;\n            background-color: #8A2BE2;\n            margin-top: 10px;\n            &:hover{\n                background-color: white;\n                cursor: pointer;\n            }\n        }\n    }\n"])));
+
+var InitForm = function InitForm(props) {
+  var form = (0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(_Context__WEBPACK_IMPORTED_MODULE_0__["default"]);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Con, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
       className: "main-con",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h3", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
         className: "remove",
         children: "Click on item to remove"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "con",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
           className: "count",
           children: "1"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
           children: "Delicious:"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
           children: "\xA330.99"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "con",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
           className: "count",
           children: "1"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
           children: "Delicious:"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
           children: "\xA330.99"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "con",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
           className: "count",
           children: "1"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
           children: "Delicious:"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
           children: "\xA330.99"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "con",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
           className: "count",
           children: "1"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
           children: "Delicious:"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
           children: "\xA330.99"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "con",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
           className: "total",
           children: "Total:"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
           className: "total",
           children: "\xA3120"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+        onClick: function onClick() {
+          return form.setForm(2);
+        },
         children: "PROCEED"
       })]
     })
@@ -18353,54 +18379,87 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _Context__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Context */ "./resources/js/Context.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject;
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 
 
 
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    .main-con {\n        position: fixed;\n        top: 0;\n        left: 0;\n        z-index: 1000;\n        width: 100vw;\n        height: 100vh;\n        font-family: 'Anton', sans-serif;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        opacity:.9;\n        background-color: #8A2BE2;\n        flex-direction: column;\n        .remove{\n            color: red;\n            font-size: 3rem;\n        }\n        .con{\n            margin-top: 2rem;\n            z-index: 1000;\n            opacity: 1;\n            display: flex;\n            flex-direction: column;\n            width: 75%;\n            height: 50px;\n            color: white;\n            font-size: 1.5rem;\n            margin-bottom: 1.5rem;\n            max-width: 900px;\n            .input{\n                max-height: 3rem;\n                min-height: 3rem;\n                font-size: 2rem;\n                padding: .2rem;\n            }\n        }\n         #small{\n                max-width: 300px;\n            }\n        button {\n            width: 200px;\n            padding: .1rem;\n            font-family: 'Anton', sans-serif;\n            border: 1px solid grey;\n            font-size: 2rem;\n            height: 100px;\n            background-color: #8A2BE2;\n            margin-top: 3rem;\n            &:hover{\n                background-color: white;\n                cursor: pointer;\n            }\n        }\n    }\n"])));
 
-var Pay = function Pay() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Con, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+
+
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    .main-con {\n        position: fixed;\n        top: 0;\n        left: 0;\n        z-index: 1000;\n        width: 100vw;\n        height: 100vh;\n        font-family: 'Anton', sans-serif;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        opacity:.9;\n        background-color: #8A2BE2;\n        flex-direction: column;\n        .remove{\n            color: red;\n            font-size: 3rem;\n        }\n        .con{\n            margin-top: 2rem;\n            z-index: 1000;\n            opacity: 1;\n            display: flex;\n            flex-direction: column;\n            width: 75%;\n            height: 50px;\n            color: white;\n            font-size: 1.5rem;\n            margin-bottom: 1.5rem;\n            max-width: 900px;\n            .input{\n                max-height: 3rem;\n                min-height: 3rem;\n                font-size: 2rem;\n                padding: .2rem;\n            }\n        }\n         #small{\n                max-width: 300px;\n            }\n        button {\n            width: 200px;\n            padding: .1rem;\n            font-family: 'Anton', sans-serif;\n            border: 1px solid grey;\n            font-size: 2rem;\n            height: 100px;\n            background-color: #8A2BE2;\n            margin-top: 3rem;\n            &:hover{\n                background-color: white;\n                cursor: pointer;\n            }\n        }\n    }\n"])));
+
+var Pay = function Pay(props) {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),
+      _useState2 = _slicedToArray(_useState, 2),
+      success = _useState2[0],
+      setSuccess = _useState2[1];
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Con, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
       className: "main-con",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        className: "con",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("label", {
-          children: "CARDHOLDER NAME:"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", {
-          className: "input"
+      children: !success ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "con",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+            children: "CARDHOLDER NAME:"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+            className: "input"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "con",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+            children: " CARD NUMBER:"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+            className: "input"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "con",
+          id: "small",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+            children: "EXPIRY DATE:"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+            className: "input"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "con",
+          id: "small",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+            children: "SECUIRTY CODE:"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+            className: "input"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          onClick: function onClick() {
+            return setSuccess(1);
+          },
+          children: "MAKE PAYMENT"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        className: "con",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("label", {
-          children: " CARD NUMBER:"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", {
-          className: "input"
+      }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
+          children: "SUCCESS!"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          children: "HOME"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        className: "con",
-        id: "small",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("label", {
-          children: "EXPIRY DATE:"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", {
-          className: "input"
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        className: "con",
-        id: "small",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("label", {
-          children: "SECUIRTY CODE:"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", {
-          className: "input"
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
-        children: "MAKE PAYMENT"
-      })]
+      })
     })
   });
 };
@@ -18420,8 +18479,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _Context__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Context */ "./resources/js/Context.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject;
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
@@ -18429,34 +18490,40 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    .main-con {\n        position: fixed;\n        top: 0;\n        left: 0;\n        z-index: 1000;\n        width: 100vw;\n        height: 100vh;\n        font-family: 'Anton', sans-serif;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        opacity:.9;\n        background-color: #8A2BE2;\n        flex-direction: column;\n        .remove{\n            color: red;\n            font-size: 3rem;\n        }\n        .con{\n            margin-top: 2rem;\n            z-index: 1000;\n            opacity: 1;\n            display: flex;\n            flex-direction: column;\n            width: 75%;\n            height: 50px;\n            color: white;\n            font-size: 1.5rem;\n            margin-bottom: 1.5rem;\n            max-width: 900px;\n            .input{\n                max-height: 3rem;\n                min-height: 3rem;\n                font-size: 2rem;\n                padding: .2rem;\n            }\n        }\n        button {\n            width: 200px;\n            padding: .1rem;\n            font-family: 'Anton', sans-serif;\n            border: 1px solid grey;\n            font-size: 2rem;\n            height: 100px;\n            background-color: #8A2BE2;\n            margin-top: 3rem;\n            &:hover{\n                background-color: white;\n                cursor: pointer;\n            }\n        }\n    }\n"])));
 
-var PayForm = function PayForm() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Con, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    .main-con {\n        position: fixed;\n        top: 0;\n        left: 0;\n        z-index: 1000;\n        width: 100vw;\n        height: 100vh;\n        font-family: 'Anton', sans-serif;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        opacity:.9;\n        background-color: #8A2BE2;\n        flex-direction: column;\n        .remove{\n            color: red;\n            font-size: 3rem;\n        }\n        .con{\n            margin-top: 2rem;\n            z-index: 1000;\n            opacity: 1;\n            display: flex;\n            flex-direction: column;\n            width: 75%;\n            height: 50px;\n            color: white;\n            font-size: 1.5rem;\n            margin-bottom: 1.5rem;\n            max-width: 900px;\n            .input{\n                max-height: 3rem;\n                min-height: 3rem;\n                font-size: 2rem;\n                padding: .2rem;\n            }\n        }\n        button {\n            width: 200px;\n            padding: .1rem;\n            font-family: 'Anton', sans-serif;\n            border: 1px solid grey;\n            font-size: 2rem;\n            height: 100px;\n            background-color: #8A2BE2;\n            margin-top: 3rem;\n            &:hover{\n                background-color: white;\n                cursor: pointer;\n            }\n        }\n    }\n"])));
+
+var PayForm = function PayForm(props) {
+  var form = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_Context__WEBPACK_IMPORTED_MODULE_1__["default"]);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Con, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
       className: "main-con",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "con",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("label", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
           children: "FULL NAME:"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
           className: "input"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "con",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("label", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
           children: " POSTCODE:"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
           className: "input"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "con",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("label", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
           children: "ADDRESS:"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
           className: "input"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+        onClick: function onClick() {
+          return form.setForm(3);
+        },
         children: "PAYMENT"
       })]
     })
@@ -18615,7 +18682,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 var burgers = ['/images/logo.jpg', '/images/spin.jpg'];
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n     margin-top: 6rem;\n     text-align: center;\n    .main-con{\n        margin: .25rem  auto;\n        justify-content: center;\n        display: flex;\n        flex-wrap: wrap;\n        width: 80%;\n        img{\n         max-width: 30%;\n         margin: .1rem;\n        }\n    }\n    .insta{\n        display: inline-block;\n        width: auto;\n        color: white;\n        font-family: 'Anton', sans-serif;\n        background-color: #8A2BE2;\n        padding: 1rem;\n        border-radius: 5px;\n        margin-bottom: 6rem;\n    }\n    p{\n        display: inline-block;\n        width: auto;\n        color: #8A2BE2;\n        font-family: 'Anton', sans-serif;\n        font-size: 1.5rem;\n    }\n    .checkout{\n      position: fixed;\n      bottom: 0;\n      left: 0;\n      width: 100vw;\n      height: 5rem;\n      font-family: 'Anton', sans-serif;\n      background-color: #8A2BE2;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      font-size: 3rem;\n      color: white;\n      &:hover{\n          cursor: pointer;\n          color: white;\n          background-color: blue;\n      }\n    }\n"])));
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n     margin-top: 6rem;\n     text-align: center;\n    .main-con{\n        margin: .25rem  auto;\n        justify-content: center;\n        display: flex;\n        flex-wrap: wrap;\n        width: 80%;\n        img{\n         max-width: 30%;\n         margin: .1rem;\n        }\n    }\n    .insta{\n        display: inline-block;\n        width: auto;\n        color: white;\n        font-family: 'Anton', sans-serif;\n        background-color: #8A2BE2;\n        padding: 1rem;\n        border-radius: 5px;\n        margin-bottom: 6rem;\n    }\n    p{\n        display: inline-block;\n        width: auto;\n        color: #8A2BE2;\n        font-family: 'Anton', sans-serif;\n        font-size: 1.5rem;\n    }\n\n"])));
 
 var Footer = function Footer() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Con, {
@@ -18645,9 +18712,6 @@ var Footer = function Footer() {
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
       className: "insta",
       children: "FOLLOW US ON INSTAGRAM"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-      className: "checkout",
-      children: "CHECKOUT"
     })]
   });
 };
@@ -18667,11 +18731,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _components_InitForm__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/InitForm */ "./resources/js/components/InitForm.js");
 /* harmony import */ var _components_PayForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/PayForm */ "./resources/js/components/PayForm.js");
 /* harmony import */ var _components_Pay__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Pay */ "./resources/js/components/Pay.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _Context__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Context */ "./resources/js/Context.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject;
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
@@ -18682,14 +18748,21 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    .cancel{\n        position: fixed;\n        top: 1rem;\n        right: 1rem;\n        font-family: 'Rampart One', cursive;\n        font-size: 3rem;\n        color: white;\n        z-index: 10000;\n        &:hover{\n            cursor: pointer;\n            color: red;\n        }\n    }\n"])));
+
+
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    .cancel{\n        position: fixed;\n        top: 1rem;\n        right: 1rem;\n        font-family: 'Rampart One', cursive;\n        font-size: 3rem;\n        color: white;\n        z-index: 10000;\n        &:hover{\n            cursor: pointer;\n            color: red;\n        }\n    }\n"])));
 
 var Form = function Form() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(Con, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+  var data = (0,react__WEBPACK_IMPORTED_MODULE_3__.useContext)(_Context__WEBPACK_IMPORTED_MODULE_4__["default"]);
+  console.log(data.form, data);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(Con, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
       className: "cancel",
+      onClick: function onClick() {
+        return data.setForm(0);
+      },
       children: "x"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Pay__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
+    }), data.form === 1 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_InitForm__WEBPACK_IMPORTED_MODULE_0__["default"], {}) : null, data.form === 2 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_PayForm__WEBPACK_IMPORTED_MODULE_1__["default"], {}) : null, data.form === 3 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Pay__WEBPACK_IMPORTED_MODULE_2__["default"], {}) : null]
   });
 };
 
@@ -18741,11 +18814,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _components_Food__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Food */ "./resources/js/components/Food.js");
 /* harmony import */ var _components_Dessersts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Dessersts */ "./resources/js/components/Dessersts.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/Button.js");
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/Button.js");
 /* harmony import */ var _views_Form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../views/Form */ "./resources/js/views/Form.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Context__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Context */ "./resources/js/Context.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject;
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -18770,7 +18844,10 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    display: flex;\n    flex-wrap: wrap;\n"])));
+
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    display: flex;\n    flex-wrap: wrap;\n    .checkout{\n        position: fixed;\n        bottom: 0;\n        left: 0;\n        width: 100vw;\n        height: 5rem;\n        font-family: 'Anton', sans-serif;\n        background-color: #8A2BE2;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        font-size: 3rem;\n        color: white;\n        &:hover{\n            cursor: pointer;\n            color: white;\n            background-color: blue;\n        }\n        visibility: ", ";\n    }\n"])), function (props) {
+  return props.show ? 'visible' : 'hidden';
+});
 
 var Menu = function Menu() {
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(1),
@@ -18783,6 +18860,11 @@ var Menu = function Menu() {
       viewing = _useState4[0],
       setViewing = _useState4[1];
 
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(0),
+      _useState6 = _slicedToArray(_useState5, 2),
+      form = _useState6[0],
+      setForm = _useState6[1];
+
   var changeViewing = function changeViewing(val) {
     setViewing(val);
   };
@@ -18791,60 +18873,75 @@ var Menu = function Menu() {
     setOpacity(val);
   };
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(Con, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
-      opa: opacity,
-      changeOpacity: changeOpacity,
-      changeViewing: changeViewing,
-      viewing: viewing
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
-      opa: opacity,
-      changeOpacity: changeOpacity,
-      changeViewing: changeViewing,
-      viewing: viewing
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
-      opa: opacity,
-      changeOpacity: changeOpacity,
-      changeViewing: changeViewing,
-      viewing: viewing
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
-      opa: opacity,
-      changeOpacity: changeOpacity,
-      changeViewing: changeViewing,
-      viewing: viewing
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
-      opa: opacity,
-      changeOpacity: changeOpacity,
-      changeViewing: changeViewing,
-      viewing: viewing
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_Dessersts__WEBPACK_IMPORTED_MODULE_1__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
-      opa: opacity,
-      changeOpacity: changeOpacity,
-      changeViewing: changeViewing,
-      viewing: viewing
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
-      opa: opacity,
-      changeOpacity: changeOpacity,
-      changeViewing: changeViewing,
-      viewing: viewing
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
-      opa: opacity,
-      changeOpacity: changeOpacity,
-      changeViewing: changeViewing,
-      viewing: viewing
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
-      opa: opacity,
-      changeOpacity: changeOpacity,
-      changeViewing: changeViewing,
-      viewing: viewing
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
-      opa: opacity,
-      changeOpacity: changeOpacity,
-      changeViewing: changeViewing,
-      viewing: viewing
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_6__["default"], {
-      children: "PRESS"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_views_Form__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
+  var startForm = function startForm() {
+    setForm(1);
+  };
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(Con, {
+    show: true,
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_Context__WEBPACK_IMPORTED_MODULE_4__["default"].Provider, {
+      value: {
+        form: form,
+        setForm: setForm
+      },
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
+        opa: opacity,
+        changeOpacity: changeOpacity,
+        changeViewing: changeViewing,
+        viewing: viewing
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
+        opa: opacity,
+        changeOpacity: changeOpacity,
+        changeViewing: changeViewing,
+        viewing: viewing
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
+        opa: opacity,
+        changeOpacity: changeOpacity,
+        changeViewing: changeViewing,
+        viewing: viewing
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
+        opa: opacity,
+        changeOpacity: changeOpacity,
+        changeViewing: changeViewing,
+        viewing: viewing
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
+        opa: opacity,
+        changeOpacity: changeOpacity,
+        changeViewing: changeViewing,
+        viewing: viewing
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Dessersts__WEBPACK_IMPORTED_MODULE_1__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
+        opa: opacity,
+        changeOpacity: changeOpacity,
+        changeViewing: changeViewing,
+        viewing: viewing
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
+        opa: opacity,
+        changeOpacity: changeOpacity,
+        changeViewing: changeViewing,
+        viewing: viewing
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
+        opa: opacity,
+        changeOpacity: changeOpacity,
+        changeViewing: changeViewing,
+        viewing: viewing
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
+        opa: opacity,
+        changeOpacity: changeOpacity,
+        changeViewing: changeViewing,
+        viewing: viewing
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
+        opa: opacity,
+        changeOpacity: changeOpacity,
+        changeViewing: changeViewing,
+        viewing: viewing
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        children: "PRESS"
+      }), form >= 1 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_views_Form__WEBPACK_IMPORTED_MODULE_3__["default"], {}) : null, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
+        className: "checkout",
+        onClick: startForm,
+        children: "CHECKOUT"
+      })]
+    })
   });
 };
 

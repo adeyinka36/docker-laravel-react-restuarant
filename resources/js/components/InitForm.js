@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import FormContext from "../Context";
+import {useContext} from "react";
 
 
 const Con = styled.div`
@@ -30,7 +32,6 @@ const Con = styled.div`
             height: 50px;
             color: white;
             font-size: 1.5rem;
-            max-width: 900px;
             .count{
                 margin-right: 1rem;
             }
@@ -58,7 +59,8 @@ const Con = styled.div`
     }
 `
 
-const InitForm = ()=>{
+const InitForm = props=>{
+    const form = useContext(FormContext);
 return(
     <Con>
         <div className="main-con">
@@ -87,7 +89,7 @@ return(
                 <p className="total">Total:</p>
                 <p className="total">£120</p>
             </div>
-            <button>PROCEED</button>
+            <button onClick={()=> form.setForm(2)}>PROCEED</button>
         </div>
     </Con>
     )

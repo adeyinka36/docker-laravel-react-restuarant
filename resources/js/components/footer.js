@@ -37,25 +37,7 @@ const Con = style.div`
         font-family: 'Anton', sans-serif;
         font-size: 1.5rem;
     }
-    .checkout{
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100vw;
-      height: 5rem;
-      font-family: 'Anton', sans-serif;
-      background-color: #8A2BE2;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 3rem;
-      color: white;
-      &:hover{
-          cursor: pointer;
-          color: white;
-          background-color: blue;
-      }
-    }
+
 `
 
 const Footer = ()=>{
@@ -72,7 +54,6 @@ const Footer = ()=>{
                 <img src={burgers[0]} alt="second display"/>
             </div>
             <p className="insta">FOLLOW US ON INSTAGRAM</p>
-            <span className="checkout">CHECKOUT</span>
         </Con>
     )
 }
