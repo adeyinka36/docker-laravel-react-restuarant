@@ -19,3 +19,4 @@ Route::get('/food',[Food::class,'index']);
 Route::post('/modify',[Food::class,'update']);
 Route::post('/add',[Food::class,'create']);
 Route::post('/del',[Food::class,'delete']);
+//Route::post('/stripe-payment', [Stripe::class, 'pay']);

@@ -16,6 +16,10 @@ const Con = styled.div`
         opacity:.9;
         background-color: #8A2BE2;
         flex-direction: column;
+        .remove{
+            color: red;
+            font-size: 3rem;
+        }
         .con{
             z-index: 1000;
             opacity: 1;
@@ -26,6 +30,10 @@ const Con = styled.div`
             height: 50px;
             color: white;
             font-size: 1.5rem;
+            max-width: 900px;
+            .count{
+                margin-right: 1rem;
+            }
             p{
                 margin-right: 10px;
             }
@@ -54,19 +62,24 @@ const InitForm = ()=>{
 return(
     <Con>
         <div className="main-con">
+            <h3 className="remove">Click on item to remove</h3>
             <div className="con">
+                <span className="count">1</span>
                 <p>Delicious:</p>
                 <span>£30.99</span>
             </div>
             <div className="con">
+                <span className="count">1</span>
                 <p>Delicious:</p>
                 <span>£30.99</span>
             </div>
             <div className="con">
+                <span className="count">1</span>
                 <p>Delicious:</p>
                 <span>£30.99</span>
             </div>
             <div className="con">
+                <span className="count">1</span>
                 <p>Delicious:</p>
                 <span>£30.99</span>
             </div>

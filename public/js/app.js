@@ -17970,36 +17970,51 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    .main-con {\n        position: fixed;\n        top: 0;\n        left: 0;\n        z-index: 1000;\n        width: 100vw;\n        height: 100vh;\n        font-family: 'Anton', sans-serif;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        opacity:.9;\n        background-color: #8A2BE2;\n        flex-direction: column;\n        .con{\n            z-index: 1000;\n            opacity: 1;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            width: 75%;\n            height: 50px;\n            color: white;\n            font-size: 1.5rem;\n            p{\n                margin-right: 10px;\n            }\n            .total{\n                margin-top: 50px;\n            }\n        }\n        button {\n            width: 200px;\n            padding: .1rem;\n            font-family: 'Anton', sans-serif;\n            border: 1px solid grey;\n            font-size: 2rem;\n            height: 100px;\n            background-color: #8A2BE2;\n            margin-top: 10px;\n            &:hover{\n                background-color: white;\n                cursor: pointer;\n            }\n        }\n    }\n"])));
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    .main-con {\n        position: fixed;\n        top: 0;\n        left: 0;\n        z-index: 1000;\n        width: 100vw;\n        height: 100vh;\n        font-family: 'Anton', sans-serif;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        opacity:.9;\n        background-color: #8A2BE2;\n        flex-direction: column;\n        .remove{\n            color: red;\n            font-size: 3rem;\n        }\n        .con{\n            z-index: 1000;\n            opacity: 1;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            width: 75%;\n            height: 50px;\n            color: white;\n            font-size: 1.5rem;\n            max-width: 900px;\n            .count{\n                margin-right: 1rem;\n            }\n            p{\n                margin-right: 10px;\n            }\n            .total{\n                margin-top: 50px;\n            }\n        }\n        button {\n            width: 200px;\n            padding: .1rem;\n            font-family: 'Anton', sans-serif;\n            border: 1px solid grey;\n            font-size: 2rem;\n            height: 100px;\n            background-color: #8A2BE2;\n            margin-top: 10px;\n            &:hover{\n                background-color: white;\n                cursor: pointer;\n            }\n        }\n    }\n"])));
 
 var InitForm = function InitForm() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Con, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
       className: "main-con",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h3", {
+        className: "remove",
+        children: "Click on item to remove"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "con",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+          className: "count",
+          children: "1"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
           children: "Delicious:"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
           children: "\xA330.99"
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "con",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+          className: "count",
+          children: "1"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
           children: "Delicious:"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
           children: "\xA330.99"
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "con",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+          className: "count",
+          children: "1"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
           children: "Delicious:"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
           children: "\xA330.99"
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "con",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+          className: "count",
+          children: "1"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
           children: "Delicious:"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
           children: "\xA330.99"
@@ -18327,6 +18342,131 @@ if (document.getElementById('app')) {
 
 /***/ }),
 
+/***/ "./resources/js/components/Pay.js":
+/*!****************************************!*\
+  !*** ./resources/js/components/Pay.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _templateObject;
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    .main-con {\n        position: fixed;\n        top: 0;\n        left: 0;\n        z-index: 1000;\n        width: 100vw;\n        height: 100vh;\n        font-family: 'Anton', sans-serif;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        opacity:.9;\n        background-color: #8A2BE2;\n        flex-direction: column;\n        .remove{\n            color: red;\n            font-size: 3rem;\n        }\n        .con{\n            margin-top: 2rem;\n            z-index: 1000;\n            opacity: 1;\n            display: flex;\n            flex-direction: column;\n            width: 75%;\n            height: 50px;\n            color: white;\n            font-size: 1.5rem;\n            margin-bottom: 1.5rem;\n            max-width: 900px;\n            .input{\n                max-height: 3rem;\n                min-height: 3rem;\n                font-size: 2rem;\n                padding: .2rem;\n            }\n        }\n         #small{\n                max-width: 300px;\n            }\n        button {\n            width: 200px;\n            padding: .1rem;\n            font-family: 'Anton', sans-serif;\n            border: 1px solid grey;\n            font-size: 2rem;\n            height: 100px;\n            background-color: #8A2BE2;\n            margin-top: 3rem;\n            &:hover{\n                background-color: white;\n                cursor: pointer;\n            }\n        }\n    }\n"])));
+
+var Pay = function Pay() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Con, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+      className: "main-con",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: "con",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("label", {
+          children: "CARDHOLDER NAME:"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", {
+          className: "input"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: "con",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("label", {
+          children: " CARD NUMBER:"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", {
+          className: "input"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: "con",
+        id: "small",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("label", {
+          children: "EXPIRY DATE:"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", {
+          className: "input"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: "con",
+        id: "small",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("label", {
+          children: "SECUIRTY CODE:"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", {
+          className: "input"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+        children: "MAKE PAYMENT"
+      })]
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Pay);
+
+/***/ }),
+
+/***/ "./resources/js/components/PayForm.js":
+/*!********************************************!*\
+  !*** ./resources/js/components/PayForm.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _templateObject;
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    .main-con {\n        position: fixed;\n        top: 0;\n        left: 0;\n        z-index: 1000;\n        width: 100vw;\n        height: 100vh;\n        font-family: 'Anton', sans-serif;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        opacity:.9;\n        background-color: #8A2BE2;\n        flex-direction: column;\n        .remove{\n            color: red;\n            font-size: 3rem;\n        }\n        .con{\n            margin-top: 2rem;\n            z-index: 1000;\n            opacity: 1;\n            display: flex;\n            flex-direction: column;\n            width: 75%;\n            height: 50px;\n            color: white;\n            font-size: 1.5rem;\n            margin-bottom: 1.5rem;\n            max-width: 900px;\n            .input{\n                max-height: 3rem;\n                min-height: 3rem;\n                font-size: 2rem;\n                padding: .2rem;\n            }\n        }\n        button {\n            width: 200px;\n            padding: .1rem;\n            font-family: 'Anton', sans-serif;\n            border: 1px solid grey;\n            font-size: 2rem;\n            height: 100px;\n            background-color: #8A2BE2;\n            margin-top: 3rem;\n            &:hover{\n                background-color: white;\n                cursor: pointer;\n            }\n        }\n    }\n"])));
+
+var PayForm = function PayForm() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Con, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+      className: "main-con",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: "con",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("label", {
+          children: "FULL NAME:"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", {
+          className: "input"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: "con",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("label", {
+          children: " POSTCODE:"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", {
+          className: "input"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: "con",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("label", {
+          children: "ADDRESS:"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", {
+          className: "input"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+        children: "PAYMENT"
+      })]
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PayForm);
+
+/***/ }),
+
 /***/ "./resources/js/components/SpecialandAbout.js":
 /*!****************************************************!*\
   !*** ./resources/js/components/SpecialandAbout.js ***!
@@ -18527,9 +18667,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _components_InitForm__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/InitForm */ "./resources/js/components/InitForm.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _components_PayForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/PayForm */ "./resources/js/components/PayForm.js");
+/* harmony import */ var _components_Pay__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Pay */ "./resources/js/components/Pay.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject;
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
@@ -18538,14 +18680,16 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    .cancel{\n        position: fixed;\n        top: 1rem;\n        right: 1rem;\n        font-family: 'Rampart One', cursive;\n        font-size: 3rem;\n        color: white;\n        z-index: 10000;\n        &:hover{\n            cursor: pointer;\n            color: red;\n        }\n    }\n"])));
+
+
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    .cancel{\n        position: fixed;\n        top: 1rem;\n        right: 1rem;\n        font-family: 'Rampart One', cursive;\n        font-size: 3rem;\n        color: white;\n        z-index: 10000;\n        &:hover{\n            cursor: pointer;\n            color: red;\n        }\n    }\n"])));
 
 var Form = function Form() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(Con, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(Con, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
       className: "cancel",
       children: "x"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_components_InitForm__WEBPACK_IMPORTED_MODULE_0__["default"], {})]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Pay__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
   });
 };
 

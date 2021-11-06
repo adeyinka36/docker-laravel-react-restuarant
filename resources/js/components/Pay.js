@@ -39,6 +39,9 @@ const Con = styled.div`
                 padding: .2rem;
             }
         }
+         #small{
+                max-width: 300px;
+            }
         button {
             width: 200px;
             padding: .1rem;
@@ -56,26 +59,32 @@ const Con = styled.div`
     }
 `
 
-const PayForm = ()=>{
+const Pay = ()=>{
     return(
         <Con>
             <div className="main-con">
                 <div className="con">
-                    <label>FULL NAME:</label>
+                    <label>CARDHOLDER NAME:</label>
                     <input className="input"/>
                 </div>
                 <div className="con">
-                    <label> POSTCODE:</label>
+                    <label> CARD NUMBER:</label>
                     <input className="input"/>
                 </div>
-                <div className="con">
-                    <label>ADDRESS:</label>
+                <div className="con" id="small">
+                    <label>EXPIRY DATE:</label>
                     <input className="input"/>
                 </div>
-                <button>PAYMENT</button>
+
+                <div className="con" id="small">
+                    <label>SECUIRTY CODE:</label>
+                    <input className="input"/>
+                </div>
+
+                <button>MAKE PAYMENT</button>
             </div>
         </Con>
     )
 }
 
-export default PayForm;
+export default Pay;

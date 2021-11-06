@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import InitForm from "../components/InitForm";
+import PayForm from "../components/PayForm";
+import Pay from "../components/Pay";
 
 const Con = styled.div`
     .cancel{
@@ -22,7 +24,9 @@ const Form  = ()=>{
     return (
         <Con>
          <span className="cancel">x</span>
-         <InitForm/>
+         {/*<InitForm/>*/}
+         {/*<PayForm/>*/}
+         <Pay/>
         </Con>
     )
 
