@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import {useContext, useState} from 'react';
-import FormContext from '../Context';
+import { useState } from 'react';
+import CachedIcon from '@material-ui/icons/Cached';
 
 
 const Con = styled.div`
@@ -59,10 +59,35 @@ const Con = styled.div`
             }
         }
     }
+    .completed{
+        color: white;
+        line-spacing: .25rem;
+        font-size: 3rem;
+    }
+    .spinner{
+        transition: 5s;
+        font-size: 7rem;
+        color: white;
+        animation: spin 5s infinite;
+    }
+    @keyframes spin{
+        0%{transform:rotate(0deg)}
+        100%{transform:rotate(360deg)}
+    }
 `
 
 const Pay = props =>{
     const [success,setSuccess] = useState(0);
+    let [loading , setLoading] = useState(false);
+    const submit = ()=> {
+        setLoading(true);
+        setSuccess(1);
+        setTimeout(()=>{
+            setLoading(false);
+        }, 2000)
+
+    }
+
     return(
         <Con>
             <div className="main-con">
@@ -81,17 +106,21 @@ const Pay = props =>{
                         </div>
 
                         <div className="con" id="small">
-                            <label>SECUIRTY CODE:</label>
+                            <label>SECURITY CODE:</label>
                             <input className="input"/>
                         </div>
-
-                        <button onClick={() => setSuccess(1)}>MAKE PAYMENT</button>
+                        <button onClick={submit}>MAKE PAYMENT</button>
                     </>:
-
+                    <>
+                    {!loading?
                         <>
-                            <h2>SUCCESS!</h2>
+                            <h2 className="completed">Thanks for your order!</h2>
                             <button>HOME</button>
-                        </>
+                         </>:
+                        <CachedIcon className="spinner"/>
+                    }
+                    </>
+
                 }
             </div>
         </Con>

@@ -5,6 +5,8 @@ import {Switch} from 'react-router';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import Footer from "./footer";
+import AppContext from "../AppContext";
+import {useState} from 'react';
 
  library.add(faBars, faBars)
 
@@ -13,12 +15,23 @@ import Home from "../views/Home";
 import Menu from "../views/Menu";
 
 function Main() {
+    let [items, setItems] =  useState([
+        {
+            name: "",
+            description: "",
+            price: "",
+            image: ""
+        }
+    ])
+
     return (
         <Router>
-            <Header/>
-            <Route  exact path = "/"  component={Home}/>
-            <Route  exact path = "/menu"  component={Menu}/>
-            <Footer/>
+            <AppContext.Provider value={{items, setItems}}>
+                <Header/>
+                <Route  exact path = "/"  component={Home}/>
+                <Route  exact path = "/menu"  component={Menu}/>
+                <Footer/>
+            </AppContext.Provider>
         </Router>
     );
 }

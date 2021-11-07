@@ -99,6 +99,9 @@ const Con =  style.div`
          }
          opacity: ${props=>props.opacity};
          transition: .500s;
+         .details span{
+            text-align: center;
+         }
 
 `
 
@@ -107,16 +110,24 @@ const Food = props =>{
         let [val, setVal ] = useState(0);
         let [cur, setCur ] = useState(0);
     const show = ()=>{
-        setVal(1)
-        props.changeOpacity(0);
-        props.changeViewing(1);
-        setCur(1);
+        let width = window.innerWidth;
+        if(width >= 1341)
+        {
+            setVal(1)
+            props.changeOpacity(0);
+            props.changeViewing(1);
+            setCur(1);
+        }
     }
     const unShow = ()=>{
-        setVal(0)
-        props.changeOpacity(1);
-        props.changeViewing(0);
-        setCur(0);
+        let width = window.innerWidth;
+        if(width >= 1341)
+        {
+            setVal(0)
+            props.changeOpacity(1);
+            props.changeViewing(0);
+            setCur(0);
+        }
     }
 
     let opacity;

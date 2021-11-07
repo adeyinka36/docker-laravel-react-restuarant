@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-import {useContext} from "react";
+import {useContext, useState, useRef} from "react";
 import FormContext from "../Context";
+import LoopIcon from '@mui/icons-material/Loop';
 
 
 const Con = styled.div`
@@ -55,27 +56,55 @@ const Con = styled.div`
                 cursor: pointer;
             }
         }
+          p{
+                transition: .250s;
+                border: 4px solid white;
+                color: white;
+                height: 3rem;
+                width: 60%;
+                font-size: 2rem;
+                max-width: 900px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
     }
 `
 
 const PayForm = props =>{
-const form = useContext(FormContext);
+    let [invalidPostcode, setPostcodeValid] = useState(false);
+    let form = useContext(FormContext);
+    let [details, setDetails] = useState({
+        postcode: "",
+        fullname: "",
+        address: ""
+    });
+    const re = /([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9][A-Za-z]?))))\s?[0-9][A-Za-z]{2})/
+    const postRef = useRef()
+    const submit = ()=>{
+        if(re.test(details.postcode) && details.fullname && details.address) {
+            form.setForm(3)
+        }else {
+            setPostcodeValid( true);
+        }
+    }
     return(
         <Con>
             <div className="main-con">
-                <div className="con">
-                    <label>FULL NAME:</label>
-                    <input className="input"/>
-                </div>
-                <div className="con">
-                    <label> POSTCODE:</label>
-                    <input className="input"/>
-                </div>
-                <div className="con">
-                    <label>ADDRESS:</label>
-                    <input className="input"/>
-                </div>
-                <button onClick={()=>form.setForm(3)}>PAYMENT</button>
+                    <div className="con">
+                        <label>FULL NAME:</label>
+                        <input className="input" value ={details.fullname} onChange={(e)=>setDetails({ ...details,fullname:e.target.value})}/>
+                    </div>
+                    <div className="con">
+                        <label> POSTCODE:</label>
+                        <input className="input"  ref = {postRef}  value ={details.postcode} onChange={(e)=>setDetails({ ...details,postcode:e.target.value})}/>
+                    </div>
+                    <div className="con">
+                        <label>ADDRESS:</label>
+                        <input className="input" value ={details.address} onChange={(e)=>setDetails({ ...details,address:e.target.value})}/>
+                    </div>
+                    <button onClick={submit}>PAYMENT</button>
+                    {invalidPostcode? <p className="warning">Please enter a valid details</p> :null}
             </div>
         </Con>
     )
