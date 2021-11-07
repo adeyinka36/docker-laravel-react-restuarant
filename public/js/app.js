@@ -17624,10 +17624,35 @@ _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_2__.library.add(_fort
 
 function Main() {
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([{
-    name: "",
-    description: "",
-    price: "",
-    image: ""
+    name: "Delight",
+    description: "The bes burger you have ever eaten",
+    price: 17.99,
+    image: 1
+  }, {
+    name: "Delight",
+    description: "The bes burger you have ever eaten",
+    price: 17.99,
+    image: 1
+  }, {
+    name: "Delight",
+    description: "The bes burger you have ever eaten",
+    price: 17.99,
+    image: 1
+  }, {
+    name: "Delight",
+    description: "The bes burger you have ever eaten",
+    price: 17.99,
+    image: 1
+  }, {
+    name: "Delight",
+    description: "The bes burger you have ever eaten",
+    price: 17.99,
+    image: 1
+  }, {
+    name: "Delight",
+    description: "The bes burger you have ever eaten",
+    price: 17.99,
+    image: 1
   }]),
       _useState2 = _slicedToArray(_useState, 2),
       items = _useState2[0],
@@ -18309,7 +18334,8 @@ var Menu = function Menu() {
           changeViewing: changeViewing,
           viewing: viewing,
           add: add,
-          remove: remove
+          remove: remove,
+          item: item
         });
       }), form >= 1 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_views_Form__WEBPACK_IMPORTED_MODULE_3__["default"], {}) : null, data.items.length ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
         className: "checkout",

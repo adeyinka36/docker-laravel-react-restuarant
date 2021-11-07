@@ -59,7 +59,7 @@ const Menu =() =>{
         <Con show={true}>
             <FormContext.Provider value={{form, setForm}}>
                 { data.items.map(item=>
-                    <Food opa = {opacity} changeOpacity={changeOpacity} changeViewing={changeViewing} viewing={viewing} add={add} remove={remove}/>)
+                    <Food opa = {opacity} changeOpacity={changeOpacity} changeViewing={changeViewing} viewing={viewing} add={add} remove={remove} item={item}/>)
                 }
 
                 {form >=1?<Form/> :null}
