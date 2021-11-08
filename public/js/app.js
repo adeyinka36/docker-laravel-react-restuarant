@@ -18371,10 +18371,16 @@ var Menu = function Menu() {
 
   var remove = function remove() {
     var item = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
-    var remaining = bought.filter(function (i) {
-      return i.id !== item.id;
-    });
-    setBought(_toConsumableArray(remaining));
+    var newBought = bought;
+
+    for (var i = 0; i < newBought.length; i++) {
+      if (newBought[i].id === item.id) {
+        bought.splice(i, 1);
+        break;
+      }
+    }
+
+    setBought(_toConsumableArray(newBought));
   };
 
   var total = bought.length ? bought.map(function (item) {

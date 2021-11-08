@@ -54,8 +54,14 @@ const Menu =() =>{
     }
 
     const remove = (item = null) =>{
-        let remaining = bought.filter(i=>i.id !== item.id);
-        setBought([...remaining]);
+         let newBought = bought;
+        for(let i=0 ; i< newBought.length;i++) {
+            if(newBought[i].id === item.id){
+                bought.splice(i, 1);
+                break;
+            }
+        }
+        setBought([...newBought]);
     }
 
     let total = bought.length? bought.map(item=>item.price).reduce((curr,acc)=>acc+curr).toFixed(2): 0;
