@@ -1,11 +1,24 @@
 import style from 'styled-components';
 
 const burgers = [
-    '/images/burger1.jpg',
-    '/images/burger2.jpg',
-    '/images/burger3.jpg'
+    '/images/a.jpg',
+    '/images/b.jpg',
+    '/images/c.jpg',
+    '/images/d.jpg',
+    'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610a54901d5_Hamburger%20Cutout%20compressed.png',
+    '/images/e.jpg',
+    '/images/f.jpg',
+    '/images/h.jpg',
+    '/images/i.jpg',
+    '/images/j.jpg',
+    '/images/k.jpg',
+    '/images/b.jpg',
+    '/images/c.jpg',
+    'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610d0490216_TTTONLINE_Clipped.png',
+    'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc660f4449021a_StyleBowlGrain_Clipped-p-500.png',
+    'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610a54901d5_Hamburger%20Cutout%20compressed.png',
+    '/images/m.jpg',
 ]
-let image = Math.floor(Math.random() * 3);
 const media = {
     desktop : `@media (min-width:1341px)`
 }
@@ -184,7 +197,7 @@ const Home = ()=>{
     return(
         <Con>
             <div className="main-con">
-                <img src={burgers[image]} className="main" alt="background-random"/>
+                <img src={burgers[4]} className="main" alt="background-random"/>
             </div>
             <div className="main-desc">
                 <h2>MEXICAN</h2>
@@ -195,42 +208,42 @@ const Home = ()=>{
             <div className="pics">
                 <div className="shift">
                     <div className="shade"></div>
-                    <img src={burgers[2]} alt="this is a burger"/>
+                    <img src={burgers[10]} alt="this is a burger"/>
                     <span className="overlay">VEGGIE FEAST<span className="price">£20.99</span></span>
                 </div>
                 <div>
                     <div className="shade"></div>
-                    <img src={burgers[2]} alt="this is a burger"/>
+                    <img src={burgers[12]} alt="this is a burger"/>
                     <span className="overlay">VEGGIE FEAST<span className="price">£20.99</span></span>
                 </div>
                 <div>
                     <div className="shade"></div>
-                    <img src={burgers[2]} alt="this is a burger"/>
+                    <img src={burgers[15]} alt="this is a burger"/>
                     <span className="overlay">VEGGIE FEAST<span className="price">£20.99</span></span>
                 </div>
                 <div className="shift">
                     <div className="shade"></div>
-                    <img src={burgers[2]} alt="this is a burger"/>
+                    <img src={burgers[5]} alt="this is a burger"/>
                     <span className="overlay">VEGGIE FEAST<span className="price">£20.99</span></span>
                 </div>
                 <div className="shift">
                     <div className="shade"></div>
-                    <img src={burgers[2]} alt="this is a burger"/>
+                    <img src={burgers[7]} alt="this is a burger"/>
                     <span className="overlay">VEGGIE FEAST<span className="price">£20.99</span></span>
                 </div>
                 <div>
                     <div className="shade"></div>
-                    <img src={burgers[2]} alt="this is a burger"/>
+                    <img src={burgers[16]} alt="this is a burger"/>
                     <span className="overlay">VEGGIE FEAST<span className="price">£20.99</span></span>
                 </div>
                 <div>
                     <div className="shade"></div>
-                    <img src={burgers[2]} alt="this is a burger"/>
+                    <img src={burgers[6]} alt="this is a burger"/>
                     <span className="overlay">VEGGIE FEAST<span className="price">£20.99</span></span>
                 </div>
                 <div className="shift">
                     <div className="shade"></div>
-                    <img src={burgers[2]} alt="this is a burger"/>
+                    <img src={burgers[13]} alt="this is a burger"/>
                     <span className="overlay">VEGGIE FEAST<span className="price">£20.99</span></span>
                 </div>
             </div>

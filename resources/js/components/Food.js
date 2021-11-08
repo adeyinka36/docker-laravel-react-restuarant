@@ -3,9 +3,25 @@ import {useState} from 'react';
 
 
 const burgers = [
-    '/images/burger1.jpg',
-    '/images/burger2.jpg',
-    '/images/burger3.jpg'
+    '/images/a.jpg',
+    '/images/b.jpg',
+    '/images/c.jpg',
+    '/images/d.jpg',
+    '/images/e.jpg',
+    '/images/f.jpg',
+    '/images/h.jpg',
+    '/images/i.jpg',
+    '/images/j.jpg',
+    '/images/k.jpg',
+    '/images/b.jpg',
+    '/images/c.jpg',
+    'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610d0490216_TTTONLINE_Clipped.png',
+    'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc660f4449021a_StyleBowlGrain_Clipped-p-500.png',
+    'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610a54901d5_Hamburger%20Cutout%20compressed.png',
+    ''
+
+
+
 ]
 let image = Math.floor(Math.random() * 3);
 const media = {
@@ -77,6 +93,8 @@ const Con =  styled.div`
       &:hover{
        ${media.desktop}{
             cursor: pointer;
+            opacity: .5;
+            background-color: white;
          }
         }
       }
@@ -94,11 +112,10 @@ const Con =  styled.div`
            flex-direction: column;
            justify-content: center;
            align-items: center;
-           opacity: 1;
            transition: .500s;
          }
          opacity: ${props=>props.opacity};
-         transition: .500s;
+         transition: .5s;
          .details span{
             text-align: center;
          }

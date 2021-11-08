@@ -17039,12 +17039,12 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var burgers = ['/images/burger1.jpg', '/images/burger2.jpg', '/images/burger3.jpg'];
+var burgers = ['/images/a.jpg', '/images/b.jpg', '/images/c.jpg', '/images/d.jpg', '/images/e.jpg', '/images/f.jpg', '/images/h.jpg', '/images/i.jpg', '/images/j.jpg', '/images/k.jpg', '/images/b.jpg', '/images/c.jpg', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610d0490216_TTTONLINE_Clipped.png', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc660f4449021a_StyleBowlGrain_Clipped-p-500.png', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610a54901d5_Hamburger%20Cutout%20compressed.png', ''];
 var image = Math.floor(Math.random() * 3);
 var media = {
   desktop: "@media (min-width:1341px)"
 };
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 600px;\n  display: flex;\n  flex-direction: column;\n  margin: 0 auto;\n  justify-content: center;\n  align-items: center;\n  color: #8A2BE2;\n  font-family: 'Anton',sans-serif;\n  margin-top: 5rem;\n  ", "{\n    width: 30%;\n    max-width: 500px;\n    justify-content: space-around;\n  }\n  img{\n    max-width: 600px;\n    width: 95%;\n\n  }\n  .details{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    .sig{\n        font-size: 3rem;\n    }\n    p{\n    margin-top: .1rem;\n    margin-bottom: .1rem;\n    }\n    .desc{\n        margin: 0;\n        padding: 0;\n        display: flex;\n        justify-content: space-around;\n        align-items: center;\n        width: 70%;\n        .buy{\n            font-size: 2rem;\n            border: 1px solid #8A2BE2;\n            border-radius: 50%;\n            height: 50px;\n            width: 50px;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            &:hover{\n             cursor: pointer;\n             color: white;\n             background-color: #8A2BE2;\n            }\n    }\n    }\n  }\n  .main-img{\n    ", " {\n        display: none;\n    }\n  }\n  .details{\n      &:hover{\n       ", "{\n            cursor: pointer;\n         }\n        }\n      }\n\n }\n  .preview{\n           height: 100vh;\n           width: 100vw;\n           top: 0;\n           left: 0;\n           z-index: -2;\n           position: fixed;\n           opacity: 1;\n           display: flex;\n           flex-direction: column;\n           justify-content: center;\n           align-items: center;\n           opacity: 1;\n           transition: .500s;\n         }\n         opacity: ", ";\n         transition: .500s;\n         .details span{\n            text-align: center;\n         }\n\n"])), media.desktop, media.desktop, media.desktop, function (props) {
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 600px;\n  display: flex;\n  flex-direction: column;\n  margin: 0 auto;\n  justify-content: center;\n  align-items: center;\n  color: #8A2BE2;\n  font-family: 'Anton',sans-serif;\n  margin-top: 5rem;\n  ", "{\n    width: 30%;\n    max-width: 500px;\n    justify-content: space-around;\n  }\n  img{\n    max-width: 600px;\n    width: 95%;\n\n  }\n  .details{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    .sig{\n        font-size: 3rem;\n    }\n    p{\n    margin-top: .1rem;\n    margin-bottom: .1rem;\n    }\n    .desc{\n        margin: 0;\n        padding: 0;\n        display: flex;\n        justify-content: space-around;\n        align-items: center;\n        width: 70%;\n        .buy{\n            font-size: 2rem;\n            border: 1px solid #8A2BE2;\n            border-radius: 50%;\n            height: 50px;\n            width: 50px;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            &:hover{\n             cursor: pointer;\n             color: white;\n             background-color: #8A2BE2;\n            }\n    }\n    }\n  }\n  .main-img{\n    ", " {\n        display: none;\n    }\n  }\n  .details{\n      &:hover{\n       ", "{\n            cursor: pointer;\n            opacity: .5;\n            background-color: white;\n         }\n        }\n      }\n\n }\n  .preview{\n           height: 100vh;\n           width: 100vw;\n           top: 0;\n           left: 0;\n           z-index: -2;\n           position: fixed;\n           opacity: 1;\n           display: flex;\n           flex-direction: column;\n           justify-content: center;\n           align-items: center;\n           transition: .500s;\n         }\n         opacity: ", ";\n         transition: .5s;\n         .details span{\n            text-align: center;\n         }\n\n"])), media.desktop, media.desktop, media.desktop, function (props) {
   return props.opacity;
 }); //make other menu option invisible when image is shown on background
 
@@ -17372,8 +17372,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var burgers = ['/images/burger1.jpg', '/images/burger2.jpg', '/images/burger3.jpg'];
-var image = Math.floor(Math.random() * 3);
+var burgers = ['/images/a.jpg', '/images/b.jpg', '/images/c.jpg', '/images/d.jpg', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610a54901d5_Hamburger%20Cutout%20compressed.png', '/images/e.jpg', '/images/f.jpg', '/images/h.jpg', '/images/i.jpg', '/images/j.jpg', '/images/k.jpg', '/images/b.jpg', '/images/c.jpg', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610d0490216_TTTONLINE_Clipped.png', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc660f4449021a_StyleBowlGrain_Clipped-p-500.png', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610a54901d5_Hamburger%20Cutout%20compressed.png', '/images/m.jpg'];
 var media = {
   desktop: "@media (min-width:1341px)"
 };
@@ -17384,7 +17383,7 @@ var Home = function Home() {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
       className: "main-con",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-        src: burgers[image],
+        src: burgers[4],
         className: "main",
         alt: "background-random"
       })
@@ -17406,7 +17405,7 @@ var Home = function Home() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
           className: "shade"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-          src: burgers[2],
+          src: burgers[10],
           alt: "this is a burger"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
           className: "overlay",
@@ -17419,7 +17418,7 @@ var Home = function Home() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
           className: "shade"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-          src: burgers[2],
+          src: burgers[12],
           alt: "this is a burger"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
           className: "overlay",
@@ -17432,21 +17431,7 @@ var Home = function Home() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
           className: "shade"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-          src: burgers[2],
-          alt: "this is a burger"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
-          className: "overlay",
-          children: ["VEGGIE FEAST", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-            className: "price",
-            children: "\xA320.99"
-          })]
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        className: "shift",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-          className: "shade"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-          src: burgers[2],
+          src: burgers[15],
           alt: "this is a burger"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
           className: "overlay",
@@ -17460,33 +17445,7 @@ var Home = function Home() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
           className: "shade"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-          src: burgers[2],
-          alt: "this is a burger"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
-          className: "overlay",
-          children: ["VEGGIE FEAST", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-            className: "price",
-            children: "\xA320.99"
-          })]
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-          className: "shade"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-          src: burgers[2],
-          alt: "this is a burger"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
-          className: "overlay",
-          children: ["VEGGIE FEAST", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-            className: "price",
-            children: "\xA320.99"
-          })]
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-          className: "shade"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-          src: burgers[2],
+          src: burgers[5],
           alt: "this is a burger"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
           className: "overlay",
@@ -17500,7 +17459,47 @@ var Home = function Home() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
           className: "shade"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-          src: burgers[2],
+          src: burgers[7],
+          alt: "this is a burger"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
+          className: "overlay",
+          children: ["VEGGIE FEAST", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+            className: "price",
+            children: "\xA320.99"
+          })]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+          className: "shade"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+          src: burgers[16],
+          alt: "this is a burger"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
+          className: "overlay",
+          children: ["VEGGIE FEAST", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+            className: "price",
+            children: "\xA320.99"
+          })]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+          className: "shade"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+          src: burgers[6],
+          alt: "this is a burger"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
+          className: "overlay",
+          children: ["VEGGIE FEAST", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+            className: "price",
+            children: "\xA320.99"
+          })]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: "shift",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+          className: "shade"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+          src: burgers[13],
           alt: "this is a burger"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
           className: "overlay",
@@ -17667,6 +17666,7 @@ function Main() {
 
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     axios__WEBPACK_IMPORTED_MODULE_5___default().get('/api/food').then(function (res) {
+      console.log(res.data);
       setItems(_toConsumableArray(res.data));
     });
   }, []);
