@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Food;
+use App\Http\Controllers\FoodController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/food',[Food::class,'index']);
-Route::post('/modify',[Food::class,'update']);
-Route::post('/add',[Food::class,'create']);
-Route::post('/del',[Food::class,'delete']);
+Route::get('/food',[FoodController::class,'index']);
+Route::post('/modify',[FoodController::class,'update']);
+Route::post('/add',[FoodController::class,'create']);
+Route::post('/del',[FoodController::class,'delete']);
 //Route::post('/stripe-payment', [Stripe::class, 'pay']);

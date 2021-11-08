@@ -1,4 +1,4 @@
-import style from 'styled-components';
+import styled from 'styled-components';
 import {useState} from 'react';
 
 
@@ -12,7 +12,7 @@ const media = {
     desktop : `@media (min-width:1341px)`
 }
 
-const Con =  style.div`
+const Con =  styled.div`
   max-width: 600px;
   display: flex;
   flex-direction: column;
@@ -56,7 +56,7 @@ const Con =  style.div`
             border: 1px solid #8A2BE2;
             border-radius: 50%;
             height: 50px;
-            width: 90px;
+            width: 50px;
             display: flex;
             justify-content: center;
             align-items: center;

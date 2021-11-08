@@ -6,7 +6,8 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import Footer from "./footer";
 import AppContext from "../AppContext";
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
+import axios from 'axios';
 
  library.add(faBars, faBars)
 
@@ -15,51 +16,16 @@ import Home from "../views/Home";
 import Menu from "../views/Menu";
 
 function Main() {
-    let [items, setItems] =  useState([
-        {
-            id: 1,
-            name: "Delight",
-            description: "The bes burger you have ever eaten",
-            price: 17.99,
-            image: 1
-        },
-        {
-            id: 2,
-            name: "Delight",
-            description: "The bes burger you have ever eaten",
-            price: 17.99,
-            image: 1
-        },
-        {
-            id: 3,
-            name: "Delight",
-            description: "The bes burger you have ever eaten",
-            price: 17.99,
-            image: 1
-        },
-        {
-            id: 4,
-            name: "Delight",
-            description: "The bes burger you have ever eaten",
-            price: 17.99,
-            image: 1
-        },
-        {
-            id: 5,
-            name: "Delight",
-            description: "The bes burger you have ever eaten",
-            price: 17.99,
-            image: 1
-        },
-        {
-            id: 6,
-            name: "Delight",
-            description: "The bes burger you have ever eaten",
-            price: 17.99,
-            image: 1
-        }
 
-    ])
+    let [items, setItems] =  useState([])
+
+    useEffect(()=>{
+           axios.get('/api/food').then(res=>{
+               setItems([...res.data])
+           })
+
+    },[]);
+
 
     return (
         <Router>

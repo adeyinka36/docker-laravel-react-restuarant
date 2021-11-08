@@ -17,8 +17,8 @@ class CreateFoodTable extends Migration
             Schema::create('food', function ($table) {
                 $table->id();
                 $table->string('name');
-                $table->float('cost');
-                $table->string('image');
+                $table->float('price');
+                $table->integer('image');
                 $table->longText('description');
                 $table->timestamps();
             });

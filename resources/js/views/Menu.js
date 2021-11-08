@@ -6,9 +6,16 @@ import Form from '../views/Form';
 import FormContext from "../Context";
 import AppContext from "../AppContext";
 
+const media = {
+    desktop : `@media (min-width:1341px)`
+}
+
 const Con = styled.div`
     display: flex;
     flex-wrap: wrap;
+    ${media.desktop}{
+        justify-content: space-between;
+    }
     .checkout{
         position: fixed;
         bottom: 0;

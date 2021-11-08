@@ -2,8 +2,13 @@ import style from 'styled-components';
 
 
 const burgers = [
-    '/images/logo.jpg',
-    '/images/spin.jpg'
+    '/images/a.jpg',
+    '/images/b.jpg',
+    '/images/c.jpg',
+    '/images/d.jpg',
+    '/images/e.jpg',
+    '/images/f.jpg',
+    '/images/h.jpg'
 ]
 
 const Con = style.div`
@@ -47,11 +52,11 @@ const Footer = ()=>{
             <p>Open Everyday: 10am-10pm</p>
             <div className="main-con">
                 <img src={burgers[0]} alt="second display"/>
-                <img src={burgers[0]} alt="second display"/>
-                <img src={burgers[0]} alt="second display"/>
-                <img src={burgers[0]} alt="second display"/>
-                <img src={burgers[0]} alt="second display"/>
-                <img src={burgers[0]} alt="second display"/>
+                <img src={burgers[2]} alt="second display"/>
+                <img src={burgers[1]} alt="second display"/>
+                <img src={burgers[3]} alt="second display"/>
+                <img src={burgers[4]} alt="second display"/>
+                <img src={burgers[6]} alt="second display"/>
             </div>
             <p className="insta">FOLLOW US ON INSTAGRAM</p>
         </Con>

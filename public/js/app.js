@@ -17044,7 +17044,7 @@ var image = Math.floor(Math.random() * 3);
 var media = {
   desktop: "@media (min-width:1341px)"
 };
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 600px;\n  display: flex;\n  flex-direction: column;\n  margin: 0 auto;\n  justify-content: center;\n  align-items: center;\n  color: #8A2BE2;\n  font-family: 'Anton',sans-serif;\n  margin-top: 5rem;\n  ", "{\n    width: 30%;\n    max-width: 500px;\n    justify-content: space-around;\n  }\n  img{\n    max-width: 600px;\n    width: 95%;\n\n  }\n  .details{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    .sig{\n        font-size: 3rem;\n    }\n    p{\n    margin-top: .1rem;\n    margin-bottom: .1rem;\n    }\n    .desc{\n        margin: 0;\n        padding: 0;\n        display: flex;\n        justify-content: space-around;\n        align-items: center;\n        width: 70%;\n        .buy{\n            font-size: 2rem;\n            border: 1px solid #8A2BE2;\n            border-radius: 50%;\n            height: 50px;\n            width: 90px;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            &:hover{\n             cursor: pointer;\n             color: white;\n             background-color: #8A2BE2;\n            }\n    }\n    }\n  }\n  .main-img{\n    ", " {\n        display: none;\n    }\n  }\n  .details{\n      &:hover{\n       ", "{\n            cursor: pointer;\n         }\n        }\n      }\n\n }\n  .preview{\n           height: 100vh;\n           width: 100vw;\n           top: 0;\n           left: 0;\n           z-index: -2;\n           position: fixed;\n           opacity: 1;\n           display: flex;\n           flex-direction: column;\n           justify-content: center;\n           align-items: center;\n           opacity: 1;\n           transition: .500s;\n         }\n         opacity: ", ";\n         transition: .500s;\n         .details span{\n            text-align: center;\n         }\n\n"])), media.desktop, media.desktop, media.desktop, function (props) {
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 600px;\n  display: flex;\n  flex-direction: column;\n  margin: 0 auto;\n  justify-content: center;\n  align-items: center;\n  color: #8A2BE2;\n  font-family: 'Anton',sans-serif;\n  margin-top: 5rem;\n  ", "{\n    width: 30%;\n    max-width: 500px;\n    justify-content: space-around;\n  }\n  img{\n    max-width: 600px;\n    width: 95%;\n\n  }\n  .details{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    .sig{\n        font-size: 3rem;\n    }\n    p{\n    margin-top: .1rem;\n    margin-bottom: .1rem;\n    }\n    .desc{\n        margin: 0;\n        padding: 0;\n        display: flex;\n        justify-content: space-around;\n        align-items: center;\n        width: 70%;\n        .buy{\n            font-size: 2rem;\n            border: 1px solid #8A2BE2;\n            border-radius: 50%;\n            height: 50px;\n            width: 50px;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            &:hover{\n             cursor: pointer;\n             color: white;\n             background-color: #8A2BE2;\n            }\n    }\n    }\n  }\n  .main-img{\n    ", " {\n        display: none;\n    }\n  }\n  .details{\n      &:hover{\n       ", "{\n            cursor: pointer;\n         }\n        }\n      }\n\n }\n  .preview{\n           height: 100vh;\n           width: 100vw;\n           top: 0;\n           left: 0;\n           z-index: -2;\n           position: fixed;\n           opacity: 1;\n           display: flex;\n           flex-direction: column;\n           justify-content: center;\n           align-items: center;\n           opacity: 1;\n           transition: .500s;\n         }\n         opacity: ", ";\n         transition: .500s;\n         .details span{\n            text-align: center;\n         }\n\n"])), media.desktop, media.desktop, media.desktop, function (props) {
   return props.opacity;
 }); //make other menu option invisible when image is shown on background
 
@@ -17610,16 +17610,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
 /* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fortawesome/fontawesome-svg-core */ "./node_modules/@fortawesome/fontawesome-svg-core/index.es.js");
-/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
 /* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./footer */ "./resources/js/components/footer.js");
 /* harmony import */ var _AppContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../AppContext */ "./resources/js/AppContext.js");
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Header */ "./resources/js/components/Header.js");
-/* harmony import */ var _views_Home__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../views/Home */ "./resources/js/views/Home.js");
-/* harmony import */ var _views_Menu__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../views/Menu */ "./resources/js/views/Menu.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Header */ "./resources/js/components/Header.js");
+/* harmony import */ var _views_Home__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../views/Home */ "./resources/js/views/Home.js");
+/* harmony import */ var _views_Menu__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../views/Menu */ "./resources/js/views/Menu.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -17641,7 +17651,8 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_2__.library.add(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__.faBars, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__.faBars);
+
+_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_2__.library.add(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faBars, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faBars);
 
 
 
@@ -17649,62 +17660,31 @@ _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_2__.library.add(_fort
 
 
 function Main() {
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([{
-    id: 1,
-    name: "Delight",
-    description: "The bes burger you have ever eaten",
-    price: 17.99,
-    image: 1
-  }, {
-    id: 2,
-    name: "Delight",
-    description: "The bes burger you have ever eaten",
-    price: 17.99,
-    image: 1
-  }, {
-    id: 3,
-    name: "Delight",
-    description: "The bes burger you have ever eaten",
-    price: 17.99,
-    image: 1
-  }, {
-    id: 4,
-    name: "Delight",
-    description: "The bes burger you have ever eaten",
-    price: 17.99,
-    image: 1
-  }, {
-    id: 5,
-    name: "Delight",
-    description: "The bes burger you have ever eaten",
-    price: 17.99,
-    image: 1
-  }, {
-    id: 6,
-    name: "Delight",
-    description: "The bes burger you have ever eaten",
-    price: 17.99,
-    image: 1
-  }]),
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
       _useState2 = _slicedToArray(_useState, 2),
       items = _useState2[0],
       setItems = _useState2[1];
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.BrowserRouter, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_AppContext__WEBPACK_IMPORTED_MODULE_4__["default"].Provider, {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    axios__WEBPACK_IMPORTED_MODULE_5___default().get('/api/food').then(function (res) {
+      setItems(_toConsumableArray(res.data));
+    });
+  }, []);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.BrowserRouter, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(_AppContext__WEBPACK_IMPORTED_MODULE_4__["default"].Provider, {
       value: {
         items: items,
         setItems: setItems
       },
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_Header__WEBPACK_IMPORTED_MODULE_6__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_Header__WEBPACK_IMPORTED_MODULE_7__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
         exact: true,
         path: "/",
-        component: _views_Home__WEBPACK_IMPORTED_MODULE_7__["default"]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
+        component: _views_Home__WEBPACK_IMPORTED_MODULE_8__["default"]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
         exact: true,
         path: "/menu",
-        component: _views_Menu__WEBPACK_IMPORTED_MODULE_8__["default"]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_footer__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
+        component: _views_Menu__WEBPACK_IMPORTED_MODULE_9__["default"]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_footer__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
     })
   });
 }
@@ -17712,7 +17692,7 @@ function Main() {
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main);
 
 if (document.getElementById('app')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(Main, {}), document.getElementById('app'));
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(Main, {}), document.getElementById('app'));
 }
 
 /***/ }),
@@ -18116,7 +18096,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var burgers = ['/images/logo.jpg', '/images/spin.jpg'];
+var burgers = ['/images/a.jpg', '/images/b.jpg', '/images/c.jpg', '/images/d.jpg', '/images/e.jpg', '/images/f.jpg', '/images/h.jpg'];
 var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n     margin-top: 6rem;\n     text-align: center;\n    .main-con{\n        margin: .25rem  auto;\n        justify-content: center;\n        display: flex;\n        flex-wrap: wrap;\n        width: 80%;\n        img{\n         max-width: 30%;\n         margin: .1rem;\n        }\n    }\n    .insta{\n        display: inline-block;\n        width: auto;\n        color: white;\n        font-family: 'Anton', sans-serif;\n        background-color: #8A2BE2;\n        padding: 1rem;\n        border-radius: 5px;\n        margin-bottom: 6rem;\n    }\n    p{\n        display: inline-block;\n        width: auto;\n        color: #8A2BE2;\n        font-family: 'Anton', sans-serif;\n        font-size: 1.5rem;\n    }\n\n"])));
 
 var Footer = function Footer() {
@@ -18129,19 +18109,19 @@ var Footer = function Footer() {
         src: burgers[0],
         alt: "second display"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-        src: burgers[0],
+        src: burgers[2],
         alt: "second display"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-        src: burgers[0],
+        src: burgers[1],
         alt: "second display"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-        src: burgers[0],
+        src: burgers[3],
         alt: "second display"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-        src: burgers[0],
+        src: burgers[4],
         alt: "second display"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-        src: burgers[0],
+        src: burgers[6],
         alt: "second display"
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
@@ -18325,7 +18305,10 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    display: flex;\n    flex-wrap: wrap;\n    .checkout{\n        position: fixed;\n        bottom: 0;\n        left: 0;\n        width: 100vw;\n        height: 5rem;\n        font-family: 'Anton', sans-serif;\n        background-color: #8A2BE2;\n        display: flex;\n        justify-content: space-around;\n        align-items: center;\n        font-size: 3rem;\n        color: white;\n        &:hover{\n            cursor: pointer;\n            color: white;\n            background-color: blue;\n        }\n        visibility: ", ";\n    }\n"])), function (props) {
+var media = {
+  desktop: "@media (min-width:1341px)"
+};
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    display: flex;\n    flex-wrap: wrap;\n    ", "{\n        justify-content: space-between;\n    }\n    .checkout{\n        position: fixed;\n        bottom: 0;\n        left: 0;\n        width: 100vw;\n        height: 5rem;\n        font-family: 'Anton', sans-serif;\n        background-color: #8A2BE2;\n        display: flex;\n        justify-content: space-around;\n        align-items: center;\n        font-size: 3rem;\n        color: white;\n        &:hover{\n            cursor: pointer;\n            color: white;\n            background-color: blue;\n        }\n        visibility: ", ";\n    }\n"])), media.desktop, function (props) {
   return props.show ? 'visible' : 'hidden';
 });
 
