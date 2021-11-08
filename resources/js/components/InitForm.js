@@ -74,13 +74,15 @@ const sortIt = arr =>{
 const InitForm = props=>{
     const form = useContext(FormContext);
     const unique = props.bought.map(item=>item.id).sort()
-    console.log(sortIt(unique))
+    let allUnique = [...new Set(props.bought)]
+    let sorted = sortIt(unique)
+    let completed = allUnique.map(i=>{return {...i,count:sorted[i.id],price:sorted[i.id]*i.price.toFixed(2)}})
 return(
     <Con>
         <div className="main-con">
-            {props.bought.length? props.bought.map(item =>
+            {props.bought.length? completed.map(item =>
                 <div className="con" key={item.id}>
-                    <span className="count">1</span>
+                    <span className="count">{item.count}</span>
                     <p>{item.name}:</p>
                     <span>£{item.price}</span>
                 </div>
