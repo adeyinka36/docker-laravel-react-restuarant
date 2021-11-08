@@ -55,8 +55,8 @@ const Con =  style.div`
             font-size: 2rem;
             border: 1px solid #8A2BE2;
             border-radius: 50%;
-            height: 70px;
-            width: 70px;
+            height: 50px;
+            width: 90px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -113,8 +113,8 @@ const Food = props =>{
         let width = window.innerWidth;
         if(width >= 1341)
         {
-            setVal(1)
             props.changeOpacity(0);
+            setVal(1)
             props.changeViewing(1);
             setCur(1);
         }
@@ -139,18 +139,18 @@ const Food = props =>{
     return(
 
         <Con className="container"  opacity = {opacity}>
-            <img src={burgers[1]} className="main-img" alt="What you get"/>
+            <img src={burgers[props.item.image]} className="main-img" alt="What you get"/>
                 <div className="details">
-                    <p className="sig">Delicious</p>
-                    <span>This is the description This is the description This is the description This is the description</span>
+                    <p className="sig">{props.item.name}</p>
+                    <span>{props.item.description}</span>
                     <div className="desc" onMouseOver={show} onMouseLeave={unShow}>
-                        <div className="buy">+</div>
-                        <span className="sig">£12.99</span>
-                        <div className="buy">-</div>
+                        <div className="buy" onClick={()=>props.add(props.item)}>+</div>
+                        <span className="sig">£{props.item.price}</span>
+                        <div className="buy" onClick={()=>props.remove(props.item)}>-</div>
                     </div>
                 </div>
             {val === 1? <div className="preview">
-                <img src={burgers[1]} alt="What you get"/>
+                <img src={burgers[props.item.image]} alt="What you get"/>
             </div>: null}
         </Con>
     )

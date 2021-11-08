@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { useState } from 'react';
 import CachedIcon from '@material-ui/icons/Cached';
+import {Link} from 'react-router-dom';
 
 
 const Con = styled.div`
@@ -115,7 +116,7 @@ const Pay = props =>{
                     {!loading?
                         <>
                             <h2 className="completed">Thanks for your order!</h2>
-                            <button>HOME</button>
+                            <button><Link to="/">HOME</Link></button>
                          </>:
                         <CachedIcon className="spinner"/>
                     }

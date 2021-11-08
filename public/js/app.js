@@ -17044,7 +17044,7 @@ var image = Math.floor(Math.random() * 3);
 var media = {
   desktop: "@media (min-width:1341px)"
 };
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 600px;\n  display: flex;\n  flex-direction: column;\n  margin: 0 auto;\n  justify-content: center;\n  align-items: center;\n  color: #8A2BE2;\n  font-family: 'Anton',sans-serif;\n  margin-top: 5rem;\n  ", "{\n    width: 30%;\n    max-width: 500px;\n    justify-content: space-around;\n  }\n  img{\n    max-width: 600px;\n    width: 95%;\n\n  }\n  .details{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    .sig{\n        font-size: 3rem;\n    }\n    p{\n    margin-top: .1rem;\n    margin-bottom: .1rem;\n    }\n    .desc{\n        margin: 0;\n        padding: 0;\n        display: flex;\n        justify-content: space-around;\n        align-items: center;\n        width: 70%;\n        .buy{\n            font-size: 2rem;\n            border: 1px solid #8A2BE2;\n            border-radius: 50%;\n            height: 70px;\n            width: 70px;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            &:hover{\n             cursor: pointer;\n             color: white;\n             background-color: #8A2BE2;\n            }\n    }\n    }\n  }\n  .main-img{\n    ", " {\n        display: none;\n    }\n  }\n  .details{\n      &:hover{\n       ", "{\n            cursor: pointer;\n         }\n        }\n      }\n\n }\n  .preview{\n           height: 100vh;\n           width: 100vw;\n           top: 0;\n           left: 0;\n           z-index: -2;\n           position: fixed;\n           opacity: 1;\n           display: flex;\n           flex-direction: column;\n           justify-content: center;\n           align-items: center;\n           opacity: 1;\n           transition: .500s;\n         }\n         opacity: ", ";\n         transition: .500s;\n         .details span{\n            text-align: center;\n         }\n\n"])), media.desktop, media.desktop, media.desktop, function (props) {
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 600px;\n  display: flex;\n  flex-direction: column;\n  margin: 0 auto;\n  justify-content: center;\n  align-items: center;\n  color: #8A2BE2;\n  font-family: 'Anton',sans-serif;\n  margin-top: 5rem;\n  ", "{\n    width: 30%;\n    max-width: 500px;\n    justify-content: space-around;\n  }\n  img{\n    max-width: 600px;\n    width: 95%;\n\n  }\n  .details{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    .sig{\n        font-size: 3rem;\n    }\n    p{\n    margin-top: .1rem;\n    margin-bottom: .1rem;\n    }\n    .desc{\n        margin: 0;\n        padding: 0;\n        display: flex;\n        justify-content: space-around;\n        align-items: center;\n        width: 70%;\n        .buy{\n            font-size: 2rem;\n            border: 1px solid #8A2BE2;\n            border-radius: 50%;\n            height: 50px;\n            width: 90px;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            &:hover{\n             cursor: pointer;\n             color: white;\n             background-color: #8A2BE2;\n            }\n    }\n    }\n  }\n  .main-img{\n    ", " {\n        display: none;\n    }\n  }\n  .details{\n      &:hover{\n       ", "{\n            cursor: pointer;\n         }\n        }\n      }\n\n }\n  .preview{\n           height: 100vh;\n           width: 100vw;\n           top: 0;\n           left: 0;\n           z-index: -2;\n           position: fixed;\n           opacity: 1;\n           display: flex;\n           flex-direction: column;\n           justify-content: center;\n           align-items: center;\n           opacity: 1;\n           transition: .500s;\n         }\n         opacity: ", ";\n         transition: .500s;\n         .details span{\n            text-align: center;\n         }\n\n"])), media.desktop, media.desktop, media.desktop, function (props) {
   return props.opacity;
 }); //make other menu option invisible when image is shown on background
 
@@ -17063,8 +17063,8 @@ var Food = function Food(props) {
     var width = window.innerWidth;
 
     if (width >= 1341) {
-      setVal(1);
       props.changeOpacity(0);
+      setVal(1);
       props.changeViewing(1);
       setCur(1);
     }
@@ -17093,35 +17093,41 @@ var Food = function Food(props) {
     className: "container",
     opacity: opacity,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-      src: burgers[1],
+      src: burgers[props.item.image],
       className: "main-img",
       alt: "What you get"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
       className: "details",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
         className: "sig",
-        children: "Delicious"
+        children: props.item.name
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-        children: "This is the description This is the description This is the description This is the description"
+        children: props.item.description
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
         className: "desc",
         onMouseOver: show,
         onMouseLeave: unShow,
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
           className: "buy",
+          onClick: function onClick() {
+            return props.add(props.item);
+          },
           children: "+"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("span", {
           className: "sig",
-          children: "\xA312.99"
+          children: ["\xA3", props.item.price]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
           className: "buy",
+          onClick: function onClick() {
+            return props.remove(props.item);
+          },
           children: "-"
         })]
       })]
     }), val === 1 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
       className: "preview",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-        src: burgers[1],
+        src: burgers[props.item.image],
         alt: "What you get"
       })
     }) : null]
@@ -17211,11 +17217,14 @@ var Header = function Header() {
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
-          to: "/menu",
+          to: "/",
           children: "Home"
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
-        children: "Menu"
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
+          to: "/menu",
+          children: "Menu"
+        })
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_0__.FontAwesomeIcon, {
       onClick: dropDown,
@@ -17255,62 +17264,52 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var Con = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    .main-con {\n        position: fixed;\n        top: 0;\n        left: 0;\n        z-index: 1000;\n        width: 100vw;\n        height: 100vh;\n        font-family: 'Anton', sans-serif;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        opacity:.9;\n        background-color: #8A2BE2;\n        flex-direction: column;\n        .remove{\n            color: red;\n            font-size: 3rem;\n        }\n        .con{\n            z-index: 1000;\n            opacity: 1;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            width: 75%;\n            height: 50px;\n            color: white;\n            font-size: 1.5rem;\n            .count{\n                margin-right: 1rem;\n            }\n            p{\n                margin-right: 10px;\n            }\n            .total{\n                margin-top: 50px;\n            }\n        }\n        button {\n            width: 200px;\n            padding: .1rem;\n            font-family: 'Anton', sans-serif;\n            border: 1px solid grey;\n            font-size: 2rem;\n            height: 100px;\n            background-color: #8A2BE2;\n            margin-top: 10px;\n            &:hover{\n                background-color: white;\n                cursor: pointer;\n            }\n        }\n    }\n"])));
 
+var sortIt = function sortIt(arr) {
+  var vals = new Object();
+
+  for (var i = 0; i < arr.length; i++) {
+    var num = arr[i];
+    num = num.toString();
+
+    if (num in vals) {
+      vals[num] = vals[num] + 1;
+    } else {
+      vals[num] = 1;
+    }
+  }
+
+  return vals;
+};
+
 var InitForm = function InitForm(props) {
   var form = (0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(_Context__WEBPACK_IMPORTED_MODULE_0__["default"]);
+  var unique = props.bought.map(function (item) {
+    return item.id;
+  }).sort();
+  console.log(sortIt(unique));
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Con, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
       className: "main-con",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
-        className: "remove",
-        children: "Click on item to remove"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        className: "con",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
-          className: "count",
-          children: "1"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-          children: "Delicious:"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
-          children: "\xA330.99"
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        className: "con",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
-          className: "count",
-          children: "1"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-          children: "Delicious:"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
-          children: "\xA330.99"
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        className: "con",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
-          className: "count",
-          children: "1"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-          children: "Delicious:"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
-          children: "\xA330.99"
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        className: "con",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
-          className: "count",
-          children: "1"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-          children: "Delicious:"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
-          children: "\xA330.99"
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      children: [props.bought.length ? props.bought.map(function (item) {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "con",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+            className: "count",
+            children: "1"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
+            children: [item.name, ":"]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("span", {
+            children: ["\xA3", item.price]
+          })]
+        }, item.id);
+      }) : null, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "con",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
           className: "total",
           children: "Total:"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
           className: "total",
-          children: "\xA3120"
+          children: ["\xA3", props.total]
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
         onClick: function onClick() {
@@ -17624,31 +17623,37 @@ _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_2__.library.add(_fort
 
 function Main() {
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([{
+    id: 1,
     name: "Delight",
     description: "The bes burger you have ever eaten",
     price: 17.99,
     image: 1
   }, {
+    id: 2,
     name: "Delight",
     description: "The bes burger you have ever eaten",
     price: 17.99,
     image: 1
   }, {
+    id: 3,
     name: "Delight",
     description: "The bes burger you have ever eaten",
     price: 17.99,
     image: 1
   }, {
+    id: 4,
     name: "Delight",
     description: "The bes burger you have ever eaten",
     price: 17.99,
     image: 1
   }, {
+    id: 5,
     name: "Delight",
     description: "The bes burger you have ever eaten",
     price: 17.99,
     image: 1
   }, {
+    id: 6,
     name: "Delight",
     description: "The bes burger you have ever eaten",
     price: 17.99,
@@ -17698,7 +17703,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _material_ui_icons_Cached__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/Cached */ "./node_modules/@material-ui/icons/Cached.js");
+/* harmony import */ var _material_ui_icons_Cached__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/Cached */ "./node_modules/@material-ui/icons/Cached.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject;
 
@@ -17715,6 +17721,7 @@ function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Sy
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 
 
 
@@ -17787,9 +17794,12 @@ var Pay = function Pay(props) {
             className: "completed",
             children: "Thanks for your order!"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
-            children: "HOME"
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+              to: "/",
+              children: "HOME"
+            })
           })]
-        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_icons_Cached__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_icons_Cached__WEBPACK_IMPORTED_MODULE_4__["default"], {
           className: "spinner"
         })
       })
@@ -18162,7 +18172,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var Con = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    .cancel{\n        position: fixed;\n        top: 1rem;\n        right: 1rem;\n        font-family: 'Rampart One', cursive;\n        font-size: 3rem;\n        color: white;\n        z-index: 10000;\n        &:hover{\n            cursor: pointer;\n            color: red;\n        }\n    }\n"])));
 
-var Form = function Form() {
+var Form = function Form(props) {
   var data = (0,react__WEBPACK_IMPORTED_MODULE_3__.useContext)(_Context__WEBPACK_IMPORTED_MODULE_4__["default"]);
 
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)({
@@ -18184,7 +18194,9 @@ var Form = function Form() {
       details: {
         formDetails: formDetails,
         setFormDetails: setFormDetails
-      }
+      },
+      bought: props.bought,
+      total: props.total
     }) : null, data.form === 2 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_PayForm__WEBPACK_IMPORTED_MODULE_1__["default"], {
       details: {
         formDetails: formDetails,
@@ -18255,6 +18267,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject;
 
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -18278,27 +18298,32 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    display: flex;\n    flex-wrap: wrap;\n    .checkout{\n        position: fixed;\n        bottom: 0;\n        left: 0;\n        width: 100vw;\n        height: 5rem;\n        font-family: 'Anton', sans-serif;\n        background-color: #8A2BE2;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        font-size: 3rem;\n        color: white;\n        &:hover{\n            cursor: pointer;\n            color: white;\n            background-color: blue;\n        }\n        visibility: ", ";\n    }\n"])), function (props) {
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    display: flex;\n    flex-wrap: wrap;\n    .checkout{\n        position: fixed;\n        bottom: 0;\n        left: 0;\n        width: 100vw;\n        height: 5rem;\n        font-family: 'Anton', sans-serif;\n        background-color: #8A2BE2;\n        display: flex;\n        justify-content: space-around;\n        align-items: center;\n        font-size: 3rem;\n        color: white;\n        &:hover{\n            cursor: pointer;\n            color: white;\n            background-color: blue;\n        }\n        visibility: ", ";\n    }\n"])), function (props) {
   return props.show ? 'visible' : 'hidden';
 });
 
 var Menu = function Menu() {
   var data = (0,react__WEBPACK_IMPORTED_MODULE_2__.useContext)(_AppContext__WEBPACK_IMPORTED_MODULE_5__["default"]);
 
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(1),
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]),
       _useState2 = _slicedToArray(_useState, 2),
-      opacity = _useState2[0],
-      setOpacity = _useState2[1];
+      bought = _useState2[0],
+      setBought = _useState2[1];
 
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(0),
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(1),
       _useState4 = _slicedToArray(_useState3, 2),
-      viewing = _useState4[0],
-      setViewing = _useState4[1];
+      opacity = _useState4[0],
+      setOpacity = _useState4[1];
 
   var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(0),
       _useState6 = _slicedToArray(_useState5, 2),
-      form = _useState6[0],
-      setForm = _useState6[1];
+      viewing = _useState6[0],
+      setViewing = _useState6[1];
+
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(0),
+      _useState8 = _slicedToArray(_useState7, 2),
+      form = _useState8[0],
+      setForm = _useState8[1];
 
   var changeViewing = function changeViewing(val) {
     setViewing(val);
@@ -18313,13 +18338,23 @@ var Menu = function Menu() {
   };
 
   var add = function add() {
-    var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+    var item = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+    setBought([].concat(_toConsumableArray(bought), [item]));
   };
 
   var remove = function remove() {
-    var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+    var item = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+    var remaining = bought.filter(function (i) {
+      return i.id !== item.id;
+    });
+    setBought(_toConsumableArray(remaining));
   };
 
+  var total = bought.length ? bought.map(function (item) {
+    return item.price;
+  }).reduce(function (curr, acc) {
+    return acc + curr;
+  }).toFixed(2) : 0;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(Con, {
     show: true,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_Context__WEBPACK_IMPORTED_MODULE_4__["default"].Provider, {
@@ -18336,11 +18371,18 @@ var Menu = function Menu() {
           add: add,
           remove: remove,
           item: item
-        });
-      }), form >= 1 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_views_Form__WEBPACK_IMPORTED_MODULE_3__["default"], {}) : null, data.items.length ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+        }, item.id);
+      }), form >= 1 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_views_Form__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        bought: bought,
+        total: total
+      }) : null, bought.length ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
         className: "checkout",
         onClick: startForm,
-        children: "CHECKOUT"
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
+          children: [bought.length, bought.length > 1 ? 'Items' : 'Item']
+        }), "CHECKOUT", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
+          children: ["Total: \xA3", total]
+        })]
       }) : null]
     })
   });

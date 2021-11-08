@@ -22,7 +22,7 @@ const Con = styled.div`
     }
 `
 
-const Form  = ()=>{
+const Form  = props =>{
 let data = useContext(FormContext);
 let [formDetails, setFormDetails] =  useState({
     name:"",
@@ -32,7 +32,7 @@ let [formDetails, setFormDetails] =  useState({
     return (
         <Con>
          <span className="cancel" onClick={()=>data.setForm(0)}>x</span>
-            {data.form === 1 ? <InitForm details={{formDetails, setFormDetails}}/> : null}
+            {data.form === 1 ? <InitForm details={{formDetails, setFormDetails}} bought={props.bought} total={props.total}/> : null}
             {data.form === 2 ? <PayForm  details={{formDetails, setFormDetails}}/> : null}
             {data.form === 3 ? <Pay  details={{formDetails, setFormDetails}}/> : null}
         </Con>

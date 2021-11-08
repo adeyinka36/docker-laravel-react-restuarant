@@ -17,36 +17,42 @@ import Menu from "../views/Menu";
 function Main() {
     let [items, setItems] =  useState([
         {
+            id: 1,
             name: "Delight",
             description: "The bes burger you have ever eaten",
             price: 17.99,
             image: 1
         },
         {
+            id: 2,
             name: "Delight",
             description: "The bes burger you have ever eaten",
             price: 17.99,
             image: 1
         },
         {
+            id: 3,
             name: "Delight",
             description: "The bes burger you have ever eaten",
             price: 17.99,
             image: 1
         },
         {
+            id: 4,
             name: "Delight",
             description: "The bes burger you have ever eaten",
             price: 17.99,
             image: 1
         },
         {
+            id: 5,
             name: "Delight",
             description: "The bes burger you have ever eaten",
             price: 17.99,
             image: 1
         },
         {
+            id: 6,
             name: "Delight",
             description: "The bes burger you have ever eaten",
             price: 17.99,

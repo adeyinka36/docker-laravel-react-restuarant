@@ -58,36 +58,39 @@ const Con = styled.div`
         }
     }
 `
-
+const sortIt = arr =>{
+    let vals = new Object()
+    for(let i = 0; i< arr.length; i++){
+        let num = arr[i];
+        num = num.toString()
+        if(num in vals) {
+            vals[num] = vals[num]+1
+        }else {
+            vals[num] =1
+        }
+    }
+    return vals
+}
 const InitForm = props=>{
     const form = useContext(FormContext);
+    const unique = props.bought.map(item=>item.id).sort()
+    console.log(sortIt(unique))
 return(
     <Con>
         <div className="main-con">
-            <h3 className="remove">Click on item to remove</h3>
-            <div className="con">
-                <span className="count">1</span>
-                <p>Delicious:</p>
-                <span>£30.99</span>
-            </div>
-            <div className="con">
-                <span className="count">1</span>
-                <p>Delicious:</p>
-                <span>£30.99</span>
-            </div>
-            <div className="con">
-                <span className="count">1</span>
-                <p>Delicious:</p>
-                <span>£30.99</span>
-            </div>
-            <div className="con">
-                <span className="count">1</span>
-                <p>Delicious:</p>
-                <span>£30.99</span>
-            </div>
+            {props.bought.length? props.bought.map(item =>
+                <div className="con" key={item.id}>
+                    <span className="count">1</span>
+                    <p>{item.name}:</p>
+                    <span>£{item.price}</span>
+                </div>
+            ):null
+            }
+
             <div className="con">
                 <p className="total">Total:</p>
-                <p className="total">£120</p>
+                <p className="total">£{props.total}</p>
+
             </div>
             <button onClick={()=> form.setForm(2)}>PROCEED</button>
         </div>

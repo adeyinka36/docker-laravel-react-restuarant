@@ -18,7 +18,7 @@ const Con = styled.div`
         font-family: 'Anton', sans-serif;
         background-color: #8A2BE2;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         font-size: 3rem;
         color: white;
@@ -32,6 +32,7 @@ const Con = styled.div`
 `
 const Menu =() =>{
     let data = useContext(AppContext);
+    let [bought, setBought] = useState([])
     let [opacity, setOpacity] = useState(1);
     let [viewing, setViewing] = useState(0);
     let [form, setForm] = useState(0)
@@ -48,22 +49,25 @@ const Menu =() =>{
         setForm(1)
     }
 
-    const add =  (data = null) =>{
-
+    const add =  (item = null) =>{
+        setBought([...bought,item])
     }
 
-    const remove = (data = null) =>{
-
+    const remove = (item = null) =>{
+        let remaining = bought.filter(i=>i.id !== item.id);
+        setBought([...remaining]);
     }
+
+    let total = bought.length? bought.map(item=>item.price).reduce((curr,acc)=>acc+curr).toFixed(2): 0;
     return(
         <Con show={true}>
             <FormContext.Provider value={{form, setForm}}>
                 { data.items.map(item=>
-                    <Food opa = {opacity} changeOpacity={changeOpacity} changeViewing={changeViewing} viewing={viewing} add={add} remove={remove} item={item}/>)
+                    <Food opa = {opacity} changeOpacity={changeOpacity} changeViewing={changeViewing} viewing={viewing} add={add} remove={remove} item={item} key={item.id}/>)
                 }
 
-                {form >=1?<Form/> :null}
-                {data.items.length?<span className="checkout" onClick={startForm}>CHECKOUT</span>:null}
+                {form >=1?<Form bought={bought} total={total}/> :null}
+                {bought.length?<span className="checkout" onClick={startForm}><span>{bought.length}{bought.length>1?'Items':'Item'}</span>CHECKOUT<span>Total: £{total}</span></span>:null}
             </FormContext.Provider>
         </Con>
     )

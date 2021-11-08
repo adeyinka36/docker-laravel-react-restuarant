@@ -113,8 +113,8 @@ const dropDown = ()=>{
             <span className="logo">DELICIOUS</span>
             <ul id="menu">
                 <li className="cancel-con"><span  className="cancel" onClick={dropDown}>x</span></li>
-                <li><Link to='/menu'>Home</Link></li>
-                <li>Menu</li>
+                <li><Link to='/'>Home</Link></li>
+                <li><Link to='/menu'>Menu</Link></li>
             </ul>
             <FontAwesomeIcon onClick={dropDown} icon={['fa', 'bars']} className="icon"/>
         </Con>
