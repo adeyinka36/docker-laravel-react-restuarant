@@ -21,7 +21,6 @@ function Main() {
 
     useEffect(()=>{
            axios.get('/api/food').then(res=>{
-               console.log(res.data)
                setItems([...res.data])
            })
 

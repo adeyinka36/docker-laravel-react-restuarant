@@ -16971,40 +16971,6 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/js/components/Dessersts.js":
-/*!**********************************************!*\
-  !*** ./resources/js/components/Dessersts.js ***!
-  \**********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-var _templateObject;
-
-function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
-
-
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n        .desserts{\n            margin: 5rem 0;\n            width: 100vw;\n            text-align: center;\n            font-size: 3.5rem;\n            background-color: aqua;\n            color: white;\n            font-family: 'Anton',sans-serif;\n  }\n\n"])));
-
-var Desserts = function Desserts() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Con, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-      className: "desserts",
-      children: "DESSERTS"
-    })
-  });
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Desserts);
-
-/***/ }),
-
 /***/ "./resources/js/components/Food.js":
 /*!*****************************************!*\
   !*** ./resources/js/components/Food.js ***!
@@ -17039,7 +17005,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var burgers = ['/images/a.jpg', '/images/b.jpg', '/images/c.jpg', '/images/d.jpg', '/images/e.jpg', '/images/f.jpg', '/images/h.jpg', '/images/i.jpg', '/images/j.jpg', '/images/k.jpg', '/images/b.jpg', '/images/c.jpg', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610d0490216_TTTONLINE_Clipped.png', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc660f4449021a_StyleBowlGrain_Clipped-p-500.png', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610a54901d5_Hamburger%20Cutout%20compressed.png', ''];
+var burgers = ['https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610d0490216_TTTONLINE_Clipped.png', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc660f4449021a_StyleBowlGrain_Clipped-p-500.png', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610a54901d5_Hamburger%20Cutout%20compressed.png', '/images/m.jpg', '/images/n.jpg', '/images/o.jpg', '/images/p.jpg', '/images/q.jpg', '/images/k.jpg', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610d0490216_TTTONLINE_Clipped.png', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610a54901d5_Hamburger%20Cutout%20compressed.png', '/images/m.jpg', '/images/n.jpg', '/images/o.jpg', '/images/p.jpg', '/images/q.jpg', '/images/k.jpg'];
 var image = Math.floor(Math.random() * 3);
 var media = {
   desktop: "@media (min-width:1341px)"
@@ -17544,21 +17510,15 @@ var image = Math.floor(Math.random() * 3);
 var media = {
   desktop: "@media (min-width:1341px)"
 };
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    h2{\n     font-family: 'Anton',sans-serif\n     font-size: 3rem;\n     color:  #8A2BE2;\n     text-align: center;\n    }\n   h1{\n     font-family: 'Anton', sans-serif;\n     color: #8A2BE2;\n     letter-spacing: .4rem;\n     text-align: center;\n     margin-top: 2rem;\n       }\n   width: 100%;\n   .main-con{\n       display: flex;\n       flex-direction: column;\n       justify-content: center;\n       align-items: center;\n        ", " {\n           flex-direction: row;\n         }\n       .con{\n            display: flex;\n           flex-direction: column;\n           justify-content: center;\n           align-items: center;\n           margin-bottom: 3rem;\n            ", " {\n                max-width: 33%;\n                &:first-child, &:last-child{\n                   margin-top: 5rem;\n                }\n            }\n           &:hover .price{\n                ", " {\n                  cursor: pointer;\n                  background-color: #8A2BE2;\n                  color: white;\n             }\n           }\n           &:hover{\n                ", " {\n                  cursor: pointer;\n             }\n           }\n\n       }\n       img{\n            max-width: 80%;\n            height: auto;\n\n       }\n       span{\n          font-family: 'Anton', sans-serif;\n          color: #8A2BE2;\n       }\n       .con>:first-child {\n         font-size: 1rem;\n         letter-spacing: .15rem;\n       }\n       .price{\n            border: 1px solid #8A2BE2;\n            border-radius: 50%;\n            width: 60px;\n            height: 60px;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n       }\n   }\n   img{\n    z-index: -1 !important;\n}\n"])), media.desktop, media.desktop, media.desktop, media.desktop);
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    h2{\n     font-family: 'Anton',sans-serif\n     font-size: 3rem;\n     color:  #8A2BE2;\n     text-align: center;\n    }\n   h1{\n     font-family: 'Anton', sans-serif;\n     color: #8A2BE2;\n     letter-spacing: .4rem;\n     text-align: center;\n     margin-top: 2rem;\n       }\n   width: 100%;\n   .main-con{\n       display: flex;\n       flex-direction: column;\n       justify-content: center;\n       align-items: center;\n        ", " {\n           flex-direction: row;\n           justify-content: space-between;\n         }\n       .con{\n            display: flex;\n           flex-direction: column;\n           justify-content: center;\n           align-items: center;\n           margin-bottom: 3rem;\n            ", " {\n                max-width: 30%;\n                min-width: 30%;\n                &:first-child, &:last-child{\n                   margin-top: 5rem;\n                }\n            }\n           &:hover .price{\n                ", " {\n                  cursor: pointer;\n                  background-color: #8A2BE2;\n                  color: white;\n             }\n           }\n           &:hover{\n                ", " {\n                  cursor: pointer;\n             }\n           }\n\n       }\n       img{\n            max-width: 80%;\n            height: auto;\n\n       }\n       span{\n          font-family: 'Anton', sans-serif;\n          color: #8A2BE2;\n       }\n       .con>:first-child {\n         font-size: 1rem;\n         letter-spacing: .15rem;\n       }\n       .price{\n            border: 1px solid #8A2BE2;\n            border-radius: 50%;\n            width: 60px;\n            height: 60px;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n       }\n   }\n   img{\n    z-index: -1 !important;\n}\n"])), media.desktop, media.desktop, media.desktop, media.desktop);
 
 var Main = function Main() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Con, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h2", {
-      children: "mexican-inspired street food, for those who crave better"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h1", {
-      children: "SPECIALS"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Con, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
       className: "main-con",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "con",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-          children: "FLAME GRILL"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
           src: burgers[14],
           alt: "second display"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
@@ -17567,9 +17527,7 @@ var Main = function Main() {
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "con",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-          children: "FLAME GRILL"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
           src: burgers[4],
           alt: "second display"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
@@ -17578,9 +17536,7 @@ var Main = function Main() {
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "con",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-          children: "FLAME GRILL"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
           src: burgers[13],
           alt: "second display"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
@@ -17588,7 +17544,7 @@ var Main = function Main() {
           children: "\xA320.99"
         })]
       })]
-    })]
+    })
   });
 };
 
@@ -17666,7 +17622,6 @@ function Main() {
 
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     axios__WEBPACK_IMPORTED_MODULE_5___default().get('/api/food').then(function (res) {
-      console.log(res.data);
       setItems(_toConsumableArray(res.data));
     });
   }, []);
@@ -18265,13 +18220,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _components_Food__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Food */ "./resources/js/components/Food.js");
-/* harmony import */ var _components_Dessersts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Dessersts */ "./resources/js/components/Dessersts.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _views_Form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../views/Form */ "./resources/js/views/Form.js");
-/* harmony import */ var _Context__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Context */ "./resources/js/Context.js");
-/* harmony import */ var _AppContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../AppContext */ "./resources/js/AppContext.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _views_Form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../views/Form */ "./resources/js/views/Form.js");
+/* harmony import */ var _Context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Context */ "./resources/js/Context.js");
+/* harmony import */ var _AppContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../AppContext */ "./resources/js/AppContext.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject;
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
@@ -18304,33 +18258,32 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-
 var media = {
   desktop: "@media (min-width:1341px)"
 };
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    display: flex;\n    flex-wrap: wrap;\n    ", "{\n        justify-content: space-between;\n    }\n    .checkout{\n        position: fixed;\n        bottom: 0;\n        left: 0;\n        width: 100vw;\n        height: 5rem;\n        font-family: 'Anton', sans-serif;\n        background-color: #8A2BE2;\n        display: flex;\n        justify-content: space-around;\n        align-items: center;\n        font-size: 3rem;\n        color: white;\n        &:hover{\n            cursor: pointer;\n            color: white;\n            background-color: blue;\n        }\n        visibility: ", ";\n    }\n"])), media.desktop, function (props) {
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    display: flex;\n    flex-wrap: wrap;\n    ", "{\n        justify-content: space-between;\n    }\n    .checkout{\n        position: fixed;\n        bottom: 0;\n        left: 0;\n        width: 100vw;\n        height: 5rem;\n        font-family: 'Anton', sans-serif;\n        background-color: #8A2BE2;\n        display: flex;\n        justify-content: space-around;\n        align-items: center;\n        font-size: 1.7rem;\n        color: white;\n        &:hover{\n            cursor: pointer;\n            color: white;\n            background-color: blue;\n        }\n        visibility: ", ";\n    }\n"])), media.desktop, function (props) {
   return props.show ? 'visible' : 'hidden';
 });
 
 var Menu = function Menu() {
-  var data = (0,react__WEBPACK_IMPORTED_MODULE_2__.useContext)(_AppContext__WEBPACK_IMPORTED_MODULE_5__["default"]);
+  var data = (0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(_AppContext__WEBPACK_IMPORTED_MODULE_4__["default"]);
 
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]),
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
       _useState2 = _slicedToArray(_useState, 2),
       bought = _useState2[0],
       setBought = _useState2[1];
 
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(1),
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(1),
       _useState4 = _slicedToArray(_useState3, 2),
       opacity = _useState4[0],
       setOpacity = _useState4[1];
 
-  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(0),
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(0),
       _useState6 = _slicedToArray(_useState5, 2),
       viewing = _useState6[0],
       setViewing = _useState6[1];
 
-  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(0),
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(0),
       _useState8 = _slicedToArray(_useState7, 2),
       form = _useState8[0],
       setForm = _useState8[1];
@@ -18371,15 +18324,15 @@ var Menu = function Menu() {
   }).reduce(function (curr, acc) {
     return acc + curr;
   }).toFixed(2) : 0;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(Con, {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(Con, {
     show: true,
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_Context__WEBPACK_IMPORTED_MODULE_4__["default"].Provider, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_Context__WEBPACK_IMPORTED_MODULE_3__["default"].Provider, {
       value: {
         form: form,
         setForm: setForm
       },
       children: [data.items.map(function (item) {
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Food__WEBPACK_IMPORTED_MODULE_0__["default"], {
           opa: opacity,
           changeOpacity: changeOpacity,
           changeViewing: changeViewing,
@@ -18388,16 +18341,14 @@ var Menu = function Menu() {
           remove: remove,
           item: item
         }, item.id);
-      }), form >= 1 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_views_Form__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }), form >= 1 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_views_Form__WEBPACK_IMPORTED_MODULE_2__["default"], {
         bought: bought,
         total: total
-      }) : null, bought.length ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
+      }) : null, bought.length ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("span", {
         className: "checkout",
         onClick: startForm,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
-          children: [bought.length, bought.length > 1 ? 'Items' : 'Item']
-        }), "CHECKOUT", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
-          children: ["Total: \xA3", total]
+        children: ["CHECKOUT", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("span", {
+          children: ["TOTAL: \xA3", total]
         })]
       }) : null]
     })

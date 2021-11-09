@@ -1,5 +1,4 @@
 import Food from '../components/Food';
-import Desserts from "../components/Dessersts";
 import styled from "styled-components";
 import {useState , useContext} from "react";
 import Form from '../views/Form';
@@ -27,7 +26,7 @@ const Con = styled.div`
         display: flex;
         justify-content: space-around;
         align-items: center;
-        font-size: 3rem;
+        font-size: 1.7rem;
         color: white;
         &:hover{
             cursor: pointer;
@@ -80,7 +79,7 @@ const Menu =() =>{
                 }
 
                 {form >=1?<Form bought={bought} total={total}/> :null}
-                {bought.length?<span className="checkout" onClick={startForm}><span>{bought.length}{bought.length>1?'Items':'Item'}</span>CHECKOUT<span>Total: £{total}</span></span>:null}
+                {bought.length?<span className="checkout" onClick={startForm}>CHECKOUT<span>TOTAL: £{total}</span></span>:null}
             </FormContext.Provider>
         </Con>
     )

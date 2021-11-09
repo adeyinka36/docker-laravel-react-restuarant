@@ -44,6 +44,7 @@ const Con = style.div`
        align-items: center;
         ${media.desktop} {
            flex-direction: row;
+           justify-content: space-between;
          }
        .con{
             display: flex;
@@ -52,7 +53,8 @@ const Con = style.div`
            align-items: center;
            margin-bottom: 3rem;
             ${media.desktop} {
-                max-width: 33%;
+                max-width: 30%;
+                min-width: 30%;
                 &:first-child, &:last-child{
                    margin-top: 5rem;
                 }
@@ -104,21 +106,16 @@ const Main = ()=>{
 
     return(
         <Con>
-            <h2>mexican-inspired street food, for those who crave better</h2>
-            <h1>SPECIALS</h1>
             <div className="main-con">
                 <div className="con">
-                    <span>FLAME GRILL</span>
                     <img src={burgers[14]} alt="second display"/>
                     <span className="price">£20.99</span>
                 </div>
                 <div className="con">
-                    <span>FLAME GRILL</span>
                     <img src={burgers[4]} alt="second display"/>
                     <span className="price">£20.99</span>
                 </div>
                 <div className="con">
-                    <span>FLAME GRILL</span>
                     <img src={burgers[13]} alt="second display"/>
                     <span className="price">£20.99</span>
                 </div>

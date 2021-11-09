@@ -3,24 +3,23 @@ import {useState} from 'react';
 
 
 const burgers = [
-    '/images/a.jpg',
-    '/images/b.jpg',
-    '/images/c.jpg',
-    '/images/d.jpg',
-    '/images/e.jpg',
-    '/images/f.jpg',
-    '/images/h.jpg',
-    '/images/i.jpg',
-    '/images/j.jpg',
-    '/images/k.jpg',
-    '/images/b.jpg',
-    '/images/c.jpg',
     'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610d0490216_TTTONLINE_Clipped.png',
     'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc660f4449021a_StyleBowlGrain_Clipped-p-500.png',
     'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610a54901d5_Hamburger%20Cutout%20compressed.png',
-    ''
-
-
+    '/images/m.jpg',
+    '/images/n.jpg',
+    '/images/o.jpg',
+    '/images/p.jpg',
+    '/images/q.jpg',
+    '/images/k.jpg',
+    'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610d0490216_TTTONLINE_Clipped.png',
+    'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610a54901d5_Hamburger%20Cutout%20compressed.png',
+    '/images/m.jpg',
+    '/images/n.jpg',
+    '/images/o.jpg',
+    '/images/p.jpg',
+    '/images/q.jpg',
+    '/images/k.jpg',
 
 ]
 let image = Math.floor(Math.random() * 3);
