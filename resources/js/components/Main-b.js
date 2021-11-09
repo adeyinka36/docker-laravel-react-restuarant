@@ -1,9 +1,23 @@
 import style from 'styled-components';
 const burgers = [
-    '/images/burger1.jpg',
-    '/images/burger2.jpg',
-    '/images/burger3.jpg'
-]
+    '/images/a.jpg',
+    '/images/b.jpg',
+    '/images/c.jpg',
+    '/images/d.jpg',
+    'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610a54901d5_Hamburger%20Cutout%20compressed.png',
+    '/images/e.jpg',
+    '/images/f.jpg',
+    '/images/h.jpg',
+    '/images/i.jpg',
+    '/images/j.jpg',
+    '/images/k.jpg',
+    '/images/b.jpg',
+    '/images/c.jpg',
+    'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610d0490216_TTTONLINE_Clipped.png',
+    'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc660f4449021a_StyleBowlGrain_Clipped-p-500.png',
+    'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610a54901d5_Hamburger%20Cutout%20compressed.png',
+    '/images/m.jpg',
+    ]
 let image = Math.floor(Math.random() * 3);
 const media = {
     desktop : `@media (min-width:1341px)`
@@ -38,6 +52,7 @@ const Con = style.div`
            align-items: center;
            margin-bottom: 3rem;
             ${media.desktop} {
+                max-width: 33%;
                 &:first-child, &:last-child{
                    margin-top: 5rem;
                 }
@@ -94,17 +109,17 @@ const Main = ()=>{
             <div className="main-con">
                 <div className="con">
                     <span>FLAME GRILL</span>
-                    <img src={burgers[1]} alt="second display"/>
+                    <img src={burgers[14]} alt="second display"/>
                     <span className="price">£20.99</span>
                 </div>
                 <div className="con">
                     <span>FLAME GRILL</span>
-                    <img src={burgers[2]} alt="second display"/>
+                    <img src={burgers[4]} alt="second display"/>
                     <span className="price">£20.99</span>
                 </div>
                 <div className="con">
                     <span>FLAME GRILL</span>
-                    <img src={burgers[image]} alt="second display"/>
+                    <img src={burgers[13]} alt="second display"/>
                     <span className="price">£20.99</span>
                 </div>
             </div>

@@ -18,6 +18,10 @@ const burgers = [
     'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc660f4449021a_StyleBowlGrain_Clipped-p-500.png',
     'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610a54901d5_Hamburger%20Cutout%20compressed.png',
     '/images/m.jpg',
+    '/images/n.jpg',
+    '/images/o.jpg',
+    '/images/p.jpg',
+    '/images/q.jpg',
 ]
 const media = {
     desktop : `@media (min-width:1341px)`
@@ -233,7 +237,7 @@ const Home = ()=>{
                 </div>
                 <div>
                     <div className="shade"></div>
-                    <img src={burgers[16]} alt="this is a burger"/>
+                    <img src={burgers[20]} alt="this is a burger"/>
                     <span className="overlay">VEGGIE FEAST<span className="price">£20.99</span></span>
                 </div>
                 <div>

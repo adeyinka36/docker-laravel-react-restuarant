@@ -17372,7 +17372,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var burgers = ['/images/a.jpg', '/images/b.jpg', '/images/c.jpg', '/images/d.jpg', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610a54901d5_Hamburger%20Cutout%20compressed.png', '/images/e.jpg', '/images/f.jpg', '/images/h.jpg', '/images/i.jpg', '/images/j.jpg', '/images/k.jpg', '/images/b.jpg', '/images/c.jpg', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610d0490216_TTTONLINE_Clipped.png', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc660f4449021a_StyleBowlGrain_Clipped-p-500.png', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610a54901d5_Hamburger%20Cutout%20compressed.png', '/images/m.jpg'];
+var burgers = ['/images/a.jpg', '/images/b.jpg', '/images/c.jpg', '/images/d.jpg', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610a54901d5_Hamburger%20Cutout%20compressed.png', '/images/e.jpg', '/images/f.jpg', '/images/h.jpg', '/images/i.jpg', '/images/j.jpg', '/images/k.jpg', '/images/b.jpg', '/images/c.jpg', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610d0490216_TTTONLINE_Clipped.png', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc660f4449021a_StyleBowlGrain_Clipped-p-500.png', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610a54901d5_Hamburger%20Cutout%20compressed.png', '/images/m.jpg', '/images/n.jpg', '/images/o.jpg', '/images/p.jpg', '/images/q.jpg'];
 var media = {
   desktop: "@media (min-width:1341px)"
 };
@@ -17472,7 +17472,7 @@ var Home = function Home() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
           className: "shade"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-          src: burgers[16],
+          src: burgers[20],
           alt: "this is a burger"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
           className: "overlay",
@@ -17539,12 +17539,12 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var burgers = ['/images/burger1.jpg', '/images/burger2.jpg', '/images/burger3.jpg'];
+var burgers = ['/images/a.jpg', '/images/b.jpg', '/images/c.jpg', '/images/d.jpg', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610a54901d5_Hamburger%20Cutout%20compressed.png', '/images/e.jpg', '/images/f.jpg', '/images/h.jpg', '/images/i.jpg', '/images/j.jpg', '/images/k.jpg', '/images/b.jpg', '/images/c.jpg', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610d0490216_TTTONLINE_Clipped.png', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc660f4449021a_StyleBowlGrain_Clipped-p-500.png', 'https://uploads-ssl.webflow.com/604fb106ebbc6653db4900ef/604fb106ebbc6610a54901d5_Hamburger%20Cutout%20compressed.png', '/images/m.jpg'];
 var image = Math.floor(Math.random() * 3);
 var media = {
   desktop: "@media (min-width:1341px)"
 };
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    h2{\n     font-family: 'Anton',sans-serif\n     font-size: 3rem;\n     color:  #8A2BE2;\n     text-align: center;\n    }\n   h1{\n     font-family: 'Anton', sans-serif;\n     color: #8A2BE2;\n     letter-spacing: .4rem;\n     text-align: center;\n     margin-top: 2rem;\n       }\n   width: 100%;\n   .main-con{\n       display: flex;\n       flex-direction: column;\n       justify-content: center;\n       align-items: center;\n        ", " {\n           flex-direction: row;\n         }\n       .con{\n            display: flex;\n           flex-direction: column;\n           justify-content: center;\n           align-items: center;\n           margin-bottom: 3rem;\n            ", " {\n                &:first-child, &:last-child{\n                   margin-top: 5rem;\n                }\n            }\n           &:hover .price{\n                ", " {\n                  cursor: pointer;\n                  background-color: #8A2BE2;\n                  color: white;\n             }\n           }\n           &:hover{\n                ", " {\n                  cursor: pointer;\n             }\n           }\n\n       }\n       img{\n            max-width: 80%;\n            height: auto;\n\n       }\n       span{\n          font-family: 'Anton', sans-serif;\n          color: #8A2BE2;\n       }\n       .con>:first-child {\n         font-size: 1rem;\n         letter-spacing: .15rem;\n       }\n       .price{\n            border: 1px solid #8A2BE2;\n            border-radius: 50%;\n            width: 60px;\n            height: 60px;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n       }\n   }\n   img{\n    z-index: -1 !important;\n}\n"])), media.desktop, media.desktop, media.desktop, media.desktop);
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    h2{\n     font-family: 'Anton',sans-serif\n     font-size: 3rem;\n     color:  #8A2BE2;\n     text-align: center;\n    }\n   h1{\n     font-family: 'Anton', sans-serif;\n     color: #8A2BE2;\n     letter-spacing: .4rem;\n     text-align: center;\n     margin-top: 2rem;\n       }\n   width: 100%;\n   .main-con{\n       display: flex;\n       flex-direction: column;\n       justify-content: center;\n       align-items: center;\n        ", " {\n           flex-direction: row;\n         }\n       .con{\n            display: flex;\n           flex-direction: column;\n           justify-content: center;\n           align-items: center;\n           margin-bottom: 3rem;\n            ", " {\n                max-width: 33%;\n                &:first-child, &:last-child{\n                   margin-top: 5rem;\n                }\n            }\n           &:hover .price{\n                ", " {\n                  cursor: pointer;\n                  background-color: #8A2BE2;\n                  color: white;\n             }\n           }\n           &:hover{\n                ", " {\n                  cursor: pointer;\n             }\n           }\n\n       }\n       img{\n            max-width: 80%;\n            height: auto;\n\n       }\n       span{\n          font-family: 'Anton', sans-serif;\n          color: #8A2BE2;\n       }\n       .con>:first-child {\n         font-size: 1rem;\n         letter-spacing: .15rem;\n       }\n       .price{\n            border: 1px solid #8A2BE2;\n            border-radius: 50%;\n            width: 60px;\n            height: 60px;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n       }\n   }\n   img{\n    z-index: -1 !important;\n}\n"])), media.desktop, media.desktop, media.desktop, media.desktop);
 
 var Main = function Main() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Con, {
@@ -17559,7 +17559,7 @@ var Main = function Main() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
           children: "FLAME GRILL"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-          src: burgers[1],
+          src: burgers[14],
           alt: "second display"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
           className: "price",
@@ -17570,7 +17570,7 @@ var Main = function Main() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
           children: "FLAME GRILL"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-          src: burgers[2],
+          src: burgers[4],
           alt: "second display"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
           className: "price",
@@ -17581,7 +17581,7 @@ var Main = function Main() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
           children: "FLAME GRILL"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-          src: burgers[image],
+          src: burgers[13],
           alt: "second display"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
           className: "price",
