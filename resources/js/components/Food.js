@@ -123,8 +123,10 @@ const Con =  styled.div`
 
 //make other menu option invisible when image is shown on background
 const Food = props =>{
+        let [curCount, setCurCount] = useState(0);
         let [val, setVal ] = useState(0);
         let [cur, setCur ] = useState(0);
+
     const show = ()=>{
         let width = window.innerWidth;
         if(width >= 1341)
@@ -157,12 +159,12 @@ const Food = props =>{
         <Con className="container"  opacity = {opacity}>
             <img src={burgers[props.item.image]} className="main-img" alt="What you get"/>
                 <div className="details">
-                    <p className="sig">{props.item.name}</p>
+                    <p className="sig">{curCount?curCount:null} {props.item.name}</p>
                     <span>{props.item.description}</span>
                     <div className="desc" onMouseOver={show} onMouseLeave={unShow}>
-                        <div className="buy" onClick={()=>props.add(props.item)}>+</div>
+                        <div className="buy" onClick={()=>{props.add(props.item);setCurCount(curCount+1)}}>+</div>
                         <span className="sig">£{props.item.price}</span>
-                        <div className="buy" onClick={()=>props.remove(props.item)}>-</div>
+                        <div className="buy" onClick={()=>{props.remove(props.item);if(curCount>0){setCurCount(curCount-1)}}}>-</div>
                     </div>
                 </div>
             {val === 1? <div className="preview">

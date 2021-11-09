@@ -17017,13 +17017,18 @@ var Con = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templat
 var Food = function Food(props) {
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),
       _useState2 = _slicedToArray(_useState, 2),
-      val = _useState2[0],
-      setVal = _useState2[1];
+      curCount = _useState2[0],
+      setCurCount = _useState2[1];
 
   var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),
       _useState4 = _slicedToArray(_useState3, 2),
-      cur = _useState4[0],
-      setCur = _useState4[1];
+      val = _useState4[0],
+      setVal = _useState4[1];
+
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),
+      _useState6 = _slicedToArray(_useState5, 2),
+      cur = _useState6[0],
+      setCur = _useState6[1];
 
   var show = function show() {
     var width = window.innerWidth;
@@ -17064,9 +17069,9 @@ var Food = function Food(props) {
       alt: "What you get"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
       className: "details",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
         className: "sig",
-        children: props.item.name
+        children: [curCount ? curCount : null, " ", props.item.name]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
         children: props.item.description
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
@@ -17076,7 +17081,8 @@ var Food = function Food(props) {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
           className: "buy",
           onClick: function onClick() {
-            return props.add(props.item);
+            props.add(props.item);
+            setCurCount(curCount + 1);
           },
           children: "+"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("span", {
@@ -17085,7 +17091,11 @@ var Food = function Food(props) {
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
           className: "buy",
           onClick: function onClick() {
-            return props.remove(props.item);
+            props.remove(props.item);
+
+            if (curCount > 0) {
+              setCurCount(curCount - 1);
+            }
           },
           children: "-"
         })]
