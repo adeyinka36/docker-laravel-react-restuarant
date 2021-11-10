@@ -45,11 +45,11 @@ ul{
     .cancel{
         justify-content: flex-end;
         font-size: 3rem;
-        color: white;
+        color: blue;
         margin-right: .5rem;
         transition: .4s;
         &:hover{
-            color: blue;
+            color: red;
             cursor: pointer;
         }
     }

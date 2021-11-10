@@ -17157,7 +17157,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 var media = {
   desktop: "@media (min-width:1000px)"
 };
-var Con = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\nmin-width: 100%;\nfont-size: 2rem;\ndisplay: flex;\nheight: 10vh;\nbackground-color: white;\ncolor: #8A2BE2;\njustify-content: space-between;\npadding-left: .5rem;\npadding-right: .5rem;\nalign-items: center;\nposition: sticky;\ntop: 0;\nz-index: 100;\n.logo{\n font-family: 'Rampart One', cursive;\n}\nul{\n    transition: .5s;\n    position: fixed;\n    top: -100%;\n    background-color: white;\n    list-style-type: none;\n    width: 100vw;\n    color: #8A2BE2;\n    padding: 0;\n    margin: 0;\n    left: 0;\n    font-family: 'Rampart One', cursive;\n    .cancel-con{\n        justify-content: flex-end;\n        ", " {\n            display: none;\n        }\n    }\n    .cancel{\n        justify-content: flex-end;\n        font-size: 3rem;\n        color: white;\n        margin-right: .5rem;\n        transition: .4s;\n        &:hover{\n            color: blue;\n            cursor: pointer;\n        }\n    }\n    ", " {\n        position: static;\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n        width: 50%;\n    }\n    li{\n        margin: 0;\n        font-size: 1.5rem;\n        text-align: center;\n        color: #8A2BE2;\n        background-color: white;\n        height: 5rem;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        max-width: 95%;\n        ", " {\n            background-color: white;\n            color: #8A2BE2;\n            border: none;\n            height: auto;\n        }\n    }\n}\n.icon{\n    transition: .4s;\n    font-size: 4rem;\n    &:hover{\n        cursor: pointer;\n        transform: scale(1.1);\n    }\n    ", " {\n        display: none;\n    }\n}\n"])), media.desktop, media.desktop, media.desktop, media.desktop);
+var Con = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\nmin-width: 100%;\nfont-size: 2rem;\ndisplay: flex;\nheight: 10vh;\nbackground-color: white;\ncolor: #8A2BE2;\njustify-content: space-between;\npadding-left: .5rem;\npadding-right: .5rem;\nalign-items: center;\nposition: sticky;\ntop: 0;\nz-index: 100;\n.logo{\n font-family: 'Rampart One', cursive;\n}\nul{\n    transition: .5s;\n    position: fixed;\n    top: -100%;\n    background-color: white;\n    list-style-type: none;\n    width: 100vw;\n    color: #8A2BE2;\n    padding: 0;\n    margin: 0;\n    left: 0;\n    font-family: 'Rampart One', cursive;\n    .cancel-con{\n        justify-content: flex-end;\n        ", " {\n            display: none;\n        }\n    }\n    .cancel{\n        justify-content: flex-end;\n        font-size: 3rem;\n        color: blue;\n        margin-right: .5rem;\n        transition: .4s;\n        &:hover{\n            color: red;\n            cursor: pointer;\n        }\n    }\n    ", " {\n        position: static;\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n        width: 50%;\n    }\n    li{\n        margin: 0;\n        font-size: 1.5rem;\n        text-align: center;\n        color: #8A2BE2;\n        background-color: white;\n        height: 5rem;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        max-width: 95%;\n        ", " {\n            background-color: white;\n            color: #8A2BE2;\n            border: none;\n            height: auto;\n        }\n    }\n}\n.icon{\n    transition: .4s;\n    font-size: 4rem;\n    &:hover{\n        cursor: pointer;\n        transform: scale(1.1);\n    }\n    ", " {\n        display: none;\n    }\n}\n"])), media.desktop, media.desktop, media.desktop, media.desktop);
 
 var Header = function Header() {
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
@@ -17976,6 +17976,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject;
 
@@ -18055,7 +18056,10 @@ var SpecialandAbout = function SpecialandAbout() {
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
         children: "From our kitchen to your dining room. Fried chicken taco? Come and get it. Brisket nachos? Headed your way. Grilled chicken on a grain bowl? We\u2019ll take one too."
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
-        children: "ORDER NOW!"
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+          to: '/menu',
+          children: "ORDER NOW!"
+        })
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
       className: "about",

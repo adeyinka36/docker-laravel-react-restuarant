@@ -195,7 +195,7 @@ const SpecialandAbout = ()=>{
                 <h1>OPEN DAILY</h1>
                 <h1>DELIVERIES AND COLLECTIONS</h1>
                 <p>From our kitchen to your dining room. Fried chicken taco? Come and get it. Brisket nachos? Headed your way. Grilled chicken on a grain bowl? We’ll take one too.</p>
-                <button>ORDER NOW!</button>
+                <button><Link to={'/menu'}>ORDER NOW!</Link></button>
             </div>
             <div className="about">
                 <div className="effect">
