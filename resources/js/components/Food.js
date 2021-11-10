@@ -20,6 +20,7 @@ const burgers = [
     '/images/p.jpg',
     '/images/q.jpg',
     '/images/k.jpg',
+    '/images/t.jpg'
 
 ]
 let image = Math.floor(Math.random() * 3);
@@ -118,6 +119,9 @@ const Con =  styled.div`
          .details span{
             text-align: center;
          }
+         .boughtCount {
+             color: orange;
+         }
 
 `
 
@@ -159,7 +163,7 @@ const Food = props =>{
         <Con className="container"  opacity = {opacity}>
             <img src={burgers[props.item.image]} className="main-img" alt="What you get"/>
                 <div className="details">
-                    <p className="sig">{curCount?curCount:null} {props.item.name}</p>
+                    <p className="sig"  onMouseOver={show} onMouseLeave={unShow}>{curCount?curCount:null} {props.item.name}</p>
                     <span>{props.item.description}</span>
                     <div className="desc" onMouseOver={show} onMouseLeave={unShow}>
                         <div className="buy" onClick={()=>{props.add(props.item);setCurCount(curCount+1)}}>+</div>

@@ -1,4 +1,5 @@
 import style from 'styled-components';
+import {Link} from 'react-router-dom';
 
 const burgers = [
     '/images/a.jpg',
@@ -207,12 +208,12 @@ const Home = ()=>{
                 <h2>MEXICAN</h2>
                 <span>inspired</span>
                 <h1>FOOD FOR THE MOMENT</h1>
-                <button>ORDER NOW!</button>
+                <button><Link to={'/menu'}>ORDER NOW!</Link></button>
             </div>
             <div className="pics">
                 <div className="shift">
                     <div className="shade"></div>
-                    <img src={burgers[10]} alt="this is a burger"/>
+                    <img src={'/images/t.jpg'} alt="this is a burger"/>
                     <span className="overlay">VEGGIE FEAST<span className="price">£20.99</span></span>
                 </div>
                 <div>
@@ -251,7 +252,7 @@ const Home = ()=>{
                     <span className="overlay">VEGGIE FEAST<span className="price">£20.99</span></span>
                 </div>
             </div>
-            <button>EXPLORE THE MENU</button>
+            <button><Link to={'/menu'}>EXPLORE THE MENU</Link></button>
         </Con>
     )
 }

@@ -1,4 +1,5 @@
 import style from 'styled-components';
+import {Link} from 'react-router-dom';
 
 
 const burgers = [
@@ -56,9 +57,9 @@ const Footer = ()=>{
                 <img src={burgers[1]} alt="second display"/>
                 <img src={burgers[3]} alt="second display"/>
                 <img src={burgers[4]} alt="second display"/>
-                <img src={burgers[6]} alt="second display"/>
+                <img src={'/images/s.jpg'} alt="second display"/>
             </div>
-            <p className="insta">FOLLOW US ON INSTAGRAM</p>
+            <p className="insta"><a href="/https://www.instagram.com/">FOLLOW US ON INSTAGRAM</a></p>
         </Con>
     )
 }

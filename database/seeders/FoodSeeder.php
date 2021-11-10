@@ -18,7 +18,7 @@ class FoodSeeder extends Seeder
             [
                 'name'=>'Tropical Delight',
                 'price' =>19.99,
-                'image' => 3,
+                'image' => 17,
                 'description' => 'Low calorie snack made with cheese, bread and fresh meat'
             ],
             [

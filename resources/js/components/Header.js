@@ -110,7 +110,7 @@ const dropDown = ()=>{
 }
     return (
         <Con>
-            <span className="logo">DELICIOUS</span>
+            <span className="logo"><Link to={'/'}>DELICIOUS</Link></span>
             <ul id="menu">
                 <li className="cancel-con"><span  className="cancel" onClick={dropDown}>x</span></li>
                 <li><Link to='/'>Home</Link></li>

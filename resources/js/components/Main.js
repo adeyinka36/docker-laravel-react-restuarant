@@ -8,6 +8,7 @@ import Footer from "./footer";
 import AppContext from "../AppContext";
 import {useState, useEffect} from 'react';
 import axios from 'axios';
+import ScrollToTop from "./Scroll";
 
  library.add(faBars, faBars)
 
@@ -30,10 +31,12 @@ function Main() {
     return (
         <Router>
             <AppContext.Provider value={{items, setItems}}>
+                <ScrollToTop>
                 <Header/>
                 <Route  exact path = "/"  component={Home}/>
                 <Route  exact path = "/menu"  component={Menu}/>
                 <Footer/>
+                </ScrollToTop>
             </AppContext.Provider>
         </Router>
     );
