@@ -104,7 +104,7 @@ const PayForm = props =>{
                         <input className="input" value ={details.address} onChange={(e)=>setDetails({ ...details,address:e.target.value})}/>
                     </div>
                     <button onClick={submit}>PAYMENT</button>
-                    {invalidPostcode? <p className="warning">Please enter a valid details</p> :null}
+                    {invalidPostcode? <p className="warning">Please enter  valid details</p> :null}
             </div>
         </Con>
     )

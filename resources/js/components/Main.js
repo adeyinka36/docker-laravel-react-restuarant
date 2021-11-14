@@ -9,6 +9,7 @@ import AppContext from "../AppContext";
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 import ScrollToTop from "./Scroll";
+import NotFound from "../views/404";
 
  library.add(faBars, faBars)
 
@@ -33,8 +34,11 @@ function Main() {
             <AppContext.Provider value={{items, setItems}}>
                 <ScrollToTop>
                 <Header/>
-                <Route  exact path = "/"  component={Home}/>
-                <Route  exact path = "/menu"  component={Menu}/>
+                <Switch>
+                    <Route  exact path = "/"  component={Home}/>
+                    <Route  path = "/menu"  component={Menu}/>
+                    <Route  component={NotFound}/>
+                </Switch>
                 <Footer/>
                 </ScrollToTop>
             </AppContext.Provider>
