@@ -17602,14 +17602,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_Home__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../views/Home */ "./resources/js/views/Home.js");
 /* harmony import */ var _views_Menu__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../views/Menu */ "./resources/js/views/Menu.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -17640,6 +17632,62 @@ _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_2__.library.add(_fort
 
 
 
+var foods = [{
+  'name': 'Tropical Delight',
+  'price': 19.99,
+  'image': 17,
+  'description': 'Low calorie snack made with cheese, bread and fresh meat'
+}, {
+  'name': 'Tropical Delight',
+  'price': 12.99,
+  'image': 1,
+  'description': 'Low calorie snack made with cheese, bread and fresh meat'
+}, {
+  'name': 'Tropical Delight',
+  'price': 12.99,
+  'image': 10,
+  'description': 'Low calorie snack made with cheese, bread and fresh meat'
+}, {
+  'name': 'Tropical Delight',
+  'price': 14.99,
+  'image': 9,
+  'description': 'Low calorie snack made with cheese, bread and fresh meat'
+}, {
+  'name': 'Tropical Delight',
+  'price': 15.99,
+  'image': 8,
+  'description': 'Low calorie snack made with cheese, bread and fresh meat'
+}, {
+  'name': 'Tropical Delight',
+  'price': 10.99,
+  'image': 7,
+  'description': 'Low calorie snack made with cheese, bread and fresh meat'
+}, {
+  'name': 'Tropical Delight',
+  'price': 11.99,
+  'image': 6,
+  'description': 'Low calorie snack made with cheese, bread and fresh meat'
+}, {
+  'name': 'Tropical Delight',
+  'price': 15.99,
+  'image': 5,
+  'description': 'Low calorie snack made with cheese, bread and fresh meat'
+}, {
+  'name': 'Tropical Delight',
+  'price': 12.99,
+  'image': 4,
+  'description': 'Low calorie snack made with cheese, bread and fresh meat'
+}, {
+  'name': 'Tropical Delight',
+  'price': 11.99,
+  'image': 3,
+  'description': 'Low calorie snack made with cheese, bread and fresh meat'
+}, {
+  'name': 'Tropical Delight',
+  'price': 10.99,
+  'image': 2,
+  'description': 'Low calorie snack made with cheese, bread and fresh meat'
+}];
 
 function Main() {
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
@@ -17648,9 +17696,7 @@ function Main() {
       setItems = _useState2[1];
 
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    axios__WEBPACK_IMPORTED_MODULE_5___default().get('/api/food').then(function (res) {
-      setItems(_toConsumableArray(res.data));
-    });
+    setItems([].concat(foods));
   }, []);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.BrowserRouter, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_AppContext__WEBPACK_IMPORTED_MODULE_4__["default"].Provider, {

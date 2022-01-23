@@ -93,8 +93,6 @@ function Main() {
 
     useEffect(()=>{
                setItems([...foods])
-
-
     },[]);
 
 
