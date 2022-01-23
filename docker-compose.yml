@@ -7,7 +7,7 @@ services:
   php:
     build:
       context: .
-      dockerfile: dockerfiles/php.dockerfile
+      dockerfile: Dockerfiles/php.dockerfile
     networks:
       - laravel5
     container_name: "php5"
